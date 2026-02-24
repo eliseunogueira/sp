@@ -59,8 +59,8 @@ function savePosition() {
 }
 (null == themeNum && (themeNum = 2), (maleSounds = []), (femaleSounds = []));
 for (var numD = 1; numD <= numWords; numD++)
-  (maleSounds.push('sounds/pronun' + numD + '.mp3'),
-    femaleSounds.push('sounds/fpronun' + numD + '.mp3'));
+  (maleSounds.push('sounds/pronun' + numD + '.ogg'),
+    femaleSounds.push('sounds/fpronun' + numD + '.ogg'));
 var currentDevice,
   loginAppend = '',
   mainHTML =
