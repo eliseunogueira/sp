@@ -1,0 +1,83 @@
+@charset "utf-8";
+
+body {
+background-color: black;
+}
+
+.menuBar {
+	visibility: visible;	
+}
+
+
+#volDiv{
+position: relative;
+top: 22px; right: 25px;
+float:left;
+width: 50px;
+height: 2px;
+z-index: 2;
+}
+
+#sliderTrack{
+position: absolute;
+width: 100%; height: 100%;
+top: 2px; left:8px;
+z-index: -1;
+cursor: pointer;
+background: #CCC;
+border-radius: 10px;
+}
+
+#sliderText{
+position: absolute;
+width: 100%;
+text-align:center;
+  height:10px;
+  top: -15px;
+  left: auto; right: auto;
+  margin: auto 6px;
+  color: white;
+  cursor: default;
+  font-size:11px;
+}
+
+.ui-slider-handle {
+    background:#999;
+    width: 10px;
+    height: 10px;
+	top: -2px;
+	border-radius: 50%;
+    position: absolute;
+	border: 1px solid black;
+	opacity: 0.8;
+}
+
+.ui-slider-handle:focus {
+outline: 0;
+opacity: 1;
+background: #FC0;
+}
+
+
+.ui-slider-range {
+    position: absolute;
+    border: 0;
+    top: 0;
+	width: 40px;
+}
+
+.lessonTitle {pointer-events: none !important; cursor: default !important;}
+
+
+#background {-webkit-filter: brightness(100%) blur(5px) !important; filter: brightness(100%) blur(5px) !important; background-image: url(../../common/background.jpg) !important;}
+
+.off1 {background: #202020; width: 410px; height: 330px; position: absolute; left:0; right:0; top:-10px; bottom:0; margin: auto auto; border-radius: 10px; color: white; text-align: center; padding: 10px 20px;}
+
+.off2 {font-size: 32px;}
+.off3 {margin-top: -22px; color: rgba(255,255,255,0.7);  margin-bottom: 27px; font-size: 18px;}
+.off4, .off5 {border-radius: 10px; width: 200px; line-height: 50px; padding: 10px 20px; margin: 5px auto; height: auto; position: relative; font-size: 20px; font-weight: 300; opacity: 0.8; cursor: pointer; }
+.off4 {background: #2980b9; }
+.off5 {background: #6ab04c;}
+
+.smallIcon:hover, .smallLogo:hover, .off4:hover, .off5:hover{opacity: 1 !important;}
+
