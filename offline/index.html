@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!-- saved from url=(0061)https://www.ouinolanguages.com/app/Spanish/offline/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=0">
+<meta name="robots" content="noindex">
+	
+<script>
+var cacheURL = "https://www.ouinolanguages.com/app/Spanish/";
+function goOffline() {sessionStorage.removeItem("LOGGEDIN"); sessionStorage.removeItem("menuType"); sessionStorage.setItem('offlineLoad', 'true'); setTimeout(function() {window.location = cacheURL + "index.html";}, 100);}	
+</script>
+	
+<link rel="stylesheet" href="./index_files/ouinoStyle.css">
+<link rel="stylesheet" href="./index_files/offline.css">
+
+<title></title>
+<link type="text/css" rel="stylesheet" id="dark-mode-custom-link"><link type="text/css" rel="stylesheet" id="dark-mode-general-link"><style lang="en" type="text/css" id="dark-mode-custom-style"></style><style lang="en" type="text/css" id="dark-mode-native-style"></style><style lang="en" type="text/css" id="dark-mode-native-sheet"></style></head>
+<body>
+<div id="background"></div>
+<div id="loadLogo" style="display: none; opacity: 0.9; border-radius: 10px; cursor: default; padding: 0px 30px 0px 30px; line-height: 90px; background: black; z-index: 2000; position: fixed; width: 160px; height: 90px; margin: auto auto; left:0; right: 0; top: 0; bottom:0; font-size: 22px; font-weight: bold; color: white;">LOADING...</div>
+<div class="menuBar"> 
+<span class="menuBtnContainer"><img id="backBtn" src="./index_files/back.svg" class="smallIcon" onclick="history.back()"> </span> 
+	</div>
+	
+<div class="off1"> 
+<h2 class="off2">You are currently offline.</h2>
+<p class="off3">You can try to reconnect or log into the offline mode to continue using the app offline.</p>	
+<div class="off4" onclick="window.location.reload();">Try to reconnect</div>
+<div class="off5" onclick="goOffline()">Log into offline mode</div>	
+	
+</div>
+		
+	
+	
+
+
+</body></html>
