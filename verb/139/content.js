@@ -1,0 +1,13 @@
+var lessonNumber = 139;
+var conjNum = 7;
+var verbTypeNum = 2;
+var narration =  ["The endings for regular ER verbs in the imperative are very similar to AR verb endings.","Simply invert the A and E from the AR endings."];
+var replaceText  = ["", "depend","corr","le","beb","com"];
+var englishVerbs  = ["Infinitive", "To depend","To run","To read","To drink","To eat"];
+var forConj7 = ["<strong>-</strong>","zzzz<strong>e</strong>","no zzzz<strong>as</strong>","zzzz<strong>a</strong>","zzzz<strong>amos</strong>","zzzz<strong>an</strong>","<strong>-</strong>"];
+var engConj7Z = ["1st Person Singular","2nd Person Singular (positive)","2nd Person Singular (negative)","2nd Person Singular Formal (3rd)","1st Person Plural","2nd Person Plural (3rd)","3rd Person Plural"];
+var engConj7A = ["-","depend (informal)","don't depend (informal)","depend (formal)","let's depend","depend (plural)","-"];
+var engConj7B = ["-","run (informal)","don't run (informal)","run (formal)","let's run","run (plural)","-"];
+var engConj7C = ["-","read (informal)","don't read (informal)","read (formal)","let's read","read (plural)","-"];
+var engConj7D = ["-","drink (informal)","don't drink (informal)","drink (formal)","let's drink","drink (plural)","-"];
+var engConj7E = ["-","eat (informal)","don't eat (informal)","eat (formal)","let's eat","eat (plural)","-"];

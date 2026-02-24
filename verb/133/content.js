@@ -1,0 +1,13 @@
+var lessonNumber = 133;
+var conjNum = 1;
+var verbTypeNum = 2;
+var narration =  ["Both regular <strong>IR</strong> and <strong>ER</strong> verbs end with iendo.</strong>"];
+var forConj1 = ["(yo) estoy zzzz<strong>iendo</strong>","(tú) estás zzzz<strong>iendo</strong>","(usted) está zzzz<strong>iendo</strong>","(él/ella) está zzzz<strong>iendo</strong>","(nosotros) estamos zzzz<strong>iendo</strong>","(ustedes) están zzzz<strong>iendo</strong>","(ellos/ellas) están zzzz<strong>iendo</strong>"];
+var replaceText  = ["", "com","beb","aprend","corr","vend"];
+var englishVerbs  = ["Infinitive", "To eat","To drink","To learn","To run","To sell"];
+var engConj1Z = ["1st Person Singular","2nd Person Singular (inf.)","2nd Pers. Sing. Form. (3rd)","3rd Person Singular","1st Person Plural","2nd Person Plural (3rd)","3rd Person Plural"];
+var engConj1A = ["I am eating","you are eating (informal)","you are eating (formal)","he/she is eating","we are eating","you are eating (plural)","they are eating"];
+var engConj1B = ["I am drinking","you are drinking (informal)","you are drinking (formal)","he/she is drinking","we are drinking","you are drinking (plural)","they are drinking"];
+var engConj1C = ["I am learning","you are learning (informal)","you are learning (formal)","he/she is learning","we are learning","you are learning (plural)","they are learning"];
+var engConj1D = ["I am running","you are running (informal)","you are running (formal)","he/she is running","we are running","you are running (plural)","they are running"];
+var engConj1E = ["I am selling","you are selling (informal)","you are selling (formal)","he/she is selling","we are selling","you are selling (plural)","they are selling"];

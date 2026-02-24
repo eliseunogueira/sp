@@ -1,0 +1,406 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=0"/>
+<meta name="robots" content="noindex">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<link rel="apple-touch-icon" href="../common/icon60.png"/>
+<link rel="apple-touch-icon" sizes="76x76" href="../common/icon76.png"/>
+<link rel="apple-touch-icon" sizes="120x120" href="../common/icon120.png"/>
+<link rel="apple-touch-icon" sizes="152x152" href="../common/icon176.png"/>
+<link rel="stylesheet" href="../scripts/ouinoStyle.css">
+<link rel="stylesheet" href="../scripts/goalStyle.css">
+<script src="../scripts/modernizr.custom.js"></script>
+<script src="../scripts/jquery-1.11.0.min.js"></script>
+<script src="../scripts/hammer.min.js"></script>
+<script src="../scripts/jquery.hammer.min.js"></script>
+<script src="../scripts/jquery.transit.min.js"></script>
+<script src="../scripts/jquery.caret.js"></script>
+<script src="../scripts/CSSPlugin.min.js"></script>
+<script src="../scripts/EasePack.min.js"></script>
+<script src="../scripts/TweenLite.min.js"></script>
+<script src="../scripts/jquery.scrollintoview.min.js"></script>
+<script src="../scripts/zVocab.js"></script>
+<script src="../scripts/goalScript.js"></script>
+<title>Progress & Achievements</title>
+</head>
+<body>
+
+<div class="menuBar">
+<img src="../common/logo.svg" id="menuMain2" class="smallLogo alignVerticalItem"/>
+  <span class="menuTitleContainer alignVerticalItem">
+  <div class="lessonTitle">Progress & Achievements</div>
+  </span>
+  <span class="menuBtnContainer">
+  <div id="volDiv">
+    <div id="sliderTrack"></div>
+    <div id="sliderText">Volume</div>
+  </div>
+ <img id="backBtn" src="images/back.svg" class="smallIcon" style="display: none;"/>
+ <img id="backBtn2" src="images/back.svg" class="smallIcon" style="display: none;"/>
+  </span>
+  </div>
+  
+<header id="startCover" class="wrapper" style="background: rgba(0,0,0,.2); display: none;"></header>
+
+<img src="../common/arrow.svg" class="calNext hide"/>
+<img src="../common/arrow.svg" class="calPrev hide"/>
+
+<div class="explanations">
+<img class="exBack"/>
+<div class="blackCover"></div>
+<h2><img src="images/goal3.png" class="iconLogo"/>Ouino Calendar Information</h2>
+<p><img src="images/bullet.svg" class="bullet"/>We believe that in order to be successful in language learning, you must find a good core learning method (you've found OUINO) and numerous external sources. A core method is something that you follow in order to properly learn sentence structure, grammar, conjugation, etc. External sources is what you use to reinforce everything learned in your core method, like watching movies, reading books, talking to native speakers etc.</p>
+<p><img src="images/bullet.svg" class="bullet"/>Each day you practice with OUINO, a badge will automatically be added to your calendar. In addition, you can also keep track of the things you do to practice beyond the program (aka external methods). </p>
+<p><img src="images/bullet.svg" class="bullet"/>Every time you practice the language in the real world, by speaking, writing, listening, watching, or reading you can add a badge to your calendar. The more badges you have at the end of the month, the more progress you will have made.</p>
+<p><img src="images/bullet.svg" class="bullet"/>Use the calendar to find a nice balance in your language learning schedule and tweak your goals to reach fluency in a record time.</p><br>
+</div>
+
+
+
+
+<div class="choices">
+<div id="backCover"></div>
+<h1>Choose Your Progress Tracker</h1>
+<div class="acts" id="act1"><img class="btnActs" id="btnAct1" src="images/goal1.png" alt=""/><h3>Progress</h3>Take a look at how much progress you have made so far. Keeping track of your progress will increase your motivation.</div>
+<div class="acts" id="act3"><img class="btnActs" id="btnAct3" src="images/goal3.png" alt=""/><h3>Calendar</h3>Manually log your daily external learning activities on a calendar. OUINO days are automatically marked.</div>
+<div class="acts" id="act2"><img class="btnActs" id="btnAct2" src="images/goal2.png" alt=""/><h3>Trophies</h3>Keep track of your OUINO trophies. They are unlocked after achieving goals within the program. Try to unlock them all!</div>
+
+</div>
+
+
+<div class="awards">
+<section class="insideProg">	
+<table id="horTable">
+  <tr>
+    <td class="award1"><p></p><h2></h2></td>
+    <td class="award2"><p></p><h2></h2><div class="outImg"><div class="inImg"></div></div></td>
+    <td class="award3"><p></p><h2></h2><div class="outImg"><div class="inImg"></div></div></td>
+    <td class="award4"><p></p><h2></h2><div class="outImg"><div class="inImg"></div></div></td>
+    <td class="award5"><p></p><h2></h2><div class="outImg"><div class="inImg"></div></div></td>
+  </tr>
+  <tr>
+    <td class="award6"><p></p><h2></h2><div class="outImg"><div class="inImg"></div></div></td>
+    <td class="award7"><p></p><h2></h2><div class="outImg"><div class="inImg"></div></div></td>
+    <td class="award8"><p></p><h2></h2><div class="outImg"><div class="inImg"></div></div></td>
+    <td class="award9"><p></p><h2></h2><div class="outImg"><div class="inImg"></div></div></td>
+    <td class="award10"><p></p><h2></h2><div class="outImg"><div class="inImg"></div></div></td>
+  </tr>
+  <tr>
+    <td class="award11"><p></p><h2></h2><div class="outImg"><div class="inImg"></div></div></td>
+    <td class="award12"><p></p><h2></h2><div class="outImg"><div class="inImg"></div></div></td>
+    <td class="award13"><p></p><h2></h2><div class="outImg"><div class="inImg"></div></div></td>
+    <td class="award14"><p></p><h2></h2><div class="outImg"><div class="inImg"></div></div></td>
+    <td class="award15"><p></p><h2></h2><div class="outImg"><div class="inImg"></div></div></td>
+  </tr>
+  <tr>
+    <td class="award16"><p></p><h2></h2><div class="outImg"><div class="inImg"></div></div></td>
+    <td class="award17"><p></p><h2></h2><div class="outImg"><div class="inImg"></div></div></td>
+    <td class="award18"><p></p><h2></h2><div class="outImg"><div class="inImg"></div></div></td>
+    <td class="award19"><p></p><h2></h2><div class="outImg"><div class="inImg"></div></div></td>
+    <td class="award20"><p></p><h2></h2><div class="outImg"><div class="inImg"></div></div></td>
+  </tr>
+</table>
+	
+
+<table id="verTable">
+  <tr>
+    <td class="award1"><p></p><h2></h2></td>
+    <td class="award2"><p></p><h2></h2><div class="outImg"><div class="inImg"></div></div></td>
+  </tr>
+  <tr>
+    <td class="award3"><p></p><h2></h2><div class="outImg"><div class="inImg"></div></div></td>
+    <td class="award4"><p></p><h2></h2><div class="outImg"><div class="inImg"></div></div></td>
+  </tr>
+  <tr>
+    <td class="award5"><p></p><h2></h2><div class="outImg"><div class="inImg"></div></div></td>
+    <td class="award6"><p></p><h2></h2><div class="outImg"><div class="inImg"></div></div></td>
+  </tr>
+  <tr>
+    <td class="award7"><p></p><h2></h2><div class="outImg"><div class="inImg"></div></div></td>
+    <td class="award8"><p></p><h2></h2><div class="outImg"><div class="inImg"></div></div></td>
+  </tr>
+  <tr>
+    <td class="award9"><p></p><h2></h2><div class="outImg"><div class="inImg"></div></div></td>
+    <td class="award10"><p></p><h2></h2><div class="outImg"><div class="inImg"></div></div></td>
+  </tr>
+  <tr>
+    <td class="award11"><p></p><h2></h2><div class="outImg"><div class="inImg"></div></div></td>
+    <td class="award12"><p></p><h2></h2><div class="outImg"><div class="inImg"></div></div></td>
+  </tr>
+  <tr>
+    <td class="award13"><p></p><h2></h2><div class="outImg"><div class="inImg"></div></div></td>
+    <td class="award14"><p></p><h2></h2><div class="outImg"><div class="inImg"></div></div></td>
+  </tr>
+  <tr>
+    <td class="award15"><p></p><h2></h2><div class="outImg"><div class="inImg"></div></div></td>
+    <td class="award16"><p></p><h2></h2><div class="outImg"><div class="inImg"></div></div></td>
+  </tr>
+  <tr>
+    <td class="award17"><p></p><h2></h2><div class="outImg"><div class="inImg"></div></div></td>
+    <td class="award18"><p></p><h2></h2><div class="outImg"><div class="inImg"></div></div></td>
+  </tr>
+  <tr>
+    <td class="award19"><p></p><h2></h2><div class="outImg"><div class="inImg"></div></div></td>
+    <td class="award20"><p></p><h2></h2><div class="outImg"><div class="inImg"></div></div></td>
+  </tr>
+</table>	
+</section>
+</div>
+
+<div class="progress3">
+<div class="mainTitle" id="prog1"><img class="mainLogoImg2" src="images/menu2.svg">Program&nbsp;Progress</div>
+<div class="mainTitle" id="prog2"><img class="mainLogoImg2" src="images/menu1.svg">Progress&nbsp;Fun&nbsp;Facts</div>
+
+</div>
+
+
+<div class="progress2">
+<section class="insideProg">
+<div class="progOverview">
+<div class="factCont calClick"><img class="mainLogoImg1" src="images/fact1.svg"><h3 class="fact" id="fact1"></h3></div>
+<div class="factCont calClick"><img class="mainLogoImg1" src="images/fact12.svg"><h3 class="fact" id="fact12"></h3></div>
+<div class="factCont calClick"><img class="mainLogoImg1" src="images/fact13.svg"><h3 class="fact" id="fact13"></h3></div>
+<div class="factCont calClick"><img class="mainLogoImg1" src="../common/logoOuino9.png"><h3 class="fact" id="fact2"></h3></div>
+<div class="factCont calClick"><img class="mainLogoImg1" src="images/fact2.svg"><h3 class="fact" id="fact11"></h3></div>
+<div class="factCont calClick"><img class="mainLogoImg1" src="images/fact3.svg"><h3 class="fact" id="fact3"></h3></div>
+<div class="factCont"><img class="mainLogoImg1" src="images/fact4.svg"><h3 class="fact" id="fact4"></h3></div>
+<div class="factCont"><img class="mainLogoImg1" src="images/fact5.svg"><h3 class="fact" id="fact5"></h3></div>
+<div class="factCont"><img class="mainLogoImg1" src="images/fact7.svg"><h3 class="fact" id="fact7"></h3></div>
+<div class="factCont calClick"><img class="mainLogoImg1" src="images/goalListen.png"><h3 class="fact" id="fact14"></h3></div>
+<div class="factCont calClick"><img class="mainLogoImg1" src="images/goalRead.png"><h3 class="fact" id="fact15"></h3></div>
+<div class="factCont calClick"><img class="mainLogoImg1" src="images/goalWatch.png"><h3 class="fact" id="fact16"></h3></div>
+<div class="factCont calClick"><img class="mainLogoImg1" src="images/goalWrite.png"><h3 class="fact" id="fact17"></h3></div>
+<div class="factCont calClick"><img class="mainLogoImg1" src="images/goalSpeak.png"><h3 class="fact" id="fact18"></h3></div>
+<div class="factCont"><img class="mainLogoImg1" src="../extra/images/activity1.svg"><h3 class="fact" id="fact8"></h3></div>
+<div class="factCont"><img class="mainLogoImg1" src="../extra/images/activity2.svg"><h3 class="fact" id="fact19"></h3></div>
+<div class="factCont"><img class="mainLogoImg1" src="../extra/images/activity3.svg"><h3 class="fact" id="fact9"></h3></div>
+<div class="factCont"><img class="mainLogoImg1" src="../extra/images/activity4.svg"><h3 class="fact" id="fact10"></h3></div>
+<div class="factCont"><img class="mainLogoImg1" src="images/fact6.svg"><h3 class="fact" id="fact6"></h3></div>
+</div>
+</section>
+</div>
+
+
+<div class="progress hide">
+<section class="insideProg">
+<div class="progOverview">
+    <div id="pMeter1" class="pMeters">
+      <img class="progLogo" src="../common/logoOuino1.png">
+      <div class="progTitle">Building Blocks</div>
+      <div class="progText"><span><strong>Knowledge Level</strong></span>
+        <p class="progDiv"><img class="progIcons" src="../common/star.svg"><b class="starNum"></b>/<b class="starTotal"></b></p>
+      </div>
+      <div class="progMeter">
+        <div class="starMeter"></div>
+      </div>
+      <div class="progText" style="margin-top: 10px;"><span><strong class="awardText">Awards</strong></span>
+        <p class="progDiv"><img class="progIcons" src="../common/medalIcon5.svg"><b class="scoreNum"></b>%</p>
+        <p class="progDiv"><img class="progIcons" src="../common/medalIcon1.svg"><sup class="medalNum0"></sup><i>&frasl;</i><b class="medalTotal"></b></p>
+        <p class="progDiv"><img class="progIcons" src="../common/medalIcon2.svg"><sup class="medalNum1"></sup><i>&frasl;</i><b class="medalTotal"></b></p>
+        <p class="progDiv"><img class="progIcons" src="../common/medalIcon3.svg"><sup class="medalNum2"></sup><i>&frasl;</i><b class="medalTotal"></b></p>
+        <p class="progDiv"><img class="progIcons" src="../common/medalIcon4.svg"><sup class="medalNum3"></sup><i>&frasl;</i><b class="medalTotal"></b></p>
+      </div>
+      <div class="progMeter">
+        <div class="scoreMeter"></div>
+      </div>
+    </div>
+    <div id="pMeter2" class="pMeters">
+    <img class="progLogo" src="../common/logoOuino2.png">
+      <div class="progTitle">Vocabulary</div>
+      <div class="progText"><span><strong>Knowledge Level</strong></span>
+        <p class="progDiv"><img class="progIcons" src="../common/star.svg"><b class="starNum"></b>/<b class="starTotal"></b></p>
+      </div>
+      <div class="progMeter">
+        <div class="starMeter"></div>
+      </div>
+      <div class="progText" style="margin-top: 10px;"><span><strong class="awardText">Awards</strong></span>
+        <p class="progDiv"><img class="progIcons" src="../common/medalIcon5.svg"><b class="scoreNum"></b>%</p>
+        <p class="progDiv"><img class="progIcons" src="../common/medalIcon1.svg"><sup class="medalNum0"></sup><i>&frasl;</i><b class="medalTotal"></b></p>
+        <p class="progDiv"><img class="progIcons" src="../common/medalIcon2.svg"><sup class="medalNum1"></sup><i>&frasl;</i><b class="medalTotal"></b></p>
+        <p class="progDiv"><img class="progIcons" src="../common/medalIcon3.svg"><sup class="medalNum2"></sup><i>&frasl;</i><b class="medalTotal"></b></p>
+        <p class="progDiv"><img class="progIcons" src="../common/medalIcon4.svg"><sup class="medalNum3"></sup><i>&frasl;</i><b class="medalTotal"></b></p>
+      </div>
+      <div class="progMeter">
+        <div class="scoreMeter"></div>
+      </div>
+    </div><div id="pMeter3" class="pMeters">
+    <img class="progLogo" src="../common/logoOuino3.png">
+      <div class="progTitle">Conversations</div>
+      <div class="progText"><span><strong>Knowledge Level</strong></span>
+        <p class="progDiv"><img class="progIcons" src="../common/star.svg"><b class="starNum"></b>/<b class="starTotal"></b></p>
+      </div>
+      <div class="progMeter">
+        <div class="starMeter"></div>
+      </div>
+      <div class="progText" style="margin-top: 10px;"><span><strong class="awardText">Awards</strong></span>
+        <p class="progDiv"><img class="progIcons" src="../common/medalIcon5.svg"><b class="scoreNum"></b>%</p>
+        <p class="progDiv"><img class="progIcons" src="../common/medalIcon1.svg"><sup class="medalNum0"></sup><i>&frasl;</i><b class="medalTotal"></b></p>
+        <p class="progDiv"><img class="progIcons" src="../common/medalIcon2.svg"><sup class="medalNum1"></sup><i>&frasl;</i><b class="medalTotal"></b></p>
+        <p class="progDiv"><img class="progIcons" src="../common/medalIcon3.svg"><sup class="medalNum2"></sup><i>&frasl;</i><b class="medalTotal"></b></p>
+        <p class="progDiv"><img class="progIcons" src="../common/medalIcon4.svg"><sup class="medalNum3"></sup><i>&frasl;</i><b class="medalTotal"></b></p>
+      </div>
+      <div class="progMeter">
+        <div class="scoreMeter"></div>
+      </div>
+    </div>
+	<!--2020 EXTRA START-->
+	  <div id="pMeter11" class="pMeters">
+    <img class="progLogo" src="../common/logoOuino5.png">
+	<img class="progLogo" src="../common/logoOuino6.png">	  
+      <div class="progTitle">Verbs & Conjugations</div>
+      <div class="progText"><span><strong>Knowledge Level</strong></span>
+        <p class="progDiv"><img class="progIcons" src="../common/star.svg"><b class="starNum"></b>/<b class="starTotal"></b></p>
+      </div>
+      <div class="progMeter">
+        <div class="starMeter"></div>
+      </div>
+      <div class="progText" style="margin-top: 10px;"><span><strong class="awardText">Awards</strong></span>
+        <p class="progDiv"><img class="progIcons" src="../common/medalIcon5.svg"><b class="scoreNum"></b>%</p>
+        <p class="progDiv"><img class="progIcons" src="../common/medalIcon1.svg"><sup class="medalNum0"></sup><i>&frasl;</i><b class="medalTotal"></b></p>
+        <p class="progDiv"><img class="progIcons" src="../common/medalIcon2.svg"><sup class="medalNum1"></sup><i>&frasl;</i><b class="medalTotal"></b></p>
+        <p class="progDiv"><img class="progIcons" src="../common/medalIcon3.svg"><sup class="medalNum2"></sup><i>&frasl;</i><b class="medalTotal"></b></p>
+        <p class="progDiv"><img class="progIcons" src="../common/medalIcon4.svg"><sup class="medalNum3"></sup><i>&frasl;</i><b class="medalTotal"></b></p>
+      </div>
+      <div class="progMeter">
+        <div class="scoreMeter"></div>
+      </div>
+    </div>
+	<!--2020 EXTRA END-->
+    <div id="pMeter6" class="pMeters">
+    <img class="progLogo" src="../common/logoOuino6.png">
+      <div class="progTitle">Key Verbs</div>
+      <div class="progText"><span><strong>Knowledge Level</strong></span>
+        <p class="progDiv"><img class="progIcons" src="../common/star.svg"><b class="starNum"></b>/<b class="starTotal"></b></p>
+      </div>
+      <div class="progMeter">
+        <div class="starMeter"></div>
+      </div>
+      <div class="progText" style="margin-top: 10px;"><span><strong class="awardText">Awards</strong></span>
+        <p class="progDiv"><img class="progIcons" src="../common/medalIcon5.svg"><b class="scoreNum"></b>%</p>
+        <p class="progDiv"><img class="progIcons" src="../common/medalIcon1.svg"><sup class="medalNum0"></sup><i>&frasl;</i><b class="medalTotal"></b></p>
+        <p class="progDiv"><img class="progIcons" src="../common/medalIcon2.svg"><sup class="medalNum1"></sup><i>&frasl;</i><b class="medalTotal"></b></p>
+        <p class="progDiv"><img class="progIcons" src="../common/medalIcon3.svg"><sup class="medalNum2"></sup><i>&frasl;</i><b class="medalTotal"></b></p>
+        <p class="progDiv"><img class="progIcons" src="../common/medalIcon4.svg"><sup class="medalNum3"></sup><i>&frasl;</i><b class="medalTotal"></b></p>
+      </div>
+      <div class="progMeter">
+        <div class="scoreMeter"></div>
+      </div>
+    </div>
+    
+    
+        <div id="pMeter10" class="pMeters">
+    <img class="progLogo" src="../common/logoOuino10.png">
+      <div class="progTitle">Express Verbs</div>
+      <div class="progText"><span><strong>Knowledge Level</strong></span>
+        <p class="progDiv"><img class="progIcons" src="../common/star.svg"><b class="starNum"></b>/<b class="starTotal"></b></p>
+      </div>
+      <div class="progMeter">
+        <div class="starMeter"></div>
+      </div>
+      <div class="progText" style="margin-top: 10px;"><span><strong class="awardText">Awards</strong></span>
+        <p class="progDiv"><img class="progIcons" src="../common/medalIcon5.svg"><b class="scoreNum"></b>%</p>
+        <p class="progDiv"><img class="progIcons" src="../common/medalIcon1.svg"><sup class="medalNum0"></sup><i>&frasl;</i><b class="medalTotal"></b></p>
+        <p class="progDiv"><img class="progIcons" src="../common/medalIcon2.svg"><sup class="medalNum1"></sup><i>&frasl;</i><b class="medalTotal"></b></p>
+        <p class="progDiv"><img class="progIcons" src="../common/medalIcon3.svg"><sup class="medalNum2"></sup><i>&frasl;</i><b class="medalTotal"></b></p>
+        <p class="progDiv"><img class="progIcons" src="../common/medalIcon4.svg"><sup class="medalNum3"></sup><i>&frasl;</i><b class="medalTotal"></b></p>
+      </div>
+      <div class="progMeter">
+        <div class="scoreMeter"></div>
+      </div>
+    </div>
+    
+    
+    
+    <div id="pMeter5" class="pMeters">
+    <img class="progLogo" src="../common/logoOuino5.png">
+      <div class="progTitle">Individual Verbs</div>
+      <div class="progText"><span><strong>Knowledge Level</strong></span>
+        <p class="progDiv"><img class="progIcons" src="../common/star.svg"><b class="starNum"></b>/<b class="starTotal"></b></p>
+      </div>
+      <div class="progMeter">
+        <div class="starMeter"></div>
+      </div>
+      <div class="progText" style="margin-top: 10px;"><span><strong class="awardText">Awards</strong></span>
+        <p class="progDiv"><img class="progIcons" src="../common/medalIcon5.svg"><b class="scoreNum"></b>%</p>
+        <p class="progDiv"><img class="progIcons" src="../common/medalIcon1.svg"><sup class="medalNum0"></sup><i>&frasl;</i><b class="medalTotal"></b></p>
+        <p class="progDiv"><img class="progIcons" src="../common/medalIcon2.svg"><sup class="medalNum1"></sup><i>&frasl;</i><b class="medalTotal"></b></p>
+        <p class="progDiv"><img class="progIcons" src="../common/medalIcon3.svg"><sup class="medalNum2"></sup><i>&frasl;</i><b class="medalTotal"></b></p>
+        <p class="progDiv"><img class="progIcons" src="../common/medalIcon4.svg"><sup class="medalNum3"></sup><i>&frasl;</i><b class="medalTotal"></b></p>
+      </div>
+      <div class="progMeter">
+        <div class="scoreMeter"></div>
+      </div>
+    </div>
+    <div id="pMeter8" class="pMeters">
+    <img class="progLogo" src="../common/logoOuino8.png">
+      <div class="progTitle">Verb Endings</div>
+      <div class="progText"><span><strong>Knowledge Level</strong></span>
+        <p class="progDiv"><img class="progIcons" src="../common/star.svg"><b class="starNum"></b>/<b class="starTotal"></b></p>
+      </div>
+      <div class="progMeter">
+        <div class="starMeter"></div>
+      </div>
+      <div class="progText" style="margin-top: 10px;"><span><strong class="awardText">Awards</strong></span>
+        <p class="progDiv"><img class="progIcons" src="../common/medalIcon5.svg"><b class="scoreNum"></b>%</p>
+        <p class="progDiv"><img class="progIcons" src="../common/medalIcon1.svg"><sup class="medalNum0"></sup><i>&frasl;</i><b class="medalTotal"></b></p>
+        <p class="progDiv"><img class="progIcons" src="../common/medalIcon2.svg"><sup class="medalNum1"></sup><i>&frasl;</i><b class="medalTotal"></b></p>
+        <p class="progDiv"><img class="progIcons" src="../common/medalIcon3.svg"><sup class="medalNum2"></sup><i>&frasl;</i><b class="medalTotal"></b></p>
+        <p class="progDiv"><img class="progIcons" src="../common/medalIcon4.svg"><sup class="medalNum3"></sup><i>&frasl;</i><b class="medalTotal"></b></p>
+      </div>
+      <div class="progMeter">
+        <div class="scoreMeter"></div>
+      </div>
+    </div>
+    <div id="pMeter9" class="pMeters" style="padding-top: 30px;">
+    <img class="progLogo" src="../common/logoOuino9.png">
+      <div class="progTitle">All Modules</div>
+      <div class="progText"><span><strong>Knowledge Level</strong></span>
+        <p class="progDiv"><img class="progIcons" src="../common/star.svg"><b class="starNum"></b>/<b class="starTotal"></b></p>
+      </div>
+      <div class="progMeter">
+        <div class="starMeter"></div>
+      </div>
+      <div class="progText" style="margin-top: 10px;"><span><strong class="awardText">Awards</strong></span>
+        <p class="progDiv"><img class="progIcons" src="../common/medalIcon5.svg"><b class="scoreNum"></b>%</p>
+        <p class="progDiv"><img class="progIcons" src="../common/medalIcon1.svg"><sup class="medalNum0"></sup><i>&frasl;</i><b class="medalTotal"></b></p>
+        <p class="progDiv"><img class="progIcons" src="../common/medalIcon2.svg"><sup class="medalNum1"></sup><i>&frasl;</i><b class="medalTotal"></b></p>
+        <p class="progDiv"><img class="progIcons" src="../common/medalIcon3.svg"><sup class="medalNum2"></sup><i>&frasl;</i><b class="medalTotal"></b></p>
+        <p class="progDiv"><img class="progIcons" src="../common/medalIcon4.svg"><sup class="medalNum3"></sup><i>&frasl;</i><b class="medalTotal"></b></p>
+      </div>
+      <div class="progMeter">
+        <div class="scoreMeter"></div>
+      </div>
+    </div>
+  </div>
+  </section>
+</div>
+
+<div id="bg0" class="background"></div>
+<div id="bg1" class="background"></div>
+<div id="bg3" class="background"></div>
+
+<div id="calBack"></div>
+<div class="calendar"></div>
+
+<div id="goalBack"></div>
+<section class="goalCont">
+<div class="closeWin">DONE</div>
+<h2>How did you practice your language?</h2>
+<div class="goals" id="goal1"><img class="btnGoals" src="images/goalListen.png" alt=""/><h3>Listening</h3><p></p><img class="checkGoal" src="images/check.svg" alt=""/></div>
+<div class="goals" id="goal2"><img class="btnGoals" src="images/goalRead.png" alt=""/><h3>Reading</h3><p></p><img class="checkGoal" src="images/check.svg" alt=""/></div>
+<div class="goals" id="goal3"><img class="btnGoals" src="images/goalWatch.png" alt=""/><h3>Watching</h3><p></p><img class="checkGoal" src="images/check.svg" alt=""/></div>
+<div class="goals" id="goal4"><img class="btnGoals" src="images/goalWrite.png" alt=""/><h3>Writing</h3><p></p><img class="checkGoal" src="images/check.svg" alt=""/></div>
+<div class="goals" id="goal5"><img class="btnGoals" src="images/goalSpeak.png" alt=""/><h3>Speaking</h3><p></p><img class="checkGoal" src="images/check.svg" alt=""/></div>
+</section>
+
+<audio id="mainSound" src=""></audio>
+<audio id="mainMusic" loop src=""></audio>
+<audio id="sfxSprite" src=""></audio>
+
+ <div id="loadLogo">LOADING...</div> 
+<div id="orientationMessage"><p>Please rotate your device to portrait mode or expand the window height.</p></div>	
+</body>
+</html>

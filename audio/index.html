@@ -1,0 +1,233 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=0"/>
+<meta name="robots" content="noindex">
+<link rel="stylesheet" href="../scripts/ouinoStyle.css">		
+<link rel="stylesheet" href="scripts/audio.css">
+<script src="../scripts/jquery-1.11.0.min.js"></script> 
+<script src="../scripts/jquery-ui.min.js"></script>
+<script src="../scripts/hammer.min.js"></script>	
+<script src="../scripts/jquery.hammer.min.js"></script>	
+<script src="../scripts/zVocab.js"></script>
+<script src="../scripts/zEnglish.js"></script>	
+<script src="scripts/audio.js"></script> 	
+<title></title>
+</head>
+<body>
+	
+<div id="topBar"></div>		
+<div id="pbWrap"><div id="progressBar"><div class="pbs"></div><div class="pbs"></div>
+	
+	<div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div><div class="pbs"></div></div></div>
+
+<div id="background"></div> 
+<div id="background2"></div> 	
+<div id="borderDiv"></div>	
+<div class="instructions"><img class="quizBannerImage" src="../common/redArrow.svg"><b id="arrowLabel"></b></div>	
+
+<div id="loadLogo" style="display: none; opacity: 0.9; border-radius: 10px; cursor: default; padding: 0px 30px 0px 30px; line-height: 90px; background: black; z-index: 2000; position: fixed; width: 160px; height: 90px; margin: auto auto; left:0; right: 0; top: 0; bottom:0; font-size: 22px; font-weight: bold; color: white;">LOADING...</div>
+	
+<div id="doublePress" style="display: none; opacity: 1; border-radius: 10px; cursor: default; padding: 0px 30px 0px 30px; line-height: 90px; background: #111; z-index: 2000; position: fixed; width: 200px; height: 90px; margin: auto auto; left:0; right: 0; top: 0; bottom:0; font-size: 22px; font-weight: bold; color: white;">DOUBLE TAP</div>	
+	
+<div class="soundOptions">
+<h1></h1>	
+<h2>Fine-tune Playback Options</h2>
+	
+
+	 
+	
+<div class="playOptions " id="interval">
+<img src="images/arrow.svg" class="lArrow"/><img src="images/arrow2.svg" class="rArrow"/><div class="playText">Time Interval</div><div class="playChoice"></div></div>
+<div class="playOptions " id="transTime">
+<img src="images/arrow.svg" class="lArrow"/><img src="images/arrow2.svg" class="rArrow"/><div class="playText">Translation Interval</div><div class="playChoice"></div></div>
+<div class="playOptions" id="playback">
+<img src="images/arrow.svg" class="lArrow"/><img src="images/arrow2.svg" class="rArrow"/><div class="playText">Playback Speed</div><div class="playChoice"></div></div>
+<div class="playOptions " id="wordAmount">
+<img src="images/arrow.svg" class="lArrow"/><img src="images/arrow2.svg" class="rArrow"/><div class="playText">Max Word Amount</div><div class="playChoice"></div></div>	
+<div class="playOptions" id="english">
+<img src="images/arrow.svg" class="lArrow"/><img src="images/arrow2.svg" class="rArrow"/><div class="playText">English Translation</div><div class="playChoice"></div></div>
+<div class="playOptions" id="englishTime">
+<img src="images/arrow.svg" class="lArrow"/><img src="images/arrow2.svg" class="rArrow"/><div class="playText">Time after English</div><div class="playChoice"></div></div>		
+<div class="playOptions" id="whenDone">
+<img src="images/arrow.svg" class="lArrow"/><img src="images/arrow2.svg" class="rArrow"/><div class="playText">Choose End Action</div><div class="playChoice"></div></div>
+<div class="playOptions " id="extraAmount">
+<img src="images/arrow.svg" class="lArrow"/><img src="images/arrow2.svg" class="rArrow"/><div class="playText">Extra Examples</div><div class="playChoice"></div></div>
+<div id="presetBtn">PRESETS</div><div id="beginBtn">PLAY AUDIO</div>	
+	
+<div class="navigation">
+<div class="navig" id="navig1"><h4>Previous</h4><div class="navImg"></div><h3></h3></div>
+<div class="navig" id="navig2"><h4>Playing</h4><div class="navImg"></div><h3></h3></div>
+<div class="navig" id="navig3"><h4>Up Next</h4><div class="navImg"></div><h3></h3></div>
+</div>		
+	
+</div>	
+
+	
+
+<div id="swipeTip2"></div>		
+<div id="swipeTip"></div>		
+<div class="menuBar">
+	
+
+	
+<img src="../common/logo.svg" id="menuMain2" class="smallLogo alignVerticalItem"/>
+	
+  <span class="menuTitleContainer alignVerticalItem">
+  <div class="lessonTitle">OUINO Audio</div>
+  </span>
+
+ <span class="menuBtnContainer">	 
+  <div id="volDiv">
+    <div id="sliderTrack"></div>
+    <div id="sliderText">Volume</div>
+  </div>
+ <img id="backBtn" src="../common/back.svg" class="smallIcon"/>	 
+</span>
+</div>
+	
+<audio id="mainSound" src=""></audio>
+	
+
+<div class="presetCont">
+
+<br>	
+	
+<div class="pTitle">CHOOSE PLAYBACK</div>	
+	
+<div class="preset" id="p0"><div class="pTitle2">Custom Settings</div>
+<div class="pDescription" style="margin-bottom: 8px;">Adjust the settings to your specific needs and current skill level, ensuring an optimal learning experience every step of the way. <strong>These settings will be remembered on this device</strong>.</div>
+</div>
+	
+<div class="preset" id="p10"><div class="pTitle2">3-Step Vocabulary Builder</div>
+<div class="pDescription">This preset offers a 3-stage playback feature, designed to build your vocabulary on-the-go. Once you're back in the app, you can put your knowledge to the test by tackling the exercises.</div>
+	
+<div class="rounds">
+<div class="pTitle3">Round 1: Memorization</div>
+<div class="pDescription">In this initial round, you'll be presented with an English word or phrase, followed by its French equivalent. Your primary goal is to memorize the meaning of each word.</div></div>	
+	
+<div class="rounds">	
+<div class="pTitle3">Round 2: French-to-English</div>
+<div class="pDescription">First, you'll hear the word or phrase in French. Your task is to mentally translate it into English before the correct translation is provided.</div></div>
+	
+<div class="rounds">	
+<div class="pTitle3">Round 3: English-to-French</div>
+<div class="pDescription">Now, we switch things up. You'll first hear the phrase in English. Try to come up with the French translation in your mind before the actual French version is provided.</div></div>
+		
+</div>	
+	
+			
+<div class="pTitle">BEGINNER</div>
+
+<div class="preset" id="p1"><div class="pTitle2">The Beginner's Dive</div>
+<div class="pType">English → Slow → 5 sec.</div>	
+<div class="pDescription">Hear the English translation, followed by a slow-only pronunciation and a 5-second adaptive pause. This is useful for beginners to get familiarized with the French pronunciation.</div>
+
+<div class="options"><div class="o1">Time interval</div><div class="o2">5 seconds</div></div>
+<div class="options"><div class="o1">Playback speed</div><div class="o2">Slow only</div></div>
+<div class="options"><div class="o1">English translation</div><div class="o2">Play before</div></div>
+<div class="options"><div class="o1">Time after English</div><div class="o2">1 second</div></div>	
+	
+</div>	
+	
+<div class="preset" id="p2"><div class="pTitle2">The Faster Wave</div>
+<div class="pType">English → Slow → 3 sec. → Fast → 3 sec.</div>		
+<div class="pDescription">Hear the English translation, followed by the slow pronunciation, a 3-second adaptive pause, then the fast pronunciation. This eases you in with a slow pronunciation, then familiarizes you with the faster speech.</div>
+
+<div class="options"><div class="o1">Time interval</div><div class="o2">3 seconds</div></div>
+<div class="options"><div class="o1">Playback speed</div><div class="o2">Slow first</div></div>
+<div class="options"><div class="o1">English translation</div><div class="o2">Play before</div></div>
+<div class="options"><div class="o1">Time after English</div><div class="o2">1 second</div></div>	
+	
+</div>		
+	
+<div class="pTitle">INTERMEDIATE</div>
+	
+<div class="preset" id="p3"><div class="pTitle2">Lightning Session</div>
+<div class="pType">English → Fast</div>
+<div class="pDescription">Hear the English audio, followed by the French translation in quick succession. This allows you to go through a lot of content in a short time.</div>
+
+<div class="options"><div class="o1">Time interval</div><div class="o2">1 second</div></div>
+<div class="options"><div class="o1">Playback speed</div><div class="o2">Fast only</div></div>
+<div class="options"><div class="o1">English translation</div><div class="o2">Play before</div></div>
+<div class="options"><div class="o1">Time after English</div><div class="o2">1 second</div></div>	
+	
+</div>
+
+<div class="preset" id="p4"><div class="pTitle2">Comprehension Challenge</div>
+<div class="pType">Fast → 2 sec. → Slow → 2 sec. → English</div>	
+<div class="pDescription">Hear the fast pronunciation, followed by a 2-second adaptive pause, the slow pronunciation, then the English translation. This allows you to guess the meaning of the sentence or word before getting a confirmation with the English translation.</div>
+
+<div class="options"><div class="o1">Time interval</div><div class="o2">2 seconds</div></div>
+<div class="options"><div class="o1">Playback speed</div><div class="o2">Fast first</div></div>
+<div class="options"><div class="o1">English translation</div><div class="o2">Play after</div></div>
+<div class="options"><div class="o1">Time after English</div><div class="o2">N/A</div></div>	
+	
+</div>	
+
+<div class="pTitle">ADVANCED</div>
+
+<div class="preset" id="p5"><div class="pTitle2">Simple Language Input</div>
+<div class="pType">Fast → 2 sec. → Slow → 2 sec.</div>	
+<div class="pDescription">Hear the fast pronunciation, followed by a 2-second adaptive pause, then the slow pronunciation. There is no English. This allows you to be exposed to the language without the crutch of the English translation.</div>
+
+<div class="options"><div class="o1">Time interval</div><div class="o2">2 seconds</div></div>
+<div class="options"><div class="o1">Playback speed</div><div class="o2">Fast first</div></div>
+<div class="options"><div class="o1">English translation</div><div class="o2">Do not play</div></div>
+<div class="options"><div class="o1">Time after English</div><div class="o2">N/A</div></div>	
+	
+</div>	
+
+<div class="preset" id="p6"><div class="pTitle2">Complete Immersion</div>
+<div class="pType">Fast → 1 sec.</div>	
+<div class="pDescription">Hear the fast pronunciation in quick succession. There's no English and no slow pronunciation. It's designed to immerse you in the natural pace of the language, allowing you to train your ears for real-world listening without any help.</div>
+
+<div class="options"><div class="o1">Time interval</div><div class="o2">1 second</div></div>
+<div class="options"><div class="o1">Playback speed</div><div class="o2">Fast only</div></div>
+<div class="options"><div class="o1">English translation</div><div class="o2">Do not play</div></div>
+<div class="options"><div class="o1">Time after English</div><div class="o2">N/A</div></div>	
+	 
+</div>	
+
+<div class="pTitle">ACTIVE LEARNING</div>
+
+<div class="preset" id="p7"><div class="pTitle2">Pronunciation Mastery</div>
+<div class="pType">Slow → 8 sec.</div>	
+<div class="pDescription">Hear the slow pronunciation, followed by an 8-second adaptive pause. This allows you to focus on mastering pronunciation by listening to slow audio clips.</div>
+
+<div class="options"><div class="o1">Time interval</div><div class="o2">8 seconds</div></div>
+<div class="options"><div class="o1">Playback speed</div><div class="o2">Slow only</div></div>
+<div class="options"><div class="o1">English translation</div><div class="o2">Do not play</div></div>
+<div class="options"><div class="o1">Time after English</div><div class="o2">N/A</div></div>	
+	
+</div>
+
+<div class="preset" id="p8"><div class="pTitle2">English Translation Quest</div>
+<div class="pType">Fast → 6 sec. → English</div>		
+<div class="pDescription">Hear the French audio, then try to come up with the English translation in your mind before getting a confirmation after the adaptive 6-second delay. This practices your English translation skills.</div>
+
+<div class="options"><div class="o1">Time interval</div><div class="o2">6 seconds</div></div>
+<div class="options"><div class="o1">Playback speed</div><div class="o2">Fast only</div></div>
+<div class="options"><div class="o1">English translation</div><div class="o2">Play after</div></div>
+<div class="options"><div class="o1">Time after English</div><div class="o2">N/A</div></div>	
+	
+</div>
+
+<div class="preset" id="p9"><div class="pTitle2">French Mastery Challenge</div>
+<div class="pType">English → 6 sec. → Fast</div>		
+<div class="pDescription">Hear the English audio, then try to come up with the French translation in your mind before getting a confirmation after the adaptive 6-second delay. This practices your translation skills in French.</div>
+
+<div class="options"><div class="o1">Time interval</div><div class="o2">1 second</div></div>
+<div class="options"><div class="o1">Playback speed</div><div class="o2">Fast only</div></div>
+<div class="options"><div class="o1">English translation</div><div class="o2">Play before</div></div>
+<div class="options"><div class="o1">Time after English</div><div class="o2">6 seconds</div></div>	
+	
+</div>
+
+	<br>
+</div>	
+	
+	
+</body>
+</html>

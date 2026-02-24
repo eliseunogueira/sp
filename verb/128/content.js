@@ -1,0 +1,13 @@
+var lessonNumber = 128;
+var conjNum = 2;
+var verbTypeNum = 3;
+var narration =  ["Here are the endings for regular IR verbs.","These will be easy to learn because they are the exact same as regular ER verb endings.","Just look at it as extra practice."];
+var replaceText  = ["","decid","recib","part","sub","viv"];
+var englishVerbs  = ["Infinitive","To decide","To receive","To leave","To go up","To live"];
+var forConj2 = ["(yo) zzzz<strong>í</strong>","(tú) zzzz<strong>iste</strong>","(usted) zzzz<strong>ió</strong>","(él/ella) zzzz<strong>ió</strong>","(nosotros) zzzz<strong>imos</strong>","(ustedes) zzzz<strong>ieron</strong>","(ellos/ellas) zzzz<strong>ieron</strong>"];
+var engConj2Z = ["1st Person Singular","2nd Person Singular (inf.)","2nd Pers. Sing. Form. (3rd)","3rd Person Singular","1st Person Plural","2nd Person Plural (3rd)","3rd Person Plural"];
+var engConj2A = ["I decided","you decided (informal)","you decided (formal)","he/she decided","we decided","you decided (plural)","they decided"];
+var engConj2B = ["I received","you received (informal)","you received (formal)","he/she received","we received","you received (plural)","they received"];
+var engConj2C = ["I left","you left (informal)","you left (formal)","he/she left","we left","you left (plural)","they left"];
+var engConj2D = ["I went up","you went up (informal)","you went up (formal)","he/she went up","we went up","you went up (plural)","they went up"];
+var engConj2E = ["I lived","you lived (informal)","you lived (formal)","he/she lived","we lived","you lived (plural)","they lived"];

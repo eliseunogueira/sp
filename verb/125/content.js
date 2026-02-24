@@ -1,0 +1,13 @@
+var lessonNumber = 125;
+var conjNum = 4;
+var verbTypeNum = 2;
+var narration =  ["Here is a quick tip for regular ER verbs in the future.","You can use the AR endings to help you learn ER verbs faster.","Simply change the first A in the endings to an E and you get the right endings."];
+var replaceText  = ["","corr","vend","com","beb","aprend"];
+var englishVerbs  = ["Infinitive","To run","To sell","To eat","To drink","To learn"];
+var forConj4 = ["(yo) zzzz<strong>eré</strong>","(tú) zzzz<strong>erás</strong>","(usted) zzzz<strong>erá</strong>","(él/ella) zzzz<strong>erá</strong>","(nosotros) zzzz<strong>eremos</strong>","(ustedes) zzzz<strong>erán</strong>","(ellos/ellas) zzzz<strong>erán</strong>"];
+var engConj4Z = ["1st Person Singular","2nd Person Singular (inf.)","2nd Pers. Sing. Form. (3rd)","3rd Person Singular","1st Person Plural","2nd Person Plural (3rd)","3rd Person Plural"];
+var engConj4A = ["I will run","you will run (informal)","you will run (formal)","he/she will run","we will run","you will run (plural)","they will run"];
+var engConj4B = ["I will sell","you will sell (informal)","you will sell (formal)","he/she will sell","we will sell","you will sell (plural)","they will sell"];
+var engConj4C = ["I will eat","you will eat (informal)","you will eat (formal)","he/she will eat","we will eat","you will eat (plural)","they will eat"];
+var engConj4D = ["I will drink","you will drink (informal)","you will drink (formal)","he/she will drink","we will drink","you will drink (plural)","they will drink"];
+var engConj4E = ["I will learn","you will learn (informal)","you will learn (formal)","he/she will learn","we will learn","you will learn (plural)","they will learn"];

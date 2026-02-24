@@ -1,0 +1,26 @@
+
+var lessonNumber = 71;var lessonTitle = "Encantar (To love something)";
+var forExamples = ["<strong>Encantar</strong>","A ustedes les va a <strong>encantar</strong> su viaje.","(Él) le encanta","A él <strong>le encanta</strong> ir a la piscina.","(Ellos) les encantó","A ellos <strong>les encantó</strong> el postre del restaurante.","(Tú) te encantaba","<strong>Te encantaba</strong> ir a la escuela cuando eras joven.","(Yo) me encantará","<strong>Me</strong> <strong>encantará</strong> mi nuevo trabajo.","(Ella) le encantaría","A ella <strong>le</strong> <strong>encantaría</strong> tener cuatro hijos."];var engExamples = ["To love (something)<em></em>","You are going <em>to love</em> your trip.","He loves","<em>He loves</em> to go to the swimming pool.","They loved","<em>They loved</em> the dessert at the restaurant.","You used to love","<em>You used to love</em> to go to school when you were young. (informal)","I will love","<em>I will love</em> my new job.","She would love","<em>She would love</em> to have four children."];var btnColor = ["#F30101","#5F0000"];
+
+var forConj1 = ["(yo) me encant<strong>a(n)</strong>","(tú) te encant<strong>a(n)</strong>","(usted) le encant<strong>a(n)</strong>","(él/ella) le encant<strong>a(n)</strong>","(nosotros) nos encant<strong>a(n)</strong>","(ustedes) les encant<strong>a(n)</strong>","(ellos/ellas) les encant<strong>a(n)</strong>"];
+var forConj2 = ["(yo) me encant<strong>ó</strong> / encant<strong>aron</strong>","(tú) te encant<strong>ó</strong> / encant<strong>aron</strong>","(usted) le encant<strong>ó</strong> / encant<strong>aron</strong>","(él/ella) le encant<strong>ó</strong> / encant<strong>aron</strong>","(nosotros) nos encant<strong>ó</strong> / encant<strong>aron</strong>","(ustedes) les encant<strong>ó</strong> / encant<strong>aron</strong>","(ellos/ellas) les encant<strong>ó</strong> / encant<strong>aron</strong>"];
+var forConj3 = ["(yo) me encant<strong>aba(n)</strong>","(tú) te encant<strong>aba(n)</strong>","(usted) le encant<strong>aba(n)</strong>","(él/ella) le encant<strong>aba(n)</strong>","(nosotros) nos encant<strong>aba(n)</strong>","(ustedes) les encant<strong>aba(n)</strong>","(ellos/ellas) les encant<strong>aba(n)</strong>"];
+var forConj4 = ["(yo) me encant<strong>ará(n)</strong>","(tú) te encant<strong>ará(n)</strong>","(usted) le encant<strong>ará(n)</strong>","(él/ella) le encant<strong>ará(n)</strong>","(nosotros) nos encant<strong>ará(n)</strong>","(ustedes) les encant<strong>ará(n)</strong>","(ellos/ellas) les encant<strong>ará(n)</strong>"];
+var forConj5 = ["(yo) me encant<strong>aría(n)</strong>","(tú) te encant<strong>aría(n)</strong>","(usted) le encant<strong>aría(n)</strong>","(él/ella) le encant<strong>aría(n)</strong>","(nosotros) nos encant<strong>aría(n)</strong>","(ustedes) les encant<strong>aría(n)</strong>","(ellos/ellas) les encant<strong>aría(n)</strong>"];
+
+
+var engConj1 = ["I love","you love (informal)","you love (formal)","he/she/it loves","we love","you love (plural)","they love"];var engConj2 = ["I loved","you loved (informal)","you loved (formal)","he/she/it loved","we loved","you loved (plural)","they loved"];var engConj3 = ["I was loving","you were loving (informal)","you were loving (formal)","he/she/it was loving","we were loving","you were loving (plural)","they were loving"];var engConj4 = ["I will love","you will love (informal)","you will love (formal)","he/she/it will love","we will love","you will love (plural)","they will love"];var engConj5 = ["I would love","you would love (informal)","you would love (formal)","he/she/it would love","we would love","you would love (plural)","they would love"];
+
+var quizConj1 = ["me encanta","te encanta","le encanta","nos encanta","les encanta","les encanta"];
+var quizConj2 = ["me encantó","te encantó","le encantó","nos encantó","les encantó","les encantó"];
+var quizConj3 = ["me encantaba","te encantaba","le encantaba","nos encantaba","les encantaba","les encantaba"];
+var quizConj4 = ["me encantará","te encantará","le encantará","nos encantará","les encantará","les encantará"];
+var quizConj5 = ["me encantaría","te encantaría","le encantaría","nos encantaría","les encantaría","les encantaría"];
+
+var verbTypeNum = 1;
+var forConj6 = "encantando";
+var forConj7 = 'encant';
+var pronominal = false;
+var conjNum = [0,0,1,1,2,2,3,3,4,4,5,5];
+var irregReason = ["This verb is slightly irregular because there is a diphthong in the present tense, the ''e'' becomes ''ie''. E.g. Yo pierdo."];
+var extraNote = '<br><strong>Gustar</strong> and <strong>Encantar</strong> are used differently than most verbs. They are frequently used with an object pronoun and conjugated to the third person singular or plural, depending on what is liked or loved. This occurs because Spanish uses a different structure.<br><br>Me encant<strong>a</strong> el coche.<br>I love the car. (The car is pleasing to me.)<br><br>Me encant<strong>an</strong>  los coches.<br>I love the cars. (The cars are pleasing to me.)';

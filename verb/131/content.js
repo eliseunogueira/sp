@@ -1,0 +1,13 @@
+var lessonNumber = 131;
+var conjNum = 5;
+var verbTypeNum = 3;
+var narration =  ["Once again, the rule is applied for regular IR verbs. These endings should be very easy to learn and memorize."];
+var replaceText  = ["", "viv","sub","decid","recib","part"];
+var englishVerbs  = ["Infinitive", "To live","To go up","To decide","To receive","To leave"];
+var forConj5 = ["(yo) zzzz<strong>iría</strong>","(tú) zzzz<strong>irías</strong>","(usted) zzzz<strong>iría</strong>","(él/ella) zzzz<strong>iría</strong>","(nosotros) zzzz<strong>iríamos</strong>","(ustedes) zzzz<strong>irían</strong>","(ellos/ellas) zzzz<strong>irían</strong>"];
+var engConj5Z = ["1st Person Singular","2nd Person Singular (inf.)","2nd Pers. Sing. Form. (3rd)","3rd Person Singular","1st Person Plural","2nd Person Plural (3rd)","3rd Person Plural"];
+var engConj5A = ["I would live","you would live (informal)","you would live (formal)","he/she would live","we would live","you would live (plural)","they would live"];
+var engConj5B = ["I would go up","you would go up (informal)","you would go up (formal)","he/she would go up","we would go up","you would go up (plural)","they would go up"];
+var engConj5C = ["I would decide","you would decide (informal)","you would decide (formal)","he/she would decide","we would decide","you would decide (plural)","they would decide"];
+var engConj5D = ["I would receive","you would receive (informal)","you would receive (formal)","he/she would receive","we would receive","you would receive (plural)","they would receive"];
+var engConj5E = ["I would leave","you would leave (informal)","you would leave (formal)","he/she would leave","we would leave","you would leave (plural)","they would leave"];

@@ -1,0 +1,5 @@
+var quizLessonBoth = "lesson";var lessonNumber = 29;var numOfAllQuiz = 30;var lessonTitle = "Los pronombres personales IV (Subject personal pronouns)";var btnColor = ["#CC00E2","#4A0041","#AD00FF","#320058"];var quesToRemove = [];var startNarration = [];
+var narration = ["Se = One, Someone, People in general<br>(No one in particular)","","","",""];var titleSkip = [false,true,true,true];var forTitles = ["Se"];var engTitles = ["General "];var forSideTitles = ["Se"];var engSideTitles = ["General "];
+var exampleNums = [5];
+var forExamples = ["<strong>Se</strong> vende esta casa.","<strong>Se</strong> alquila apartamento.","No <strong>se</strong> debería fumar.","<strong>Se</strong> habla español.",'¿Cómo <strong>se</strong> dice "hermano" en italiano?'];
+var engExamples = ["House for sale.","Apartment for rent.","One shouldn't smoke.","We speak Spanish.",'How does one say "brother" in Italian?'];

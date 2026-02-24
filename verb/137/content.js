@@ -1,0 +1,13 @@
+var lessonNumber = 137;
+var conjNum = 6;
+var verbTypeNum = 3;
+var narration =  ["For the subjunctive, the endings for regular IR verbs are the same as regular ER verbs."];
+var replaceText  = ["", "escrib","viv","exist","recib","decid"];
+var englishVerbs  = ["Infinitive", "To write","To live","To exist","To receive","To decide"];
+var forConj6 = ["que (yo) zzzz<strong>a</strong>","que (tú) zzzz<strong>as</strong>","que (usted) zzzz<strong>a</strong>","que (él/ella) zzzz<strong>a</strong>","que (nosotros) zzzz<strong>amos</strong>","que (ustedes) zzzz<strong>an</strong>","que (ellos/ellas) zzzz<strong>an</strong>"];
+var engConj6Z = ["1st Person Singular","2nd Person Singular (inf.)","2nd Pers. Sing. Form. (3rd)","3rd Person Singular","1st Person Plural","2nd Person Plural (3rd)","3rd Person Plural"];
+var engConj6A = ["that I write","that you write (informal)","that you write (formal)","that he/she writes","that we write","that you write (plural)","that they write"];
+var engConj6B = ["that I live","that you live (informal)","that you live (formal)","that he/she lives","that we live","that you live (plural)","that they live"];
+var engConj6C = ["that I exist","that you exist (informal)","that you exist (formal)","that he/she exists","that we exist","that you exist (plural)","that they exist"];
+var engConj6D = ["that I receive","that you receive (informal)","that you receive (formal)","that he/she receives","that we receive","that you receive (plural)","that they receive"];
+var engConj6E = ["that I decide","that you decide (informal)","that you decide (formal)","that he/she decides","that we decide","that you decide (plural)","that they decide"];

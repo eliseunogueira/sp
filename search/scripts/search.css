@@ -1,0 +1,159 @@
+@charset "utf-8";
+@font-face{font-family:Inter;src:url(../../font/Intertight-Variable.ttf) format("truetype-variations")}
+@-webkit-keyframes opaAnimate {
+0%{opacity:1}
+50%{opacity:1}
+100%{opacity:0}
+}
+@keyframes opaAnimate {
+0%{opacity:1}
+50%{opacity:1}
+100%{opacity:0}
+}
+html{width:100%;-ms-touch-action:none;touch-action:none;background:0 0;font-family:Inter,sans-serif!important;font-style:normal!important;text-shadow:none!important;box-shadow:none!important}
+body{font-family:Inter;background:0 0;font-weight:300;margin:0 auto;padding:0!important;-webkit-tap-highlight-color:transparent}
+input{font-weight:300}
+input[type=button],input[type=submit],input[type=text]{-webkit-appearance:none;border-radius:0}
+#background{width:100%;height:100%;-webkit-filter:brightness(40%);filter:brightness(40%);position:fixed;left:0;top:0;z-index:-1;width:100%;height:100%}
+option{background-color:#000}
+p{font-size:14px;font-weight:300}
+input:-webkit-autofill{-webkit-box-shadow:0 0 0 1000px #fff inset}
+.invisible{visibility:hidden}
+@-webkit-keyframes opaAnimate2 {
+0%{opacity:1;-webkit-transform:scale(1.2)}
+50%{opacity:.6;-webkit-transform:scale(1)}
+100%{opacity:1;-webkit-transform:scale(1.2)}
+}
+@keyframes opaAnimate2 {
+0%{opacity:1;transform:scale(1.2)}
+50%{opacity:.6;transform:scale(1)}
+100%{opacity:1;transform:scale(1.2)}
+}
+::-webkit-input-placeholder{color:#666}
+input{font-size:15px}
+.inside2{background:rgba(0,0,0,.8);padding-bottom:40px;width:620px;cursor:default}
+.cont h2{text-align:center;margin:30px 10px 10px!important;color:#fff}
+.dark{background:#2d3436!important;border-radius:10px!important}
+.cA{cursor:pointer;background:#fff;margin:5px auto;box-shadow:0 0 2px 1px rgba(0,0,0,.4);width:93%;opacity:1;padding:25px 15px 25px 25px;position:relative;margin-top:20px;margin-bottom:100px;border-radius:10px}
+.cont h1{text-align:center;font-size:20px;padding:10px 0}
+.del{width:30px;height:30px;position:absolute;left:auto;top:5px;right:7px;padding:0;margin:0;background:url(../..common/close2.svg);background-size:cover}
+.add{width:30px;height:30px;position:absolute;left:0;right:0;margin:auto;top:-13px;padding:0;background:url(../..common/plus2.svg);background-size:cover}
+.cA2{position:absolute!important;left:20px!important;right:0!important;bottom:20px!important;cursor:pointer!important;background:rgba(255,255,255,1);box-shadow:0 0 2px 1px rgba(0,0,0,.4);width:93%;opacity:.9!important;padding:25px 0;margin:0 auto!important;border-radius:10px}
+.cA .add,.cA2 .add{width:35px;height:35px;top:0;right:0;left:0;bottom:0;margin:auto;pointer-events:none}
+.print{width:30px;height:30px;position:absolute;left:25px;top:5px;bottom:auto;right:auto;padding:0;margin:0;background:url(../..common/print2.svg);background-size:cover}
+.print2{background:url(../..common/print.svg)}
+.cA2 .add{left:-19px}
+.del2{background:url(../..common/close.svg)}
+.add2{background:url(../..common/plus.svg)}
+.add3{background-color:#fff;animation-name:flashIt;animation-duration:4s;animation-iteration-count:3}
+@keyframes flashIt {
+0%{background-color:#fff}
+10%{background-color:#6ab04c}
+20%{background-color:#fff}
+30%{background-color:#6ab04c}
+40%{background-color:#fff}
+50%{background-color:#6ab04c}
+60%{background-color:#fff}
+70%{background-color:#6ab04c}
+80%{background-color:#fff}
+90%{background-color:#6ab04c}
+100%{background-color:#fff}
+}
+.show{display:block}
+.da1{position:absolute;right:3%}
+.da2{position:absolute;right:13%}
+.da3{position:absolute;right:23%}
+.da4{position:absolute;right:33%}
+.uModule{position:relative;line-height:30px;width:90%;padding:30px 5.1%;margin:10px 0 10px -.05%;color:grey;background:rgba(255,255,255,.1);font-size:20px;font-weight:700;cursor:pointer;border-radius: 5px !important;}
+.uModuleSelect{background:rgba(0,0,0,.8);color:#fff;position:-webkit-sticky!important;position:sticky!important;top:60px;margin-top:-24px;border-top:20px solid #101010;background:#2980b9;z-index:8}
+.green{background:#6ab04c}
+.red{color:#fff;background:#c0392b}
+.yellow{color:#000;background:#f1c40f}
+.uLogo{position:absolute;width:40px;height:auto;right:60px;top:20px}
+.uArrow{position:absolute;width:20px;height:auto;left:auto;right:20px;top:0;bottom:0;margin:auto}
+.modCont,.up{display:none}
+.uTitle{position:relative;line-height:30px;width:94%;padding:10px 3%;margin:35px 0 0;color:#fff;background:rgba(0,0,0,.6);font-weight:700;font-size:17px;pointer-events:none!important}
+.uLesson{position:relative;line-height:17px;width:94%;padding:12px 2.8%!important;margin:0;color:#fff;font-size:15px;pointer-events:none}
+body::-webkit-scrollbar{width:6px;background-color:#000}
+body::-webkit-scrollbar-thumb{background-color:#000;border-radius:3px}
+body::-webkit-scrollbar-track{background:#333}
+body::-webkit-scrollbar-thumb:hover{background-color:#06f}
+body::-webkit-scrollbar-thumb:active{background-color:#03f}
+@media screen and (min-width:590px) {
+.uLesson em{display:none}
+}
+@media screen and (max-width:590px) {
+.uTitle{font-size:15px}
+}
+.one{background:#202020}
+.two{background:#303030}
+.three{background:#151515;z-index:3;font-weight:700}
+.yourself{box-shadow:0 0 0 2px #1e824c}
+a{text-decoration:none;font-weight:700;color:#2980b9}
+@media screen and (max-width:620px) {
+.inside2{width:520px}
+}
+#like{position:fixed;z-index:999998;top:45px;left:0;width:100%;height:100%;background:rgba(255,255,255,.4);display:none;cursor:pointer}
+html{height:100%}
+body{overflow-y:auto;-webkit-overflow-scrolling:touch;margin:0;height:100%;padding:0;width:100%}
+html{width:100%;background:#101010}
+.mainCont{display:none;top:0;position:relative;margin:0 auto;width:80%;max-width:900px;height:auto;padding:43px 3% 0;padding-bottom:0!important;background:#101010;overflow:hide}
+#frLessons,#geLessons,#itLessons,#spLessons{padding-bottom:90px;margin-top:20px}
+.mainCont{width:92%!important}
+@media screen and (max-width:1000px) {
+.cA,.cA2{width:90%}
+}
+@media screen and (max-width:810px) {
+.cA,.cA2{width:90%}
+}
+@media screen and (max-width:600px) {
+.mainCont{width:92%!important}
+.cA,.cA2{width:89%}
+}
+@media screen and (max-width:501px) {
+.cA,.cA2{width:82%}
+.mainCont{width:94%!important;padding-left:3%!important;padding-right:3%!important;border-radius:0}
+}
+.mainCont h2{margin:0;padding:0;font-weight:300}
+.mainCont h4{color:grey;margin:0;padding:3px 0 20px}
+.button{cursor:pointer}
+.button-default{background-color:#f8f8f8;color:#5d5d5d;border:none;padding:10px 20px!important}
+.link{padding:5px 10px;cursor:pointer}
+@keyframes lds-ring {
+0%{transform:rotate(0)}
+100%{transform:rotate(360deg)}
+}
+.notFound{text-align:center;color:red;margin:30px 10px 0!important;display:none}
+.foundText{text-align:center;color:#fff;margin:50px 10px 10px!important;display:none}
+.found{position:relative;width:94%;margin:10px 0 0;color:#fff;font-size:20px;text-align:center;font-weight:300;box-shadow:0 0 0 1px rgba(0,0,0,.5);border-radius:5px;padding:15px 19px;left:1px;background:#303030;cursor:pointer;display:none}
+
+.found:hover{background:#404040;}
+
+.tMargin{position:relative;box-shadow:none!important;background:0 0!important;width:94%;margin:40px 0 0!important;display:none;cursor:default}
+.found strong{color:green;font-size:1.1em}
+.found em{color:red;font-style:normal;font-size:1.1em}
+.found b{color:grey;font-weight:300;font-size:.8em;cursor:pointer}
+.uLesson i{position:fixed;left:-3000px;font-size:1px;opacity:0}
+.searchBox{background:#f9f9f9 url(../common/search.png);background-size:25px 25px;background-position:12px 18px;background-repeat:no-repeat;font-size:15px;padding:20px 10% 20px 10%;border:1px solid rgba(0,0,0,.7);border-radius:5px!important;position:fixed;top:0;margin:0 auto 15px auto;width:72%;max-width:834px;left:-5px;right:0;z-index:3434523}
+
+@media screen and (max-width:550px) {.searchBox{padding:20px 5% 20px 15%;}}
+
+.uLesson,.uTitle{padding:20px 3%;font-size:17px;line-height:25px;text-align:center;cursor:pointer;transition:all .4s;pointer-events:auto}
+.uLesson{transition:all .3s;box-shadow:0 0 0 1px rgba(0,0,0,.5);border-radius:5px;padding:15px 2.9%;left:1px;margin-top:6px;font-size:15px;line-height:20px;}
+.uLesson:hover{color:#fff;background:#2980b9}
+.blMod .uLesson:hover{color:#fff;background:#6ab04c}
+.voMod .uLesson:hover{color:#fff;background:#c0392b}
+.coMod .uLesson:hover{color:#000;background:#f1c40f}
+.uLesson img{width:30px;height:30px;top:-17px;left:10px;position:absolute;cursor:pointer}
+.uLesson img:hover{transform:scale(1.3)}
+.question{position:fixed;width:100%;height:100%;background:rgba(255,255,255,.8);left:0;top:0;margin:0;padding:0;z-index:888;display:none;cursor:pointer}
+.note1,.note4,.note6{border:10px solid #6ab04c!important}
+.note2,.note5,.note7{border:10px solid #c0392b!important}
+.note3{border:10px solid #f1c40f!important}
+.uN{background:#c0392b}
+#searchWrap{width:100%;height:100%;top:0;left:0;right:0;bottom:0;margin:0;padding:0;overflow-y:scroll}
+#searchWrap::-webkit-scrollbar{width:6px;background-color:#000}
+#searchWrap::-webkit-scrollbar-thumb{background-color:#000;border-radius:3px}
+#searchWrap::-webkit-scrollbar-track{background:#333}
+#searchWrap::-webkit-scrollbar-thumb:hover{background-color:#06f}
+#searchWrap::-webkit-scrollbar-thumb:active{background-color:#03f}

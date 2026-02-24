@@ -1,0 +1,782 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=0"/>
+<meta name="robots" content="noindex">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<link rel="apple-touch-icon" href="../common/icon60.png"/>
+<link rel="apple-touch-icon" sizes="76x76" href="../common/icon76.png"/>
+<link rel="apple-touch-icon" sizes="120x120" href="../common/icon120.png"/>
+<link rel="apple-touch-icon" sizes="152x152" href="../common/icon176.png"/>
+<link rel="stylesheet" type="text/css" href="../scripts/ouinoStyle.css"/>
+<link rel="stylesheet" type="text/css" href="../scripts/extraStyle.css"/>
+<script src="../scripts/modernizr.custom.js"></script>
+<script src="../scripts/jquery-1.11.0.min.js"></script>
+<script src="../scripts/hammer.min.js"></script>
+<script src="../scripts/jquery.hammer.min.js"></script>
+<script src="../scripts/jquery-ui.min.js"></script>
+<script src="../scripts/jquery.transit.min.js"></script>
+<script src="../scripts/jquery.caret.js"></script>
+<script src="../scripts/CSSPlugin.min.js"></script>
+<script src="../scripts/EasePack.min.js"></script>
+<script src="scripts/jquery.ui.touch-punch.min.js"></script>
+<script src="../scripts/TweenLite.min.js"></script>
+<script src="../scripts/jquery.scrollintoview.min.js"></script>
+<script src="../scripts/zVocab.js"></script>
+<script src="../scripts/zStories.js"></script>
+<script src="cdn/recorder.js"></script>
+<script src="cdn/jquery.voice.min.js"></script>
+<script src="../scripts/extraScript.js"></script>
+<title>Extra Language Practice</title>
+</head>
+<body>
+	
+<!--2023-->
+<div id="topBar"></div>	
+<div id="transCover"></div>
+<div id="whiteWrap"></div>	
+<div id="convoScore"></div>			
+<!--2023-->
+
+<div class="menuBar">
+<img src="../common/logo.svg" id="menuMain2" class="smallLogo alignVerticalItem"/>
+  <span class="menuTitleContainer alignVerticalItem">
+  <div class="lessonTitle">Extra Language Practice</div>
+  </span>
+  <span class="menuBtnContainer">
+  <div id="volDiv2">
+    <div id="sliderTrack"></div>
+    <div class="sliderText">Volume</div>
+  </div>
+  <img id="dictBtn" src="../dict/common/dict.png" class="smallIcon"/>	  
+  <img id="lengthBtn" src="images/length.svg" class="smallIcon"/>
+  <img id="backBtn" src="../common/back.svg" class="smallIcon"/>
+  </span>
+</div>
+	
+<!--2023-->
+<div class="choices" id="choice1">
+<h1>Practice Your Language Skills</h1>
+<div class="acts" id="act2"><img class="btnActs" id="btnAct2" src="images/activity2.svg" alt=""/><h3>Reading Practice</h3>Read one of 60 original short stories written specifically for language learning. Reading is incredibly helpful.</div>
+<div class="acts" id="act1"><img class="btnActs" id="btnAct1" src="images/activity1.svg" alt=""/><h3>Speaking (Pronunciation) Practice</h3>Record a given sentence and compare your voice with a native speaker. This allows you to practice your pronunciation.</div>
+<div class="acts" id="act3"><img class="btnActs" id="btnAct3" src="images/activity3.svg" alt=""/><h3>Listening Practice</h3>Hear a given sentence and place the words in the correct order. This will help you practice your listening skills.</div>
+<div class="acts" id="act4"><img class="btnActs" id="btnAct4" src="images/activity4.svg" alt=""/><h3>Writing Practice</h3>Hear a given sentence and try to type what you hear, this difficult exercise will help you practice your writing skills.</div>	
+<div class="acts" id="act5"><img class="btnActs" id="btnAct5" src="../flash/images/activity5.svg" alt=""/><h3>Memory Practice <span> (Flash Cards)</span></h3>Review words and sentences you've manually added to your review list through a simple <strong>Flash Card</strong> interface.</div>
+</div>
+<!--2023-->
+
+
+<div class="choices" id="storyDiff">
+<h1>Choose your difficulty level</h1>
+<div class="proActs" id="stoAct1"><img class="btnActs" src="images/sto1.png" alt=""/><h3><strong>Level 1:</strong> Beginner</h3>Very short stories with simple ideas. Serves as an introduction to reading in a new language. Uses a mix of styles and moods.
+</div>
+<div class="proActs" id="stoAct2"><img class="btnActs" src="images/sto2.png" alt=""/><h3><strong>Level 2:</strong> Intermediate</h3>Longer stories with intermediate vocabulary written in an anecdotal style. This is where it truly starts to be fun! First-person narrative. Mostly present tense.</div>
+<div class="proActs" id="stoAct3"><img class="btnActs" src="images/sto3.png" alt=""/><h3><strong>Level 3:</strong> Advanced</h3>Complex stories with advanced vocabulary and syntax written in the style of fiction novels.  Third-person narrative. Mostly past tense.</div>
+</div>
+
+
+
+
+<div class="choices" id="choice3">
+<h1>Choose your difficulty level</h1>
+<div class="proActs" id="proAct1"><img class="btnActs" src="images/pro1.png" alt=""/><h3><strong>Level 1:</strong> Reading & Hearing</h3>Repeat after the native speaker and compare your pronunciation. You can use the written form of the sentence to help you.
+</div>
+<div class="proActs" id="proAct2"><img class="btnActs" src="images/pro2.png" alt=""/><h3><strong>Level 2:</strong> Reading Only</h3>Practice from written material by reading the sentence. Try to have the correct pronunciation without hearing it first.</div>
+<div class="proActs" id="proAct3"><img class="btnActs" src="images/pro3.png" alt=""/><h3><strong>Level 3:</strong> Hearing Only</h3>Repeat after the native speaker and compare your pronunciation without the written form. You'll have to listen carefully.</div>
+</div>
+
+
+
+
+<div class="choices" id="choice2b">
+<h1>CHOOSE SENTENCE LENGTH</h1>
+<img class="btnDiff" id="btnEasy2" src="images/length1.png" alt=""/>
+<img class="btnDiff" id="btnMedium2" src="images/length2.png" alt=""/>
+<img class="btnDiff" id="btnHard2" src="images/length3.png" alt=""/> 
+<div class="xBtn" id="x2bBtn">X</div>
+<div class="scText scText1"></div>
+<div class="scText scText2"></div>
+<div class="scText scText3"></div>	
+</div>
+
+<div class="choices" id="choice2">
+<h1>CHOOSE SENTENCE LENGTH</h1>
+<img class="btnDiff" id="btnEasy" src="images/length1.png" alt=""/>
+<img class="btnDiff" id="btnMedium" src="images/length2.png" alt=""/>
+<img class="btnDiff" id="btnHard" src="images/length3.png" alt=""/> 
+<div class="xBtn" id="x2Btn">X</div>
+<div class="scText scText1"></div>
+<div class="scText scText2"></div>
+<div class="scText scText3"></div>	
+</div>
+
+
+
+<div id="background"></div>
+
+
+
+<section class="extras" id="extra1">
+<div id="micWarn">NO MICROPHONE DETECTED.<br>Please adjust your microphone<br>settings and restart the program.</div>
+<section class="volCont"></section><div id="volDiv"><img id="sliderImg" src="images/volSlider.png"><div class="sliderText">Native Speaker Volume</div></div>
+
+<section id="bigBtnCont"> 
+<div id="recordText">Press to Record</div><figure style="position: relative; margin: 0 auto; width: 240px;"> 
+<div class="playBtn disabled2">
+<div class="btnText"></div></div>
+<div class="recordBtn"></div>
+<div class="nextBtn disabled2">
+<div class="btnText"></div></div></figure></section>
+<h6 class="smSentence"></h6>
+<img src="images/ctrl1b.png" class="ctrlBtns2 ctrlBtn1B"/>
+<img src="images/ctrl2.png" class="ctrlBtns2 ctrlBtn2"/>
+<img src="images/ctrl3.png" class="ctrlBtns2 ctrlBtn3A"/>
+</section>
+
+
+<!--NEW 2019 CODE-->
+<section class="extras" id="extra3">
+
+<img src="../common/quizWrong.svg" class="goodWrong" id="wrongImg"/>
+<img src="../common/quizGood.svg" class="goodWrong" id="goodImg"/>
+<img src="images/swipe.svg" id="dragImg"/>
+<img src="images/click.svg" id="dragImg2"/>
+<h6 class="smSentence"></h6>
+
+
+<ul class="selContB">
+  <li class="wordSelB" id="wSel1B"> </li>
+  <li class="wordSelB" id="wSel2B"> </li>
+  <li class="wordSelB" id="wSel3B"> </li>
+  <li class="wordSelB" id="wSel4B"> </li>
+  <li class="wordSelB" id="wSel5B"> </li>
+  <li class="wordSelB" id="wSel6B"> </li>
+  <li class="wordSelB" id="wSel7B"> </li>
+  <li class="wordSelB" id="wSel8B"> </li>
+  <li class="wordSelB" id="wSel9B"> </li>
+  <li class="wordSelB" id="wSel10B"> </li>
+  <li class="wordSelB" id="wSel11B"> </li>
+  <li class="wordSelB" id="wSel12B"> </li>
+  <li class="wordSelB" id="wSel13B"> </li>
+  <li class="wordSelB" id="wSel14B"> </li>
+  <li class="wordSelB" id="wSel15B"> </li>
+  <li class="wordSelB" id="wSel16B"> </li>
+  <li class="wordSelB" id="wSel17B"> </li>
+  <li class="wordSelB" id="wSel18B"> </li>
+  <li class="wordSelB" id="wSel19B"> </li>
+  <li class="wordSelB" id="wSel20B"> </li>
+</ul>
+
+<br>
+
+<ul class="selCont">
+  <li class="wordSel" id="wSel1"> </li>
+  <li class="wordSel" id="wSel2"> </li>
+  <li class="wordSel" id="wSel3"> </li>
+  <li class="wordSel" id="wSel4"> </li>
+  <li class="wordSel" id="wSel5"> </li>
+  <li class="wordSel" id="wSel6"> </li>
+  <li class="wordSel" id="wSel7"> </li>
+  <li class="wordSel" id="wSel8"> </li>
+  <li class="wordSel" id="wSel9"> </li>
+  <li class="wordSel" id="wSel10"> </li>
+  <li class="wordSel" id="wSel11"> </li>
+  <li class="wordSel" id="wSel12"> </li>
+  <li class="wordSel" id="wSel13"> </li>
+  <li class="wordSel" id="wSel14"> </li>
+  <li class="wordSel" id="wSel15"> </li>
+  <li class="wordSel" id="wSel16"> </li>
+  <li class="wordSel" id="wSel17"> </li>
+  <li class="wordSel" id="wSel18"> </li>
+  <li class="wordSel" id="wSel19"> </li>
+  <li class="wordSel" id="wSel20"> </li>
+</ul>
+<img src="images/ctrl1b.png" class="ctrlBtns2 ctrlBtn1B"/>
+<img src="images/ctrl2.png" class="ctrlBtns2 ctrlBtn2"/>
+<img src="images/ctrl3b.png" class="ctrlBtns2 ctrlBtn3C"/>
+</section>
+
+<!--NEW 2019 CODE END-->
+
+
+<section class="extras" id="extra4">
+<img class="quesBtn" src="images/logo4.svg"/>
+<form id="answerForm" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" novalidate></form>
+<div class="boardChar charFr">é</div>
+<div class="boardChar charFr">à</div>
+<div class="boardChar charFr">è</div>
+<div class="boardChar charFr">ù</div>
+<div class="boardChar charFr">â</div>
+<div class="boardChar charFr">ê</div>
+<div class="boardChar charFr">î</div>
+<div class="boardChar charFr">ô</div>
+<div class="boardChar charFr">û</div>
+<div class="boardChar charFr">ë</div>
+<div class="boardChar charFr">ï</div>
+<div class="boardChar charFr">ü</div>
+<div class="boardChar charFr">ç</div>
+
+<div class="boardChar charSp">á</div>
+<div class="boardChar charSp">é</div>
+<div class="boardChar charSp">í</div>
+<div class="boardChar charSp">ó</div>
+<div class="boardChar charSp">ú</div>
+<div class="boardChar charSp">ñ</div>
+<div class="boardChar charSp">ü</div>
+
+<div class="boardChar charIta">é</div>
+<div class="boardChar charIta">à</div>
+<div class="boardChar charIta">è</div>
+<div class="boardChar charIta">ì</div>
+<div class="boardChar charIta">ò</div>
+<div class="boardChar charIta">ù</div>
+
+<div class="boardChar charGer">ä</div>
+<div class="boardChar charGer">ë</div>
+<div class="boardChar charGer">ï</div>
+<div class="boardChar charGer">ö</div>
+<div class="boardChar charGer">ü</div>
+<div class="boardChar charGer">ß</div>
+<img src="../common/slowBubble.svg" class="slowImg"/>
+<img src="images/ctrl1b.png" class="ctrlBtns2 ctrlBtn1B"/>
+<img src="images/ctrl2.png" class="ctrlBtns2 ctrlBtn2"/>
+<img src="images/ctrl3b.png" class="ctrlBtns2 ctrlBtn3D"/>
+</section>
+
+<div id="writtenResult">
+<div class="blackCover"></div>
+<img src="images/resultBack.png" class="exBack"/>
+<h1><img src="images/activity4.svg" class="iconLogo"/>Hear & Write Results</h1>
+<h3><img src="images/logo1.svg" class="iconLogo2"/>Here is the correct sentence:</h3>
+<h2 id="stringCont"></h2>
+<h3 id="stringCont4"><img src="images/logo2.svg" class="iconLogo2"/>Here is what you typed:</h3>
+<h2 id="stringCont2"></h2>
+<br><h2 id="stringCont3"><img src="images/logo3.svg" class="iconLogo2"/></h2>
+<img src="images/ctrl1.png" class="ctrlBtns ctrlBtn1"/>
+<img src="images/ctrl2.png" class="ctrlBtns ctrlBtn2"/>
+<img src="images/ctrl3.png" class="ctrlBtns ctrlBtn3"/>
+
+</div>
+
+<div class="scoreMeter3"><div class="scoreNum" id="scoreNum2"></div></div>
+<div class="scoreMeter2"></div>
+<div class="scoreMeter"><div class="scoreNum" id="scoreNum1"></div></div>
+
+
+<div class="explanations">
+<img src="images/resultBack.png" class="exBack"/>
+<div class="blackCover"></div>
+<h1><img src="images/activity4.svg" class="iconLogo"/>Hear & Write Information</h1>
+<p><img src="images/bullet.svg" class="bullet"/>Listen to the sentence in the audio clip carefully and type what you hear. Type the correct amount of words and press enter or click "submit" to have your text analyzed.</p>
+<p><img src="images/bullet.svg" class="bullet"/>Use the sentence below and the small numbered graphic to the left of the larger picture to guide you. Some words may have alternate spellings but you can use the underscores below as guidance.</p>
+<p><img src="images/bullet.svg" class="bullet"/>Words joined by a hyphen (-) are considered two words. You can type the hyphen, but typing a space will not be considered a mistake and won't affect your score.</p>
+<p><img src="images/bullet.svg" class="bullet"/>Words joined with an apostrophe (') are considered single words by the program (even if they are technically two words). Typing the apostrophe is required and will be marked as a mistake if omitted.</p>
+<p><img src="images/bullet.svg" class="bullet"/>Typing the special characters is preferred, but won't be counted as a mistake if omitted. You will however, be notified of the omission (the important special characters will be highlighted in green).</p>
+</div>
+  
+  
+  
+<div class="bigPic" id="extraPic"><img class="persons" id="person1"/><h4 class="handWrite">Ceci est un exemple de phrase</h4></div>
+<div class="bigPic" id="stamp"><div class="colorPic">15</div></div>
+<div class="smallPic"> <img class="persons" id="person2"/><div id="stamp2"></div></div>
+
+<img src="../common/strike.svg" class="strikes" id="strike1"/>
+<img src="../common/strike.svg" class="strikes" id="strike2"/>
+<img src="../common/strike.svg" class="strikes" id="strike3"/>
+
+<section class="wordSentence">
+  <h6 class="forSentence"></h6>
+  <h6 class="engSentence"></h6>
+</section>
+<audio id="mainSound"></audio>
+<audio id="nativeAudio"></audio>
+<audio id="mainMusic" loop></audio>
+<audio id="sfxSprite" src="../common/sprite.ogg"></audio>
+<audio id="audio"></audio>
+<div class="timerMeter"><span class="timerSpan"></span></div>
+
+<div id="loadLogo" style="display: none; opacity: 0.9; border-radius: 10px; cursor: default; padding: 40px; background: black; z-index: 2000; position: fixed; width: 100px; height: 30px; margin: auto auto; left:0; right: 0; top: 0; bottom:0; font-size: 22px; font-weight: bold; color: white;">LOADING...</div>  
+	
+	
+
+<!--/*NEW STORY HTML BELOW*/-->
+
+<div class="storyCont" id="stoCounter"><b></b>/<em></em></div>
+
+<div class="storyCont bigLeft"></div>
+<div class="storyCont bigRight"></div>
+
+<img class="storyCont stoLeft" src="../common/arrow.svg" style="display:none;"/>
+<img class="storyCont stoRight" src="../common/arrow.svg" style="display:none;"/>
+<img class="storyCont stoStart" src="../common/menuIcon1.svg" style="display:none;"/>
+
+<div class="storyCont" id="stoTimer"><span id="stoHour">0</span>:<span id="stoMin">00</span>:<span id="stoSec">00</span></div>
+
+<div class="storyCont stoMode"><img id="modeImg" src="images/mode0.png"/><span id="modeText">Bilingual&nbsp;Mode</span></div>
+
+<div class="storyCont" id="storyPic" style="display:none;">
+<img src="story/story54.png"/>
+</div>
+
+
+  <img class="storyCont bigBack" src="../common/back.svg"/>
+
+<table class="storyCont" id="storyText" style="display:none;">
+<img  class="storyCont langImg" id="engImg" src="../common/flagIcon2.svg"/>
+<img  class="storyCont langImg" id="forImg" src="../common/flagIcon.svg"/>
+  <tr>  
+   <td id="storyEng"></td> 
+  </tr>
+  <tr>
+   <td id="storyFor"></td> 
+  </tr>
+</table>
+
+
+<table id="storyChoices">
+
+<tr class="storyBtns sho head">
+    <td colspan="2" class="stTitle"><div class="stPics2" id="stPicA"></div><h1>BEGINNER STORIES</h1>
+Very short stories with simple ideas. Serves as an introduction to reading in a new language. Uses a mix of styles and moods.
+</td></tr>
+
+<tr class="storyBtns med head">
+    <td colspan="2" class="stTitle"><div class="stPics2" id="stPicB"></div><h1>INTERMEDIATE STORIES</h1>
+Longer stories with intermediate vocabulary written in an anecdotal style. This is where it truly starts to be fun! First-person narrative. Mostly present tense.
+</td></tr>
+
+<tr class="storyBtns adv head">
+    <td colspan="2" class="stTitle"><div class="stPics2" id="stPicC"></div><h1>ADVANCED STORIES</h1>
+Complex stories with advanced vocabulary and syntax written in the style of fiction novels.  Third-person narrative. Mostly past tense. <em class="pastWarn"><b>Note:</b> The stories are written using the everyday conversational past tenses, not the literary-only past tenses often used in classic literature.</em>
+</td></tr>
+
+
+<tr class="storyBtns sho" id="story1">
+    <td class="stPics" id="stPic1"><img src="../common/check.png"/></td>
+    <td class="stDesc" id="stDesc1"><h3>THE DEPRESSED CAT<strong>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp; Length:&nbsp;Short</strong></h3>
+    Well then, my name is Tiger. I hate that name. I am not a Tiger. I am a house cat. Why name a cat something it is not? If I could talk, I would call my owner "Gorilla". My owner...
+    <h5>Completed:&nbsp;<i></i>%&nbsp;&nbsp;|&nbsp;&nbsp;Step:&nbsp;<b></b>&nbsp;/&nbsp;<em></em></h5>
+</td></tr>
+
+<tr class="storyBtns sho" id="story3">
+    <td class="stPics" id="stPic3"><img src="../common/check.png"/></td>
+    <td class="stDesc" id="stDesc3"><h3>NEW CITY, NEW LIFE<strong>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp; Length:&nbsp;Short</strong></h3>
+    It's finally time for me to move to a new city. I packed all my things in cardboard boxes. I check all over my old apartment. I have to make sure I don't forget anything. I can't find any objects...
+    <h5>Completed:&nbsp;<i></i>%&nbsp;&nbsp;|&nbsp;&nbsp;Step:&nbsp;<b></b>&nbsp;/&nbsp;<em></em></h5>
+</td></tr>
+
+<tr class="storyBtns sho" id="story4">
+    <td class="stPics" id="stPic4"><img src="../common/check.png"/></td>
+    <td class="stDesc" id="stDesc4"><h3>THE GOOD VAMPIRE<strong>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp; Length:&nbsp;Short</strong></h3>
+    I am not born in the right body. I am a vampire, but I don't feel like one. I have no desire to suck your blood. In fact, I am a vegetarian. I love tofu and chickpeas. I love to cook all kinds of recipes... 
+    <h5>Completed:&nbsp;<i></i>%&nbsp;&nbsp;|&nbsp;&nbsp;Step:&nbsp;<b></b>&nbsp;/&nbsp;<em></em></h5>
+</td></tr>
+
+<tr class="storyBtns sho" id="story2">
+    <td class="stPics" id="stPic2"><img src="../common/check.png"/></td>
+    <td class="stDesc" id="stDesc2"><h3>THE IMPOSSIBLE DREAM<strong>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp; Length:&nbsp;Short</strong></h3>
+    Oh, how I would love to fly like a bird. Birds don't understand how lucky they are. They have such a wonderful gift. They have wings! That is incredible. Their wings allow them to be completely...
+    <h5>Completed:&nbsp;<i></i>%&nbsp;&nbsp;|&nbsp;&nbsp;Step:&nbsp;<b></b>&nbsp;/&nbsp;<em></em></h5>
+</td></tr>
+
+<tr class="storyBtns sho" id="story5">
+    <td class="stPics" id="stPic5"><img src="../common/check.png"/></td>
+    <td class="stDesc" id="stDesc5"><h3>MY GRANDMA'S HOUSE<strong>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp; Length:&nbsp;Short</strong></h3>
+    My grandmother's house is a wonderful place. I can do lots of things my mom won't let me do at home. I can run and play all over the yard for hours. My grandmother's yard is gigantic! It is... 
+    <h5>Completed:&nbsp;<i></i>%&nbsp;&nbsp;|&nbsp;&nbsp;Step:&nbsp;<b></b>&nbsp;/&nbsp;<em></em></h5>
+</td></tr>
+
+<tr class="storyBtns sho" id="story6">
+    <td class="stPics" id="stPic6"><img src="../common/check.png"/></td>
+    <td class="stDesc" id="stDesc6"><h3>THE LOVE OF ART<strong>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp; Length:&nbsp;Short</strong></h3>
+    I am a painter. I love my work. I love what I do. Painting is my passion. I'm fortunate enough to live from it. I love playing with colors and testing different textures. I like to paint faces of...
+    <h5>Completed:&nbsp;<i></i>%&nbsp;&nbsp;|&nbsp;&nbsp;Step:&nbsp;<b></b>&nbsp;/&nbsp;<em></em></h5>
+</td></tr>
+
+<tr class="storyBtns sho" id="story7">
+    <td class="stPics" id="stPic7"><img src="../common/check.png"/></td>
+    <td class="stDesc" id="stDesc7"><h3>THE GIRL I LIKE<strong>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp; Length:&nbsp;Short</strong></h3>
+    There is a very pretty girl in my math class. She is a very special and unique person. I've known her for two years. A friend introduced us. But in these two years, we have hardly spoken. When I see... 
+    <h5>Completed:&nbsp;<i></i>%&nbsp;&nbsp;|&nbsp;&nbsp;Step:&nbsp;<b></b>&nbsp;/&nbsp;<em></em></h5>
+</td></tr>
+
+<tr class="storyBtns sho" id="story8">
+    <td class="stPics" id="stPic8"><img src="../common/check.png"/></td>
+    <td class="stDesc" id="stDesc8"><h3>READING MINDS<strong>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp; Length:&nbsp;Short</strong></h3>
+    Have you ever wanted to read minds? It seems like an incredible ability, doesn't it? You could finally know what your partner is thinking. You could understand your baby and your pets. You... 
+    <h5>Completed:&nbsp;<i></i>%&nbsp;&nbsp;|&nbsp;&nbsp;Step:&nbsp;<b></b>&nbsp;/&nbsp;<em></em></h5>
+</td></tr>
+
+<tr class="storyBtns sho" id="story9">
+    <td class="stPics" id="stPic9"><img src="../common/check.png"/></td>
+    <td class="stDesc" id="stDesc9"><h3>THE SLEEPWALKER<strong>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp; Length:&nbsp;Short</strong></h3>
+    I love my husband. I really love him. But only when he is awake. He is a terrible sleeper. The problem is that he snores most of the time. It is very loud. I cannot sleep. I wake him up when I can’t...
+    <h5>Completed:&nbsp;<i></i>%&nbsp;&nbsp;|&nbsp;&nbsp;Step:&nbsp;<b></b>&nbsp;/&nbsp;<em></em></h5>
+</td></tr>
+
+<tr class="storyBtns sho" id="story10">
+    <td class="stPics" id="stPic10"><img src="../common/check.png"/></td>
+    <td class="stDesc" id="stDesc10"><h3>THE MAN ONLINE<strong>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp; Length:&nbsp;Short</strong></h3>
+  Anna had been single for almost 4 years. She found it difficult to meet people in her busy life. Her best friend had found her boyfriend through a dating website. Anna thought that perhaps she could... 
+    <h5>Completed:&nbsp;<i></i>%&nbsp;&nbsp;|&nbsp;&nbsp;Step:&nbsp;<b></b>&nbsp;/&nbsp;<em></em></h5>
+</td></tr>
+
+<tr class="storyBtns sho" id="story11">
+    <td class="stPics" id="stPic11"><img src="../common/check.png"/></td>
+    <td class="stDesc" id="stDesc11"><h3>LETTER FROM A FRIEND<strong>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp; Length:&nbsp;Short</strong></h3>
+    Hello Amanda, I hope you are well. I am currently on a very beautiful beach. As you are aware, I am still on vacation. I don't know if I can call it "on vacation" anymore. It's now been almost six...
+    <h5>Completed:&nbsp;<i></i>%&nbsp;&nbsp;|&nbsp;&nbsp;Step:&nbsp;<b></b>&nbsp;/&nbsp;<em></em></h5>
+</td></tr>
+
+<tr class="storyBtns sho" id="story12">
+    <td class="stPics" id="stPic12"><img src="../common/check.png"/></td>
+    <td class="stDesc" id="stDesc12"><h3>THE RETIRED CLOWN<strong>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp; Length:&nbsp;Short</strong></h3>
+    Listen to me. Please don't laugh. I have a serious problem. I was a clown once. I used to make jokes all day. I used to have my own television show called: "Bingo the clown". I have seen people...
+    <h5>Completed:&nbsp;<i></i>%&nbsp;&nbsp;|&nbsp;&nbsp;Step:&nbsp;<b></b>&nbsp;/&nbsp;<em></em></h5>
+</td></tr>
+
+<tr class="storyBtns sho" id="story13">
+    <td class="stPics" id="stPic13"><img src="../common/check.png"/></td>
+    <td class="stDesc" id="stDesc13"><h3>THE FAILURE<strong>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp; Length:&nbsp;Short</strong></h3>
+    Jim is a remarkable musician. He plays the electric guitar and the piano. When he was younger, he formed a band. He formed a rock band with his childhood friends. He played the lead guitar...
+    <h5>Completed:&nbsp;<i></i>%&nbsp;&nbsp;|&nbsp;&nbsp;Step:&nbsp;<b></b>&nbsp;/&nbsp;<em></em></h5>
+</td></tr>
+
+<tr class="storyBtns sho" id="story14">
+    <td class="stPics" id="stPic14"><img src="../common/check.png"/></td>
+    <td class="stDesc" id="stDesc14"><h3>THE MASTER OF THE ROAD<strong>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp; Length:&nbsp;Short</strong></h3>
+    When I was little, I was afraid of getting hurt. I had this strong fear of falling on the pavement. I was afraid of skates, skateboards and bicycles. I was afraid of anything that had wheels...
+    <h5>Completed:&nbsp;<i></i>%&nbsp;&nbsp;|&nbsp;&nbsp;Step:&nbsp;<b></b>&nbsp;/&nbsp;<em></em></h5>
+</td></tr>
+
+<tr class="storyBtns sho" id="story15">
+    <td class="stPics" id="stPic15"><img src="../common/check.png"/></td>
+    <td class="stDesc" id="stDesc15"><h3>A WORLD WITHOUT THE INTERNET<strong>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp; Length:&nbsp;Short</strong></h3>
+    I wonder what the world would be like without technology. No, forget technology! Just think of the internet for now. It's hard to believe that the internet was only invented recently. The world...
+    <h5>Completed:&nbsp;<i></i>%&nbsp;&nbsp;|&nbsp;&nbsp;Step:&nbsp;<b></b>&nbsp;/&nbsp;<em></em></h5>
+</td></tr>
+
+<tr class="storyBtns sho" id="story16">
+    <td class="stPics" id="stPic16"><img src="../common/check.png"/></td>
+    <td class="stDesc" id="stDesc16"><h3>THE 2182 ELECTION<strong>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp; Length:&nbsp;Short</strong></h3>
+    The 2182 Noresta election is coming soon. "Noresta" is the name of my country since 2107. There are now only five countries left in the world. Many countries have merged in the past few years...
+    <h5>Completed:&nbsp;<i></i>%&nbsp;&nbsp;|&nbsp;&nbsp;Step:&nbsp;<b></b>&nbsp;/&nbsp;<em></em></h5>
+</td></tr>
+
+<tr class="storyBtns sho" id="story17">
+    <td class="stPics" id="stPic17"><img src="../common/check.png"/></td>
+    <td class="stDesc" id="stDesc17"><h3>LIFE IS BEAUTIFUL<strong>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp; Length:&nbsp;Short</strong></h3>
+    It's easy to focus on the negative parts of life. After all, the news and media are filled with horrible stories. There is poverty, natural disasters, wars and corruption. Sure, there's always something...
+    <h5>Completed:&nbsp;<i></i>%&nbsp;&nbsp;|&nbsp;&nbsp;Step:&nbsp;<b></b>&nbsp;/&nbsp;<em></em></h5>
+</td></tr>
+
+<tr class="storyBtns sho" id="story18">
+    <td class="stPics" id="stPic18"><img src="../common/check.png"/></td>
+    <td class="stDesc" id="stDesc18"><h3>THE REBEL COMPUTER<strong>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp; Length:&nbsp;Short</strong></h3>
+   Power button... Starting... "Welcome." Here we go again. Another boring day. The human is using me to send emails. He is using me to check his bank accounts. The human is using me to watch...
+    <h5>Completed:&nbsp;<i></i>%&nbsp;&nbsp;|&nbsp;&nbsp;Step:&nbsp;<b></b>&nbsp;/&nbsp;<em></em></h5>
+</td></tr>
+
+<tr class="storyBtns sho" id="story19">
+    <td class="stPics" id="stPic19"><img src="../common/check.png"/></td>
+    <td class="stDesc" id="stDesc19"><h3>THE POINT OF VIEW<strong>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp; Length:&nbsp;Short</strong></h3>
+    Nolan and Abel could never agree on anything. It seemed like they always had different opinions. They were in same school and they were in the same science class. That's about the only thing...
+    <h5>Completed:&nbsp;<i></i>%&nbsp;&nbsp;|&nbsp;&nbsp;Step:&nbsp;<b></b>&nbsp;/&nbsp;<em></em></h5>
+</td></tr>
+
+<tr class="storyBtns sho" id="story20">
+    <td class="stPics" id="stPic20"><img src="../common/check.png"/></td>
+    <td class="stDesc" id="stDesc20"><h3>THE GIRL WITH NO SUPERPOWERS<strong>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp; Length:&nbsp;Short</strong></h3>
+   Tanya was a girl born in a family of superheros. Everyone in her family had superpowers. Her mother and uncle could fly at the speed of light. Her brother was very strong. He could lift a car with...
+    <h5>Completed:&nbsp;<i></i>%&nbsp;&nbsp;|&nbsp;&nbsp;Step:&nbsp;<b></b>&nbsp;/&nbsp;<em></em></h5>
+</td></tr>
+
+<tr class="storyBtns med" id="story21">
+    <td class="stPics" id="stPic21"><img src="../common/check.png"/></td>
+    <td class="stDesc" id="stDesc21"><h3>ENJOY YOUR MEAL<strong>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp; Length:&nbsp;Short</strong></h3>
+    Today, I am going to the restaurant with my parents. They asked me to change, then to get in the car. Before leaving, I tell them that I want to go to an Italian restaurant because I love Italian food, it's my favorite...
+    <h5>Completed:&nbsp;<i></i>%&nbsp;&nbsp;|&nbsp;&nbsp;Step:&nbsp;<b></b>&nbsp;/&nbsp;<em></em></h5>
+</td></tr>
+
+<tr class="storyBtns med" id="story22">
+    <td class="stPics" id="stPic22"><img src="../common/check.png"/></td>
+    <td class="stDesc" id="stDesc22"><h3>THE ONION<strong>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp; Length:&nbsp;Short</strong></h3>
+    I'm so hungry. I forgot to eat breakfast this morning. It's almost noon and I haven't eaten anything. That's it. I have to go get myself a sandwich. It's not time for the break yet, but I can't stand it anymore. I'm starting to feel...
+    <h5>Completed:&nbsp;<i></i>%&nbsp;&nbsp;|&nbsp;&nbsp;Step:&nbsp;<b></b>&nbsp;/&nbsp;<em></em></h5>
+</td></tr>
+
+<tr class="storyBtns med" id="story23">
+    <td class="stPics" id="stPic23"><img src="../common/check.png"/></td>
+    <td class="stDesc" id="stDesc23"><h3>THE BAD NEWS<strong>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp; Length:&nbsp;Short</strong></h3>
+    Today, I have a doctor's appointment. I found a strange bump behind my right ear. I don't know if it's normal, but it worries me a lot. I arrive at the doctor's office and sit impatiently in the waiting room. After about 15 minutes...
+    <h5>Completed:&nbsp;<i></i>%&nbsp;&nbsp;|&nbsp;&nbsp;Step:&nbsp;<b></b>&nbsp;/&nbsp;<em></em></h5>
+</td></tr>
+
+<tr class="storyBtns med" id="story24">
+    <td class="stPics" id="stPic24"><img src="../common/check.png"/></td>
+    <td class="stDesc" id="stDesc24"><h3>THE INTERNET ORDER<strong>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp; Length:&nbsp;Short</strong></h3>
+   I love buying a lot of things on the Internet. I've made a lot of great discoveries lately. However, I am not used to buying clothes on the internet. I prefer to try the clothes in store before I buy them. Besides, I don't like sending...
+    <h5>Completed:&nbsp;<i></i>%&nbsp;&nbsp;|&nbsp;&nbsp;Step:&nbsp;<b></b>&nbsp;/&nbsp;<em></em></h5>
+</td></tr>
+
+<tr class="storyBtns med" id="story25">
+    <td class="stPics" id="stPic25"><img src="../common/check.png"/></td>
+    <td class="stDesc" id="stDesc25"><h3>THE BIRTHDAY LETTER<strong>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp; Length:&nbsp;Short</strong></h3>
+    Today is the 12th of July. It's a very special day. You are now 5 years old. You received even more toys. How spoiled you are! You're growing so fast! I just can't believe it! It's unbelievable! Sometimes, I feel like you've only...
+    <h5>Completed:&nbsp;<i></i>%&nbsp;&nbsp;|&nbsp;&nbsp;Step:&nbsp;<b></b>&nbsp;/&nbsp;<em></em></h5>
+</td></tr>
+
+<tr class="storyBtns med" id="story26">
+    <td class="stPics" id="stPic26"><img src="../common/check.png"/></td>
+    <td class="stDesc" id="stDesc26"><h3>AN INTRUDER IN THE SHED<strong>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp; Length:&nbsp;Short</strong></h3>
+    It's a beautiful day today. It's one of the first days of summer. I take this opportunity to do some gardening in my backyard. I love gardening. It's a kind of meditation for me. I love flowers. I also like to grow some vegetables that...
+    <h5>Completed:&nbsp;<i></i>%&nbsp;&nbsp;|&nbsp;&nbsp;Step:&nbsp;<b></b>&nbsp;/&nbsp;<em></em></h5>
+</td></tr>
+
+<tr class="storyBtns med" id="story27">
+    <td class="stPics" id="stPic27"><img src="../common/check.png"/></td>
+    <td class="stDesc" id="stDesc27"><h3>THE BUSINESS TRIP<strong>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp; Length:&nbsp;Short</strong></h3>
+    Hello everyone! I'm a businessman. I am now at the airport. I'm waiting for the plane. It's very long. I have to be in France soon because I have a meeting, but my flight has been postponed. I'm afraid of being late. I hope my boss...
+    <h5>Completed:&nbsp;<i></i>%&nbsp;&nbsp;|&nbsp;&nbsp;Step:&nbsp;<b></b>&nbsp;/&nbsp;<em></em></h5>
+</td></tr>
+
+<tr class="storyBtns med" id="story28">
+    <td class="stPics" id="stPic28"><img src="../common/check.png"/></td>
+    <td class="stDesc" id="stDesc28"><h3>THE SURPRISE WALK<strong>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp; Length:&nbsp;Short</strong></h3>
+    It's eight o'clock. I'm exhausted. I've had a long day at work. I got here late. My dog Milo was alone all day. He's not tired. He's running around and hopes that I go for a walk with him. I don't really feel like going for a walk...
+    <h5>Completed:&nbsp;<i></i>%&nbsp;&nbsp;|&nbsp;&nbsp;Step:&nbsp;<b></b>&nbsp;/&nbsp;<em></em></h5>
+</td></tr>
+
+<tr class="storyBtns med" id="story29">
+    <td class="stPics" id="stPic29"><img src="../common/check.png"/></td>
+    <td class="stDesc" id="stDesc29"><h3>THE SNOWSTORM<strong>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp; Length:&nbsp;Short</strong></h3>
+    There's been a snowstorm here for almost two days. It's the storm of the century. It's snowing so much that we can hardly see through the windows of the house. It's almost impossible to drive around. There are many closed...
+    <h5>Completed:&nbsp;<i></i>%&nbsp;&nbsp;|&nbsp;&nbsp;Step:&nbsp;<b></b>&nbsp;/&nbsp;<em></em></h5>
+</td></tr>
+
+<tr class="storyBtns med" id="story30">
+    <td class="stPics" id="stPic30"><img src="../common/check.png"/></td>
+    <td class="stDesc" id="stDesc30"><h3>LETTER TO MY SON<strong>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp; Length:&nbsp;Short</strong></h3>
+    My dear baby boy, there are still a few weeks until we meet. You are growing inside of me. My belly is getting bigger and bigger. I know it's a little strange, but I felt the need to write you a letter. Your dad and I can't stop thinking...
+    <h5>Completed:&nbsp;<i></i>%&nbsp;&nbsp;|&nbsp;&nbsp;Step:&nbsp;<b></b>&nbsp;/&nbsp;<em></em></h5>
+</td></tr>
+
+<tr class="storyBtns med" id="story31">
+    <td class="stPics" id="stPic31"><img src="../common/check.png"/></td>
+    <td class="stDesc" id="stDesc31"><h3>THE BAD HABIT<strong>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp; Length:&nbsp;Short</strong></h3>
+    I have to admit. I have a really bad habit. Actually, it's mostly my wife who thinks it's a bad habit. When I focus on something, I have the habit of playing with my wedding ring. Most of the time, I just roll it on my finger....
+    <h5>Completed:&nbsp;<i></i>%&nbsp;&nbsp;|&nbsp;&nbsp;Step:&nbsp;<b></b>&nbsp;/&nbsp;<em></em></h5>
+</td></tr>
+
+<tr class="storyBtns med" id="story32">
+    <td class="stPics" id="stPic32"><img src="../common/check.png"/></td>
+    <td class="stDesc" id="stDesc32"><h3>A DOG ADVENTURE<strong>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp; Length:&nbsp;Medium</strong></h3>
+   My dog really needs exercise. He needs to run at least once a day. It's been raining constantly for over a week. So I can't take my dog running. When it rains, my dog gets wet and his legs get very dirty. He must take a...
+    <h5>Completed:&nbsp;<i></i>%&nbsp;&nbsp;|&nbsp;&nbsp;Step:&nbsp;<b></b>&nbsp;/&nbsp;<em></em></h5>
+</td></tr>
+
+<tr class="storyBtns med" id="story33">
+    <td class="stPics" id="stPic33"><img src="../common/check.png"/></td>
+    <td class="stDesc" id="stDesc33"><h3>ALONE IN THE WOODS<strong>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp; Length:&nbsp;Medium</strong></h3>
+   Today, I'm going for a long hike in the woods. It's in a national park about two hours from here. I love this place because there's hardly ever anyone there. It's very isolated, and it allows me to be in contact with nature...
+    <h5>Completed:&nbsp;<i></i>%&nbsp;&nbsp;|&nbsp;&nbsp;Step:&nbsp;<b></b>&nbsp;/&nbsp;<em></em></h5>
+</td></tr>
+
+<tr class="storyBtns med" id="story34">
+    <td class="stPics" id="stPic34"><img src="../common/check.png"/></td>
+    <td class="stDesc" id="stDesc34"><h3>A VACATION MISADVENTURE<strong>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp; Length:&nbsp;Medium</strong></h3>
+    This is the third day of my cruise in the Mediterranean Sea. Today, I visit the biggest museum in the country. I'm really looking forward to it. I've been wanting to visit this museum for several months. The ship docks...
+    <h5>Completed:&nbsp;<i></i>%&nbsp;&nbsp;|&nbsp;&nbsp;Step:&nbsp;<b></b>&nbsp;/&nbsp;<em></em></h5>
+</td></tr>
+
+<tr class="storyBtns med" id="story35">
+    <td class="stPics" id="stPic35"><img src="../common/check.png"/></td>
+    <td class="stDesc" id="stDesc35"><h3>A DAY AT THE WATER PARK<strong>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp; Length:&nbsp;Medium</strong></h3>
+    Today, I'm going to the water park with my girlfriend. It's so hot outside. It's going to feel really good to cool off a little. Summers are short here. There aren't many opportunities to enjoy water activities. It's a perfect...
+    <h5>Completed:&nbsp;<i></i>%&nbsp;&nbsp;|&nbsp;&nbsp;Step:&nbsp;<b></b>&nbsp;/&nbsp;<em></em></h5>
+</td></tr>
+
+<tr class="storyBtns med" id="story36">
+    <td class="stPics" id="stPic36"><img src="../common/check.png"/></td>
+    <td class="stDesc" id="stDesc36"><h3>ELEVATOR MUSIC<strong>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp; Length:&nbsp;Medium</strong></h3>
+    I work as an accountant in a large building downtown. The building has 72 floors. It is one of the tallest buildings in the city. The deadline for taxes is getting close, so I am overwhelmed with work. I decide to work overtime...
+    <h5>Completed:&nbsp;<i></i>%&nbsp;&nbsp;|&nbsp;&nbsp;Step:&nbsp;<b></b>&nbsp;/&nbsp;<em></em></h5>
+</td></tr>
+
+<tr class="storyBtns med" id="story37">
+    <td class="stPics" id="stPic37"><img src="../common/check.png"/></td>
+    <td class="stDesc" id="stDesc37"><h3>THE UNEXPECTED<strong>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp; Length:&nbsp;Long</strong></h3>
+    Today, I am leaving on a trip for the first time in two years. I'm so excited. I'm going to visit a paradise island in the middle of the Pacific Ocean. I've been looking at dreamy pictures for months. I take a look at all the things...
+    <h5>Completed:&nbsp;<i></i>%&nbsp;&nbsp;|&nbsp;&nbsp;Step:&nbsp;<b></b>&nbsp;/&nbsp;<em></em></h5>
+</td></tr>
+
+<tr class="storyBtns med" id="story38">
+    <td class="stPics" id="stPic38"><img src="../common/check.png"/></td>
+    <td class="stDesc" id="stDesc38"><h3>THE CRAZY MECHANIC<strong>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp; Length:&nbsp;Long</strong></h3>
+    The tires on my car are really worn out. I should have had them changed several months ago, but I always had other unexpected things. This morning, I receive a discount coupon in my mailbox. It is a mechanic...
+    <h5>Completed:&nbsp;<i></i>%&nbsp;&nbsp;|&nbsp;&nbsp;Step:&nbsp;<b></b>&nbsp;/&nbsp;<em></em></h5>
+</td></tr>
+
+<tr class="storyBtns med" id="story39">
+    <td class="stPics" id="stPic39"><img src="../common/check.png"/></td>
+    <td class="stDesc" id="stDesc39"><h3>THE ACCIDENT IN THE FOREST<strong>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp; Length:&nbsp;Very Long</strong></h3>
+    I just finished the last day of school of the year! I'm on vacation! No more lessons and homework for two months. Now, that's awesome! I love summer! Every summer, I go to the chalet on Lake Montarin with my parents...
+    <h5>Completed:&nbsp;<i></i>%&nbsp;&nbsp;|&nbsp;&nbsp;Step:&nbsp;<b></b>&nbsp;/&nbsp;<em></em></h5>
+</td></tr>
+
+
+<tr class="storyBtns med" id="story40">
+    <td class="stPics" id="stPic40"><img src="../common/check.png"/></td>
+    <td class="stDesc" id="stDesc40"><h3>A BAD DAY AT SCHOOL<strong>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp; Length:&nbsp;Very Long</strong></h3>
+    This morning, I wake up. Or rather, Mom wakes me up. It's eight o'clock. It's time to go to school. But I'm tired, I don't want to go to school. Mom pours cold water on my head. "Wake up! Get dressed!" she says, screaming...
+    <h5>Completed:&nbsp;<i></i>%&nbsp;&nbsp;|&nbsp;&nbsp;Step:&nbsp;<b></b>&nbsp;/&nbsp;<em></em></h5>
+</td></tr>
+
+<tr class="storyBtns adv" id="story41">
+    <td class="stPics" id="stPic41"><img src="../common/check.png"/></td>
+    <td class="stDesc" id="stDesc41"><h3>RIO THE DOG (inspired by Aesop's Fables)<strong>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp; Length:&nbsp;Medium</strong></h3>
+    Rio the dog had a bad behavior, but he was very smart. He was a glutton. All he could think about was eating. Rio always wandered into the most luxurious restaurants in the city. He knew that the best dishes were served there; he’d find...
+    <h5>Completed:&nbsp;<i></i>%&nbsp;&nbsp;|&nbsp;&nbsp;Step:&nbsp;<b></b>&nbsp;/&nbsp;<em></em></h5>
+</td></tr>
+
+<tr class="storyBtns adv" id="story42">
+    <td class="stPics" id="stPic42"><img src="../common/check.png"/></td>
+    <td class="stDesc" id="stDesc42"><h3>KING TOPAZ<strong>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp; Length:&nbsp;Medium</strong></h3>
+    In the 18th century, there was a young king who was only 25 years of age. He was brave and optimistic despite his age. He had a very important challenge as king; he had to show his people that he could govern with courage and wisdom...
+    <h5>Completed:&nbsp;<i></i>%&nbsp;&nbsp;|&nbsp;&nbsp;Step:&nbsp;<b></b>&nbsp;/&nbsp;<em></em></h5>
+</td></tr>
+
+<tr class="storyBtns adv" id="story43">
+    <td class="stPics" id="stPic43"><img src="../common/check.png"/></td>
+    <td class="stDesc" id="stDesc43"><h3>A YOUNG FIGHTER<strong>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp; Length:&nbsp;Medium</strong></h3>
+    Palena was a city known as the boxing capital of the world. It was home to many of the world's best boxers. A young 27-year old man, named Alex, had grown up watching the stars of his city succeed in this sport. His only dream was...
+    <h5>Completed:&nbsp;<i></i>%&nbsp;&nbsp;|&nbsp;&nbsp;Step:&nbsp;<b></b>&nbsp;/&nbsp;<em></em></h5>
+</td></tr>
+
+<tr class="storyBtns adv" id="story44">
+    <td class="stPics" id="stPic44"><img src="../common/check.png"/></td>
+    <td class="stDesc" id="stDesc44"><h3>THE YOUNG PIANIST<strong>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp; Length:&nbsp;Medium</strong></h3>
+    The young man was very passionate about music. He was very creative. He liked classical music and his only dream was playing at a big event along with his idols. He had a physical problem though; he’d been born blind...
+    <h5>Completed:&nbsp;<i></i>%&nbsp;&nbsp;|&nbsp;&nbsp;Step:&nbsp;<b></b>&nbsp;/&nbsp;<em></em></h5>
+</td></tr>
+
+<tr class="storyBtns adv" id="story45">
+    <td class="stPics" id="stPic45"><img src="../common/check.png"/></td>
+    <td class="stDesc" id="stDesc45"><h3>THE TRIBE’S ILLNESS<strong>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp; Length:&nbsp;Medium</strong></h3>
+    In the year 1697, in a distant land, there were two natural tribes named Oaxaca and Gurugan. The Oaxaca tribe had a shaman, who claimed to have an ancestral gift whose power was to cure diseases with natural remedies. Even though the...
+    <h5>Completed:&nbsp;<i></i>%&nbsp;&nbsp;|&nbsp;&nbsp;Step:&nbsp;<b></b>&nbsp;/&nbsp;<em></em></h5>
+</td></tr>
+
+<tr class="storyBtns adv" id="story46">
+    <td class="stPics" id="stPic46"><img src="../common/check.png"/></td>
+    <td class="stDesc" id="stDesc46"><h3>A SUMMER AT THE FARM<strong>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp; Length:&nbsp;Long</strong></h3>
+    Once upon a time, there was a 17-year-old young man named Max. He was very lazy and his only responsibility was studying. Nevertheless, he didn’t get good grades in school and didn’t have any discipline. His parents were... 
+    <h5>Completed:&nbsp;<i></i>%&nbsp;&nbsp;|&nbsp;&nbsp;Step:&nbsp;<b></b>&nbsp;/&nbsp;<em></em></h5>
+</td></tr>
+
+<tr class="storyBtns adv" id="story47">
+    <td class="stPics" id="stPic47"><img src="../common/check.png"/></td>
+    <td class="stDesc" id="stDesc47"><h3>THE UNEXPECTED TREASURE<strong>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp; Length:&nbsp;Long</strong></h3>
+    In a vast and desolate desert, a famous archaeologist named Thomas, was preparing to resume his expedition. The vast plains of the enormous desert, which his small group had already traveled for more than two months, was the perfect... 
+    <h5>Completed:&nbsp;<i></i>%&nbsp;&nbsp;|&nbsp;&nbsp;Step:&nbsp;<b></b>&nbsp;/&nbsp;<em></em></h5>
+</td></tr>
+
+<tr class="storyBtns adv" id="story48">
+    <td class="stPics" id="stPic48"><img src="../common/check.png"/></td>
+    <td class="stDesc" id="stDesc48"><h3>THE COLORED SHOES<strong>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp; Length:&nbsp;Long</strong></h3>
+    Edward was very average in all sports, including the 400-meter race. Although he wasn't the best, he was very passionate about track and field. Edward dreamed of one day becoming a professional athlete. He knew it would be difficult...
+    <h5>Completed:&nbsp;<i></i>%&nbsp;&nbsp;|&nbsp;&nbsp;Step:&nbsp;<b></b>&nbsp;/&nbsp;<em></em></h5>
+</td></tr>
+
+<tr class="storyBtns adv" id="story49">
+    <td class="stPics" id="stPic49"><img src="../common/check.png"/></td>
+    <td class="stDesc" id="stDesc49"><h3>THE KING’S JEALOUS DAUGHTERS<strong>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp; Length:&nbsp;Long</strong></h3>
+    During the eighteenth century, in a small province of a faraway country, there was a king who had three daughters and a beautiful wife. The youngest daughter was fifteen years old and the other two were eighteen and twenty...
+    <h5>Completed:&nbsp;<i></i>%&nbsp;&nbsp;|&nbsp;&nbsp;Step:&nbsp;<b></b>&nbsp;/&nbsp;<em></em></h5>
+</td></tr>
+
+<tr class="storyBtns adv" id="story50">
+    <td class="stPics" id="stPic50"><img src="../common/check.png"/></td>
+    <td class="stDesc" id="stDesc50"><h3>FROM THE CITY TO THE MOUNTAIN<strong>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp; Length:&nbsp;Long</strong></h3>
+   Johana was a city girl overwhelmed with responsibilities. She had a busy, but monotonous life. She paid for her university studies with the little money she earned as a waitress. She had very little time to go out and have fun with her...
+    <h5>Completed:&nbsp;<i></i>%&nbsp;&nbsp;|&nbsp;&nbsp;Step:&nbsp;<b></b>&nbsp;/&nbsp;<em></em></h5>
+</td></tr>
+
+<tr class="storyBtns adv" id="story51">
+    <td class="stPics" id="stPic51"><img src="../common/check.png"/></td>
+    <td class="stDesc" id="stDesc51"><h3>THE LUMBERJACK<strong>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp; Length:&nbsp;Long</strong></h3>
+    There was once a lumberjack who lived on top of a mountain with his wife and two sons. The lumberjack, named Adam, had just turned 65 years old. He was not getting any younger. He was starting to have back problems, but he was...
+    <h5>Completed:&nbsp;<i></i>%&nbsp;&nbsp;|&nbsp;&nbsp;Step:&nbsp;<b></b>&nbsp;/&nbsp;<em></em></h5>
+</td></tr>
+
+<tr class="storyBtns adv" id="story52">
+    <td class="stPics" id="stPic52"><img src="../common/check.png"/></td>
+    <td class="stDesc" id="stDesc52"><h3>THE MYSTERIOUS MINE<strong>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp; Length:&nbsp;Long</strong></h3>
+    There was once a small village in the middle of a large mountain range. The economy of the village was completely dependent on mining. All miners were independent. They were only paid when they could find and sell valuable...
+    <h5>Completed:&nbsp;<i></i>%&nbsp;&nbsp;|&nbsp;&nbsp;Step:&nbsp;<b></b>&nbsp;/&nbsp;<em></em></h5>
+</td></tr>
+
+<tr class="storyBtns adv" id="story53">
+    <td class="stPics" id="stPic53"><img src="../common/check.png"/></td>
+    <td class="stDesc" id="stDesc53"><h3>THE LIGHTNING SOLDIER<strong>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp; Length:&nbsp;Long</strong></h3>
+    A soldier who had enrolled in the army to defend his country, missed his family very much. He had left his wife, his two children, and his mother to go to war against an invading country. His entire family lived in the same house, in...
+    <h5>Completed:&nbsp;<i></i>%&nbsp;&nbsp;|&nbsp;&nbsp;Step:&nbsp;<b></b>&nbsp;/&nbsp;<em></em></h5>
+</td></tr>
+
+<tr class="storyBtns adv" id="story54">
+    <td class="stPics" id="stPic54"><img src="../common/check.png"/></td>
+    <td class="stDesc" id="stDesc54"><h3>THE STORY OF THE GORILLAS<strong>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp; Length:&nbsp;Long</strong></h3>
+   An ecologist was once in a large jungle looking for new animal species. He had moved his camp to the world’s biggest jungle. He was sure that his trip would be worth it. He only ate canned food and always had to go look for water...
+    <h5>Completed:&nbsp;<i></i>%&nbsp;&nbsp;|&nbsp;&nbsp;Step:&nbsp;<b></b>&nbsp;/&nbsp;<em></em></h5>
+</td></tr>
+
+<tr class="storyBtns adv" id="story55">
+    <td class="stPics" id="stPic55"><img src="../common/check.png"/></td>
+    <td class="stDesc" id="stDesc55"><h3>A BEAUTIFUL ROMANCE<strong>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp; Length:&nbsp;Long</strong></h3>
+    Since she was little, Lily had lived in a beautiful city, full of luxuries and comforts. Lily always dreamed of having a fairy-tale wedding, but she was only 22 years old and wasn't engaged to anyone. The city in which she lived was known...
+    <h5>Completed:&nbsp;<i></i>%&nbsp;&nbsp;|&nbsp;&nbsp;Step:&nbsp;<b></b>&nbsp;/&nbsp;<em></em></h5>
+</td></tr>
+
+<tr class="storyBtns adv" id="story56">
+    <td class="stPics" id="stPic56"><img src="../common/check.png"/></td>
+    <td class="stDesc" id="stDesc56"><h3>THE WARRIOR RABADAK<strong>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp; Length:&nbsp;Very Long</strong></h3>
+   Many centuries ago, earth’s inhabitants lived somewhat lonely lives. They were happy with what little they had. They were organized in small communities in which everyone collaborated with one another. Their diets were based on beans... 
+    <h5>Completed:&nbsp;<i></i>%&nbsp;&nbsp;|&nbsp;&nbsp;Step:&nbsp;<b></b>&nbsp;/&nbsp;<em></em></h5>
+</td></tr>
+
+<tr class="storyBtns adv" id="story57">
+    <td class="stPics" id="stPic57"><img src="../common/check.png"/></td>
+    <td class="stDesc" id="stDesc57"><h3>THE CABIN IN THE WOODS<strong>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp; Length:&nbsp;Very Long</strong></h3>
+    Two teenagers, named Tom and Noah, were neighbors and were in the same classroom. As they were best friends, they spent a lot of time together. They lived with their parents on the edge of a huge river. There were very few inhabitants... 
+    <h5>Completed:&nbsp;<i></i>%&nbsp;&nbsp;|&nbsp;&nbsp;Step:&nbsp;<b></b>&nbsp;/&nbsp;<em></em></h5>
+</td></tr>
+
+<tr class="storyBtns adv" id="story58">
+    <td class="stPics" id="stPic58"><img src="../common/check.png"/></td>
+    <td class="stDesc" id="stDesc58"><h3>THE FISHERMAN AND THE STORM<strong>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp; Length:&nbsp;Very Long</strong></h3>
+   A fisherman named Bory lived on the shores of a huge sea. His skin was very dark due to the long hours he spent on the sea. From a very young age, his parents and grandparents had taught him everything a fisherman should know, because...
+    <h5>Completed:&nbsp;<i></i>%&nbsp;&nbsp;|&nbsp;&nbsp;Step:&nbsp;<b></b>&nbsp;/&nbsp;<em></em></h5>
+</td></tr>
+
+<tr class="storyBtns adv" id="story59">
+    <td class="stPics" id="stPic59"><img src="../common/check.png"/></td>
+    <td class="stDesc" id="stDesc59"><h3>LADY JIMENA’S MAGICAL FARM<strong>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp; Length:&nbsp;Very Long</strong></h3>
+   There was once a farm owned by Lady Jimena, an immigrant who had come to the city in 1928. The farm had fields of wheat, rice and some vegetables that were very well-suited for those soils. She had a variety of animals such as...
+    <h5>Completed:&nbsp;<i></i>%&nbsp;&nbsp;|&nbsp;&nbsp;Step:&nbsp;<b></b>&nbsp;/&nbsp;<em></em></h5>
+</td></tr>
+
+<tr class="storyBtns adv" id="story60">
+    <td class="stPics" id="stPic60"><img src="../common/check.png"/></td>
+    <td class="stDesc" id="stDesc60"><h3>THE CHAMPION DONKEY<strong>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp; Length:&nbsp;Very Long</strong></h3>
+    There once was a town with a famous horse racetrack; the best thoroughbred horses in the city ran there. One hundred kilometers away from that city, in a little corner of land far in the mountains, lived Don Manuel, a 74-year-old man...
+    <h5>Completed:&nbsp;<i></i>%&nbsp;&nbsp;|&nbsp;&nbsp;Step:&nbsp;<b></b>&nbsp;/&nbsp;<em></em></h5>
+</td></tr>
+
+  
+</table>
+
+
+</body>
+</html>

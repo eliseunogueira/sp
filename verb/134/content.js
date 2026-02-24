@@ -1,0 +1,13 @@
+var lessonNumber = 134;
+var conjNum = 1;
+var verbTypeNum = 3;
+var narration =  ["As we previously mentioned, both regular <strong>IR</strong> and <strong>ER</strong> verbs end with iendo.</strong>"];
+var forConj1 = ["(yo) estoy zzzz<strong>iendo</strong>","(tú) estás zzzz<strong>iendo</strong>","(usted) está zzzz<strong>iendo</strong>","(él/ella) está zzzz<strong>iendo</strong>","(nosotros) estamos zzzz<strong>iendo</strong>","(ustedes) están zzzz<strong>iendo</strong>","(ellos/ellas) están zzzz<strong>iendo</strong>"];
+var replaceText  = ["", "viv","decid","recib","part","sub"];
+var englishVerbs  = ["Infinitive", "To live","To decide","To receive","To leave","To go up"];
+var engConj1Z = ["1st Person Singular","2nd Person Singular (inf.)","2nd Pers. Sing. Form. (3rd)","3rd Person Singular","1st Person Plural","2nd Person Plural (3rd)","3rd Person Plural"];
+var engConj1A = ["I am living","you are living (informal)","you are living (formal)","he/she is living","we are living","you are living (plural)","they are living"];
+var engConj1B = ["I am deciding","you are deciding (informal)","you are deciding (formal)","he/she is deciding","we are deciding","you are deciding (plural)","they are deciding"];
+var engConj1C = ["I am receiving","you are receiving (informal)","you are receiving (formal)","he/she is receiving","we are receiving","you are receiving (plural)","they are receiving"];
+var engConj1D = ["I am leaving","you are leaving (informal)","you are leaving (formal)","he/she is leaving","we are leaving","you are leaving (plural)","they are leaving"];
+var engConj1E = ["I am going up","you are going up (informal)","you are going up (formal)","he/she is going up","we are going up","you are going up (plural)","they are going up"];

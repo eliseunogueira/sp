@@ -1,0 +1,13 @@
+var lessonNumber = 126;
+var conjNum = 5;
+var verbTypeNum = 2;
+var narration =  ["Notice that in regular ER verbs, the first A in the endings is changed to an E.","It is the only difference from regular AR verbs."];
+var replaceText  = ["","com","vend","beb","aprend","corr"];
+var englishVerbs  = ["Infinitive","To eat","To sell","To drink","To learn","To run"];
+var forConj5 = ["(yo) zzzz<strong>ería</strong>","(tú) zzzz<strong>erías</strong>","(usted) zzzz<strong>ería</strong>","(él/ella) zzzz<strong>ería</strong>","(nosotros) zzzz<strong>eríamos</strong>","(ustedes) zzzz<strong>erían</strong>","(ellos/ellas) zzzz<strong>erían</strong>"];
+var engConj5Z = ["1st Person Singular","2nd Person Singular (inf.)","2nd Pers. Sing. Form. (3rd)","3rd Person Singular","1st Person Plural","2nd Person Plural (3rd)","3rd Person Plural"];
+var engConj5A = ["I would eat","you would eat (informal)","you would eat (formal)","he/she would eat","we would eat","you would eat (plural)","they would eat"];
+var engConj5B = ["I would sell","you would sell (informal)","you would sell (formal)","he/she would sell","we would sell","you would sell (plural)","they would sell"];
+var engConj5C = ["I would drink","you would drink (informal)","you would drink (formal)","he/she would drink","we would drink","you would drink (plural)","they would drink"];
+var engConj5D = ["I would learn","you would learn (informal)","you would learn (formal)","he/she would learn","we would learn","you would learn (plural)","they would learn"];
+var engConj5E = ["I would run","you would run (informal)","you would run (formal)","he/she would run","we would run","you would run (plural)","they would run"];

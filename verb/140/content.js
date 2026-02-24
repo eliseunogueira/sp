@@ -1,0 +1,13 @@
+var lessonNumber = 140;
+var conjNum = 7;
+var verbTypeNum = 3;
+var narration =  ["The endings for regular IR verbs in the imperative are the same as the ER verb endings."];
+var replaceText  = ["", "decid","recib","exist","viv","escrib"];
+var englishVerbs  = ["Infinitive", "To decide","To receive","To exist","To live","To write"];
+var forConj7 = ["<strong>-</strong>","zzzz<strong>e</strong>","no zzzz<strong>as</strong>","zzzz<strong>a</strong>","zzzz<strong>amos</strong>","zzzz<strong>an</strong>","<strong>-</strong>"];
+var engConj7Z = ["1st Person Singular","2nd Person Singular (positive)","2nd Person Singular (negative)","2nd Person Singular Formal (3rd)","1st Person Plural","2nd Person Plural (3rd)","3rd Person Plural"];
+var engConj7A = ["-","decide (informal)","don't decide (informal)","decide (formal)","let's decide","decide (plural)","-"];
+var engConj7B = ["-","receive (informal)","don't receive (informal)","receive (formal)","let's receive","receive (plural)","-"];
+var engConj7C = ["-","exist (informal)","don't exist (informal)","exist (formal)","let's exist","exist (plural)","-"];
+var engConj7D = ["-","live (informal)","don't live (informal)","live (formal)","let's live","live (plural)","-"];
+var engConj7E = ["-","write (informal)","don't write (informal)","write (formal)","let's write","write (plural)","-"];

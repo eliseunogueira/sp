@@ -1,0 +1,13 @@
+var lessonNumber = 132;
+var conjNum = 1;
+var verbTypeNum = 1;
+var narration =  ['The endings for the "Present progressive" are very easy to remember because the same ending is used with each pronoun.','However, as you may have seen in the "Present progressive" lesson you need to be able to conjugate the verb "Estar" (to be) in order to use this verb tense.',"<strong>AR</strong> verbs end with <strong>ando</strong>"];
+var replaceText  = ["", "habl","trabaj","am","march","ayud"];
+var englishVerbs  = ["Infinitive", "To speak","To work","To love","To walk","To help"];
+var forConj1 = ["(yo) estoy zzzz<strong>ando</strong>","(tú) estás zzzz<strong>ando</strong>","(usted) está zzzz<strong>ando</strong>","(él/ella) está zzzz<strong>ando</strong>","(nosotros) estamos zzzz<strong>ando</strong>","(ustedes) están zzzz<strong>ando</strong>","(ellos/ellas) están zzzz<strong>ando</strong>"];
+var engConj1Z = ["1st Person Singular","2nd Person Singular (inf.)","2nd Pers. Sing. Form. (3rd)","3rd Person Singular","1st Person Plural","2nd Person Plural (3rd)","3rd Person Plural"];
+var engConj1A = ["I am speaking","you are speaking (informal)","you are speaking (formal)","he/she is speaking","we are speaking","you are speaking (plural)","they are speaking"];
+var engConj1B = ["I am working","you are working (informal)","you are working (formal)","he/she is working","we are working","you are working (plural)","they are working"];
+var engConj1C = ["I am loving","you are loving (informal)","you are loving (formal)","he/she is loving","we are loving","you are loving (plural)","they are loving"];
+var engConj1D = ["I am walking","you are walking (informal)","you are walking (formal)","he/she is walking","we are walking","you are walking (plural)","they are walking"];
+var engConj1E = ["I am helping","you are helping (informal)","you are helping (formal)","he/she is helping","we are helping","you are helping (plural)","they are helping"];

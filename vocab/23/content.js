@@ -1,0 +1,13 @@
+var lessonNumber = 23;
+var lessonTitle = "Vocabulary: ¿Qué hora es?";
+var forExamples = ["/¿Qué hora es?","/Telling time in Spanish is simple.",'/"La" or "las" is added before the number.',"/There are no words for AM and PM.","/A 24-hour clock is often used for official purposes.","/Es la una.","/Son las dos.","/Son las tres y diez.","/Son las cuatro y cuarto.","/Son las cuatro y quince.","/Son las cinco y media.","/Son las cinco y treinta.","/Son las seis y cuarenta y cinco.","/Son las siete menos cuarto.","/Son las siete y cincuenta.","/Son las ocho menos diez.","/Son las ocho de la mañana.","/Son las dos de la tarde.","/Son las catorce.","/Son las ocho de la noche.","/Son las veinte.","/Es mediodía.","/Es medianoche."];
+var engExamples = ["What time is it?","","","","","It's one o'clock.","It's two o'clock.","It's three ten.","It's quarter past four.","It's four fifteen.","It's half past five.","It's five thirty.","It's six forty-five.","It's fifteen to seven.","It's seven fifty.","It's ten to eight.","It's eight a.m.","It's two p.m.","It's fourteen hours.","It's eight p.m.","It's twenty hours.","It's noon.","It's midnight."];
+var engButtons = ["What time is it?","Telling time in Spanish is simple.",'LA or LAS is added before the number.',"There are no words for AM and PM.","A 24-hour clock is often used","It's one o'clock.","It's two o'clock.","It's three ten.","It's quarter past four.","It's four fifteen.","It's half past five.","It's five thirty.","It's six forty-five.","It's fifteen to seven.","It's seven fifty.","It's ten to eight.","It's eight a.m.","It's two p.m.","It's fourteen hours.","It's eight p.m.","It's twenty hours.","It's noon.","It's midnight."];
+var btnColor = ["#FFC400","#BB0A00","#FFEE00","#B83D00"];
+var lessonType = "normal";
+var quizMapArray = [6,7,8,9,11,13,16,17,19,20,22,23];
+var quizMultiArray = [];var numToRemove = [1,2,3,4,5];
+var fillQuestions = [];
+var fillQuestionsEng = []; var fillAnswers = [];
+var fillAnswersEng = [];
+var quizExamples = ["¿Qué hora es?","Telling time in Spanish is simple.","","There are no words for AM and PM.","A 24-hour clock is often used for official purposes.","Es la una.","Son las dos.","Son las tres y diez.","Son las cuatro y cuarto.","Son las cuatro y quince.","Son las cinco y media.","Son las cinco y treinta.","Son las seis y cuarenta y cinco.","Son las siete menos cuarto.","Son las siete y cincuenta.","Son las ocho menos diez.","Son las ocho de la mañana.","Son las dos de la tarde.","Son las catorce.","Son las ocho de la noche.","Son las veinte.","Es mediodía.","Es medianoche."];var quizFillArray = [];

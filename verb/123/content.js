@@ -1,0 +1,13 @@
+var lessonNumber = 123;
+var conjNum = 2;
+var verbTypeNum = 2;
+var narration =  ["For regular ER verbs, the endings are very similar to AR verbs."];
+var replaceText  = ["","beb","aprend","corr","vend","com"];
+var englishVerbs  = ["Infinitive","To drink","To learn","To run","To sell","To eat"];
+var forConj2 = ["(yo) zzzz<strong>í</strong>","(tú) zzzz<strong>iste</strong>","(usted) zzzz<strong>ió</strong>","(él/ella) zzzz<strong>ió</strong>","(nosotros) zzzz<strong>imos</strong>","(ustedes) zzzz<strong>ieron</strong>","(ellos/ellas) zzzz<strong>ieron</strong>"];
+var engConj2Z = ["1st Person Singular","2nd Person Singular (inf.)","2nd Pers. Sing. Form. (3rd)","3rd Person Singular","1st Person Plural","2nd Person Plural (3rd)","3rd Person Plural"];
+var engConj2A = ["I drank","you drank (informal)","you drank (formal)","he/she drank","we drank","you drank (plural)","they drank"];
+var engConj2B = ["I learned","you learned (informal)","you learned (formal)","he/she learned","we learned","you learned (plural)","they learned"];
+var engConj2C = ["I ran","you ran (informal)","you ran (formal)","he/she ran","we ran","you ran (plural)","they ran"];
+var engConj2D = ["I sold","you sold (informal)","you sold (formal)","he/she sold","we sold","you sold (plural)","they sold"];
+var engConj2E = ["I ate","you ate (informal)","you ate (formal)","he/she ate","we ate","you ate (plural)","they ate"];

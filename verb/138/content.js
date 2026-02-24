@@ -1,0 +1,13 @@
+var lessonNumber = 138;
+var conjNum = 7;
+var verbTypeNum = 1;
+var narration =  ["Endings for the Spanish imperative are a bit different.","There are no endings for he, she and they, because it's impossible to give an order in the third person.","There are two endings for the informal second person, depending if the order is positive or negative. Let's take a look."];
+var replaceText  = ["", "trabaj","habl","limpi","cocin","esper"];
+var englishVerbs  = ["Infinitive", "To work","To speak","To clean","To cook","To wait"];
+var forConj7 = ["<strong>-</strong>","zzzz<strong>a</strong>","no zzzz<strong>es</strong>","zzzz<strong>e</strong>","zzzz<strong>emos</strong>","zzzz<strong>en</strong>","<strong>-</strong>"];
+var engConj7Z = ["1st Person Singular","2nd Person Singular (positive)","2nd Person Singular (negative)","2nd Person Singular Formal (3rd)","1st Person Plural","2nd Person Plural (3rd)","3rd Person Plural"];
+var engConj7A = ["-","work (informal)","don't work (informal)","work (formal)","let's work","work (plural)","-"];
+var engConj7B = ["-","speak (informal)","don't speak (informal)","speak (formal)","let's speak","speak (plural)","-"];
+var engConj7C = ["-","clean (informal)","don't clean (informal)","clean (formal)","let's clean","clean (plural)","-"];
+var engConj7D = ["-","cook (informal)","don't cook (informal)","cook (formal)","let's cook","cook (plural)","-"];
+var engConj7E = ["-","wait (informal)","don't wait (informal)","wait (formal)","let's wait","wait (plural)","-"];

@@ -1,0 +1,13 @@
+var lessonNumber = 124;
+var conjNum = 3;
+var verbTypeNum = 2;
+var narration =  ["The following endings are for regular ER verbs in the imperfect."];
+var replaceText  = ["","aprend","corr","vend","com","beb"];
+var englishVerbs  = ["Infinitive","To learn","To run","To sell","To eat","To drink"];
+var forConj3 = ["(yo) zzzz<strong>ía</strong>","(tú) zzzz<strong>ías</strong>","(usted) zzzz<strong>ía</strong>","(él/ella) zzzz<strong>ía</strong>","(nosotros) zzzz<strong>íamos</strong>","(ustedes) zzzz<strong>ían</strong>","(ellos/ellas) zzzz<strong>ían</strong>"];
+var engConj3Z = ["1st Person Singular","2nd Person Singular (inf.)","2nd Pers. Sing. Form. (3rd)","3rd Person Singular","1st Person Plural","2nd Person Plural (3rd)","3rd Person Plural"];
+var engConj3A = ["I was learning","you were learning (informal)","you were learning (formal)","he/she was learning","we were learning","you were learning (plural)","they were learning"];
+var engConj3B = ["I was running","you were running (informal)","you were running (formal)","he/she was running","we were running","you were running (plural)","they were running"];
+var engConj3C = ["I was selling","you were selling (informal)","you were selling (formal)","he/she was selling","we were selling","you were selling (plural)","they were selling"];
+var engConj3D = ["I was eating","you were eating (informal)","you were eating (formal)","he/she was eating","we were eating","you were eating (plural)","they were eating"];
+var engConj3E = ["I used to drink","you used to drink (informal)","you used to drink (formal)","he/she used to drink","we used to drink","you used to drink (plural)","they used to drink"];

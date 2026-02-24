@@ -1,0 +1,696 @@
+@charset "utf-8";
+/* CSS Document */
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../../font/Intertight-Variable.ttf') format('truetype-variations');
+}
+
+
+html {
+ font-family: 'Inter', sans-serif !important; 
+  font-style: normal !important;
+  
+  text-shadow: none !important;
+  box-shadow: none !important;
+}
+
+body {
+background-color: #1a1616;
+}
+
+
+.card-scene {
+  -webkit-perspective: 600px;
+          perspective: 600px;
+  -webkit-animation: cardAppear 0.9s forwards;
+          animation: cardAppear 0.9s forwards;
+ display:none;	
+}
+
+.noAnimation{
+-webkit-animation: none !important;	
+animation: none !important;
+}
+
+
+@keyframes cardAppear {
+  0% { 	transform: rotate3d(0, 0, 1, 15deg) translate3d(0, -100vh, 0);}
+  30% { transform: rotate3d(0, 0, 0, 0deg) translate3d(0, 0, 0); }
+  65% { transform: rotate3d(0, 0, 0, 0deg) translate3d(0, 0, 0)}
+  80% {transform: rotate3d(0, 0, 1, 0deg);}
+  100% {transform: rotate3d(0, 0, 0, 0);}	
+}
+
+.card {
+  height: 100%;
+  z-index: 10;	
+  width: 100%;
+  position: relative;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+.card.card--flipped {
+  -webkit-animation: cardFlip .275s forwards linear;
+          animation: cardFlip .275s forwards linear;
+}
+.card.card--unflip {
+  -webkit-animation: cardUnFlip .275s forwards linear;
+          animation: cardUnFlip .275s forwards linear;
+}
+
+
+
+@keyframes cardFlip {
+  0% {	transform: rotateZ(0deg) rotateY(180deg);}
+  50% {	transform: rotateZ(-1deg) rotateY(90deg);}
+  100% { transform: rotateZ(0deg) rotateY(0deg);}
+}
+
+@keyframes cardUnFlip {
+  0% {transform: rotateZ(0deg) rotateY(0deg);}
+  50% {transform: rotateZ(-1deg) rotateY(90deg);}
+  100% { transform: rotateZ(0deg) rotateY(180deg);}
+}
+
+
+.card-face {
+  position: absolute;	
+  -webkit-transform:rotateY(0deg);
+		transform:rotateY(0deg);	
+-webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  border-radius: 12px;
+}
+
+.card-backing {
+  position: absolute;
+  z-index: 4;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: white;	
+  display: -webkit-box;
+  display: flex;	
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+#background {
+	width: 102%;
+	height: 102%;
+	background-position:center center;
+	background-repeat:no-repeat;
+	background-size: cover;
+	position: fixed;
+	left: -1%;
+	top: -1%;
+	z-index: -1;
+	-webkit-filter: brightness(40%) blur(0px);
+filter: brightness(40%) blur(0px);
+	background-image: url('../images/background.jpg');
+}
+
+#borderDiv {
+box-shadow: inset 0 0 0 5px #101010; position: fixed; top: -2%; left: 0; width: 100%; height: 102%; margin: 0; padding: 0; z-index:-1;
+}
+
+#volDiv{
+position: relative;
+top: 22px; right: 25px;
+float:left;
+width: 50px;
+height: 2px;
+z-index: 2;
+}
+
+#sliderTrack{
+position: absolute;
+width: 100%; height: 100%;
+top: 2px; left:8px;
+z-index: -1;
+cursor: pointer;
+background: #CCC;
+border-radius: 10px;
+}
+
+#sliderText{
+position: absolute;
+width: 100%;
+text-align:center;
+  height:10px;
+  top: -15px;
+  left: auto; right: auto;
+  margin: auto 6px;
+  color: white;
+  cursor: default;
+  font-size:11px;
+}
+
+.ui-slider-handle {
+    background:#999;
+    width: 10px;
+    height: 10px;
+	top: -2px;
+	border-radius: 50%;
+    position: absolute;
+	border: 1px solid black;
+	opacity: 0.8;
+}
+
+.ui-slider-handle:focus {
+outline: 0;
+opacity: 1;
+background: #FC0;
+}
+
+
+.ui-slider-range {
+    position: absolute;
+    border: 0;
+    top: 0;
+	width: 40px;
+}
+
+body:after {
+  display: none;
+content: url('../images/background.jpg');
+}
+
+#swipeTip {
+background-color: rgba(0,0,0,0.6);	
+background-image: url('../images/instruction.svg');
+background-size: 400px;
+background-position: center;
+background-repeat: no-repeat;	
+width: 100%;
+height: 100%;
+top: 45px;
+left: 0;
+margin: 0;
+padding:0;
+position: fixed;
+z-index: 100;	
+cursor: pointer;
+}
+
+@media screen and (max-width: 530px) {#swipeTip {background-size: 300px; background-color: rgba(0,0,0,0); top: 22px;}}
+@media screen and (max-height: 530px) {#swipeTip {background-size: 300px; background-color: rgba(0,0,0,0); top: 22px;}}
+
+.menuBar {
+	visibility: visible;	
+}
+
+.bigLeft, .bigRight{
+position: fixed;
+width: 10%;
+height: 60%;
+top: 22.5%;
+background: rgba(255,255,255,0.05);
+cursor: pointer;
+opacity: 0;
+z-index: 30;	
+max-width: 100px;
+border-radius: 10px;	
+}
+
+.bigLeft{left: 6px;}
+.bigRight{right: 6px;}
+
+/*MODIFICATIONS BELOW*/
+
+
+.countNum { border-radius: 50%; line-height: 30px; width: 30px; text-align: center; background: rgba(10,10,10,0.6); font-weight: 300 !important; font-size: 14px;	color: white; position: absolute; left: auto; right: 10px; top: 10px; z-index: 21; transition: all 0.4s;}
+
+.countNum2 {font-size: 15px; width: 290px; color: rgba(255,255,255,0.3); 
+	position: fixed; bottom: 20px; margin: auto; text-align: center; left: 0; right: 0;}
+
+.countNum2 strong { font-size: 1.1em; }
+
+.remCard { position: absolute; top: 10px; left: 13px; z-index: 21; width: 35px; height: 35px; opacity: 0.7;}
+.remCard:hover { opacity: 1;}
+
+
+@media screen and (max-height: 760px) {.countNum2{display: none !important;}}
+
+.countAni { transform: scale(1.1); background: #67ad6d; }
+.countAni2 { transform: scale(1.1); background: #d6464e; }
+
+.deleteAll {position: fixed; opacity: 0.6; cursor: pointer; transition: opacity 0.4s; z-index: 500;} .deleteAll:hover { opacity: 1;}
+
+.del1 {display: none; bottom: 23px; left: 15px; width: auto; height: 73px;} 
+.del2 {display: block; bottom: 20px; left: 10px; width: auto; height: 45px;}
+.del3 {display: none; bottom: 23px; left: 10px; width: auto; height: 45px;}
+
+.noticeNone, .noticeNone2 { position: fixed; right: 0; left: 0; bottom: 5px; top: 40px; margin: auto; width:300px; height: 150px; z-index: 22; display:none; pointer-events: none;}
+.noticeGood, .noticeGoodB, .noticeBad { position: fixed; right: 0; left: 0; top: 45px; bottom: 5px; margin: auto; width:200px; height: 110px; z-index: 22; display:none; pointer-events: none;}
+
+@media screen and (min-width: 900px) {.noticeGood, .noticeGoodB, .noticeBad { position: fixed; top: 46px; right: 5px; left: auto; margin: 0;}}
+
+
+.flashGood, .flashBad{
+  position: absolute; left: 0; right: 0; 
+  width: 180px; height: 40px; margin: 0 auto; padding: 0;	
+  opacity: 0.3;	
+  z-index: 11;		
+}
+
+
+.flashGood2 {
+  position: absolute; left: 0; right: 0; 
+  width: 180px; height: 40px; margin: 0 auto; padding: 0;	
+  opacity: 0.3;	
+  z-index: 11;		
+}
+
+
+.flashGood { top: auto; bottom: -55px;}
+.flashBad { top: -50px;}
+
+
+.rArrow, .lArrow {
+  position: absolute; top: 0; bottom: 30px; 
+  width: 30px; height: 30px; margin: auto; padding: 0;	
+  opacity: 0.3;	
+  z-index: 49;
+}
+
+
+.rArrow {
+  right: -35px;	 	
+}
+
+.lArrow {
+  left: -35px;		
+}
+
+
+.card-scene {
+position: fixed; 
+top: 35px;
+bottom: 0;
+left: 0;
+right: 0;
+margin: auto;
+cursor: pointer;		
+}
+
+.langMode, .cateMode, .combMode {
+width: auto;
+height: auto;
+display: inline-block;	
+font-weight: 300 !important; font-size: 16px;	color: white; 
+background: #303030;
+position: fixed;
+z-index: 21;	
+border-radius: 3px;	
+top: -7px;	
+margin: 0 10px 0 0px;	
+padding: 9px 12px 9px 45px;	
+cursor: pointer;
+opacity: 0.8;	
+visibility: hidden;
+}
+
+.langMode strong, .cateMode strong, .combMode strong {
+font-weight: 300 !important;
+font-size: 14px;
+}
+
+.combMode {bottom: 23px; top: auto; right: 7px; left: auto;}
+.cateMode {top: 55px; left: auto; right: 7px;}
+.langMode {top: 55px; left: 17px; right: auto;}
+
+@media screen and (max-width: 780px){
+.countNum2{display:none !important;}
+}
+
+.langMode:hover, .cateMode:hover, .combMode:hover {
+opacity: 1;	
+}
+
+.langMode img {
+width: 25px; height: 25px;
+position: absolute; top: 7px; left: 10px;
+}
+
+.combMode img {
+width: 25px; height: 25px;
+position: absolute; top: 7px; left: 10px;
+}
+
+.cateMode img {
+width: 25px; height: 25px;
+position: absolute; top: 7px; left: 10px;
+display:none;	
+}
+
+.combDisabled{ opacity: 0.2; pointer-events: none;}
+
+#allCate {display:block;}
+
+#engFlag {display:none;}
+
+
+
+
+.cardDark {background: rgba(0,0,0,0.8); width: 100%; height: 100%; position: absolute; padding: 0; margin: 0; top: 0; left: 0; border-radius: 9px;}
+.card-backing {background: #ecf0f1; border: 5px solid #2d3436;}
+.card-front {border: 5px solid #ecf0f1; background-position: center; background-size: cover;}
+
+#forCard, #engCard {
+display: block; font-weight: 300; font-size: 24px; text-align: center; padding: 15px 25px;
+top: 0; bottom: 0; left: 0; right: 0; margin: auto; position: absolute; width: auto; height: 100px; 
+}
+#forCard {color: #2d3436;}
+#engCard {color: #ecf0f1;}
+
+#forCard span, #engCard span {font-size: 0.85em; margin-top: 50px;}
+
+
+.card-face, .card-scene {width: 600px;height: 400px;}
+
+@media screen and (max-width: 690px) and (orientation: portrait){
+
+.remCard { left: 4.5%;}	
+	
+.card-face, .card-scene {width: 100%;height: 500px;}
+.rArrow, .lArrow {opacity: 0;}	
+.countNum	{right: 20px;}
+}
+
+
+
+
+
+
+@media screen and (max-width: 690px){ .flashGood, .flashBad{width: 135px; height: 30px;} .flashGood { top: auto; bottom: -40px;}  .flashBad { top: -35px;} .flashGood.navied { bottom: -40px;} .flashBad.navied { top: -40px;}	.card-face, .card-scene {width: 96%; margin-left: 2%;} .rArrow {right: 0%;}.lArrow {left: 0;} #forCard, #engCard {font-size: 21px; height: 85px;} .rArrow.navi,.lArrow.navi {border-radius: 50%; padding: 4px;}
+.rArrow.navied,.lArrow.navied {background: #222;}	 
+.bigLeft, .bigRight{height: 45%;top: 30%; }
+}
+@media screen and (max-height: 790px) and (orientation: portrait){ .card-face, .card-scene {height: 450px;}  }
+@media screen and (max-height: 760px) and (orientation: portrait){ .card-face, .card-scene {height: 430px;}  }
+@media screen and (max-height: 720px) and (orientation: portrait){ .card-face, .card-scene {height: 380px;}  }
+@media screen and (max-height: 680px) and (orientation: portrait){ .card-face, .card-scene {height: 330px;}  }
+@media screen and (max-height: 640px){ .flashGood, .flashBad{width: 135px; height: 30px;} .flashGood { top: auto; bottom: -40px;}  .flashBad { top: -35px;} .flashGood.navied { bottom: -40px;} .flashBad.navied { top: -40px;}	.card-face, .card-scene {height: 280px;}  }
+@media screen and (max-height: 590px){ .card-face, .card-scene {height: 230px;}  }
+@media screen and (max-height: 540px){ .card-face, .card-scene {height: 200px;} }
+@media screen and (max-width: 520px){ .countNum2{display:none;} }
+
+.navi {transition: all 0.3s;}
+.navied {opacity: 1; transform: scale(1.3);}
+
+
+
+
+@media screen and (max-width: 765px){
+.lArrow, .rArrow {pointer-event:none !important; }
+}
+
+em {font-style: normal !important; font-weight: 700 !important; }
+i {font-style: normal !important; }
+
+.htmlMaker { position: fixed; top: -100000px;  }
+
+#sprompt{
+position: fixed;
+z-index: 999998;
+top:45px; left:0;  
+width: 100%;
+height: 100%;
+background: rgba(255,255,255,0.4); 
+display: none;
+}
+
+#spromptIn{
+position: fixed;
+z-index: 999999;
+margin: auto auto;
+top:0; right:0; bottom:0; left:0; 
+color: white;
+font-weight: 700;
+width: 320px;
+background-color: rgba(23,23,23,1.00);
+text-align: center;
+padding: 30px;
+height: 285px;
+font-size: 18px;	
+border-radius: 5px;
+}
+
+#spromptYes,#spromptYes2, #spromptNo{
+position: absolute;
+font-size: 18px;
+bottom:22px;
+font-weight: 700;
+text-align: center;
+padding: 13px;
+border-radius: 2px;
+cursor: pointer;
+opacity: 0.85;
+left:0; right: 0; 
+margin: 0 auto; width: 80%;		
+}
+
+#spromptYes2{color: white;bottom: 77px;background-color: #404040; }
+#spromptYes{color: black; background-color: #FC0; bottom: 132px; }
+#spromptNo{color: black; background-color: #808080;}
+#spromptYes:hover,#spromptYes2:hover, #spromptNo:hover{opacity: 1;}
+
+.fullOpacity {opacity: 1;}
+
+@media screen and (max-width: 1050px){
+#menuMain2{width: 60px !important; height: 60px !important; border-top: none !important;}
+#backBtn{width: 40px !important; height: 40px !important;}	
+.menuBar {background: #101010 !important;}
+}
+
+/*4.1 START*/
+.fl{
+background-color: #262626;
+background-image: url('../../extra/images/logo2.svg');
+background-size: 20px;
+background-position: right 10px center;
+background-repeat: no-repeat;	
+color: white;
+font-weight: 300;
+border-radius: 5px;
+width: 95%;
+padding: 12px 2%;
+margin: 2px auto 2px auto;	
+text-align: center;
+cursor: pointer;
+font-size: 15px;	
+max-width: 550px;	
+}
+
+.fON{
+background-image: url('../../extra/images/logo1.svg');
+background-size: 20px;
+background-position: right 10px center;
+background-repeat: no-repeat;	
+}
+	
+.fl:hover{
+background-color: rgba(45, 52, 54,1.0)
+}	
+	
+.ft{
+pointer-events: none;	
+background: #141414;
+padding: 12px 2%;
+margin-top: 20px;
+font-size: 16px;
+font-weight: 700;	
+cursor: default;	
+}
+	
+.uModule{
+background: none;	
+pointer-events: none;
+padding: 12px 2%;
+margin-top: 25px;
+margin-bottom: -15px;	
+font-size: 20px;
+font-weight: 700;	
+}	
+
+
+#flashBack {
+	width: 102%;
+	height: 102%;
+	background-position:center center;
+	background-repeat:no-repeat;
+	background-size: cover;
+	position: fixed;
+	left: -1%;
+	top: -1%;
+	z-index: 501;
+	-webkit-filter: brightness(40%) ;
+filter: brightness(40%) ;
+	background-image: url('../images/background.jpg');
+	cursor: pointer;
+	display:none;
+}
+
+.flashChoose img {
+width: 30px;
+top: 55px; right: 10px; position: fixed;
+pointer-events: none;	
+}
+
+@media screen and (max-width: 767px) {.flashChoose img {display:none;}}
+
+.cateMode{
+padding-right: 25px;	
+}
+
+.combMode{
+display:none;
+}
+
+
+#cateArrow{
+height: 14px;
+width: auto;
+top: 13px;
+left: auto;
+right: 7px;	
+display: block !important;	
+}
+
+
+#customCate{
+height: 40px;
+width: auto;
+top: 0px;
+left: -50px;
+filter: grayscale(100%);
+}
+
+.flashChoose{
+overflow-y: scroll !important;	
+background: rgba(0,0,0,0.4);	
+-webkit-overflow-scrolling: touch;	
+z-index: 502;	
+width: 90%; height: 93%; position: fixed; top: 45px; left:0; right: 0; margin: 0 auto; padding: 2% 0 5% 0;	max-width: 650px;
+display:none;	
+}
+
+.flashChoose::-webkit-scrollbar{width:6px;background-color: black;} 
+.flashChoose::-webkit-scrollbar-thumb{background-color: #999;border-radius: 3px;}
+.flashChoose::-webkit-scrollbar-track{background: #333;} 
+.flashChoose::-webkit-scrollbar-thumb:hover{background-color: #F90;}
+.flashChoose::-webkit-scrollbar-thumb:active{background-color: #F60;}
+
+.coColor{background: rgba(255, 169, 20, 0.8);}
+.blColor{background: rgba(106, 176, 76, 0.8);}
+.voColor{background: rgba(192, 57, 43, 0.8);}
+.veColor{background: rgba(41, 128, 185, 0.8);}
+
+#flMoreCards{
+width: 250px;
+padding-left: 15px;	
+margin: 0px auto 50px auto;	
+position: relative;
+opacity: 0.4;	
+display: block !important;	
+}
+
+#flNote{
+width: 95%;
+padding: 56px 2% 12px 2%;
+margin: 2px auto 2px auto;	
+text-align: center;
+max-width: 550px;	
+color: white;
+font-weight: 300;	
+display: block !important;		
+}
+
+
+#allAdd, #allRem{
+top: 20px;	
+height: 30px;
+width: auto;	
+position: relative;	
+display: block !important;
+cursor: pointer;
+opacity: 0.8;
+pointer-events: auto;	
+}
+
+#allRem{
+float: right;
+padding-right: 6%;	
+	
+}
+
+#allAdd{
+float: left;
+padding-left: 10%;		
+}
+
+@media screen and (min-width: 690px) {
+#allRem{padding-right: 25%;}
+#allAdd{padding-left: 29%;}
+	
+	
+
+}
+
+.fullOpacity {opacity: 1 !important;}
+
+/*4.1 END*/
+
+
+#menuMain2{width: 56px !important; height: 56px !important; border-top: none !important;}
+.menuBar {background: #101010 !important;}
+#backBtn{width: 40px !important; height: 40px !important; margin-top: -4px;}		
+
+
+@media screen and (max-width:550px) {
+#topBar{position:fixed;top:0;left:0;width:100%;height:51px;background:#070707!important;display:block;z-index:999!important}	
+.menuBar{background: rgba(20,20,20,0) !important;}
+.menuTitleContainer{position: fixed; top: 25px; left: 50px;}
+#menuMain2{top: 25px; height: 56px !important;width: 56px !important;position: fixed; border: none; background: none !important; opacity: 0.9; left: 4px;}
+#backBtn{width: 47px !important; height: 47px !important;margin-right: 0px; top: 4px; position: fixed; right: 2px; opacity: 0.9;}
+#volDiv{margin-right: 40px;}	
+	
+.langMode, .cateMode {top: 65px;}	
+	
+.flashChoose{
+width: 100%; height: calc(100%); top: 0px; padding: 50px 0 0 0; 
+
+}
+	
+}
+
+
+
+#background {-webkit-filter: brightness(80%) blur(0px);filter: brightness(80%) blur(0px);}
+#background::after {-webkit-backdrop-filter: blur(7px); backdrop-filter: blur(7px);background: linear-gradient(0deg, rgba(10,10,10,0) 40%, rgba(10,10,10,0.8) 91%);}
+
+.autoPlay{position:absolute;top:10px;right:13px;z-index:21;width:30px;height:30px;padding:20px;opacity:.7;background-color:#222;background-image:url('../../common/play.svg');background-size:26px 26px;background-position:9px center;background-repeat:no-repeat;border-radius:50%}
+.playOn{background-image:url('../../common/pause.svg');background-size:24px 24px;background-position:8px center}
+.autoPlay:hover{opacity:1}
+@keyframes spin{from{transform:rotate(0)}to{transform:rotate(360deg)}}
+.autoPlay::before{content:'';position:absolute;top:0;right:0;border:3px solid #333;border-radius:50%;width:40px;height:40px;animation:1.5s linear infinite paused spin}
+.running::before{border-top-color:#ffbd3b;animation-play-state:running}
+#autoNotice{display:none;border-radius:10px;cursor:default;padding:30px;background:#222;z-index:2000;position:fixed;width:240px;height:85px;margin:auto;left:0;right:0;top:0;bottom:0;font-size:22px;font-weight:700;color:#fff;text-align:center}
+#autoNotice strong{color:#ffbd3b}
+#spromptYes{background-color:#ffbd3b}
+.countNum {top: auto; bottom: 10px;}
+
+@media screen and (max-width:690px) {.autoPlay{right:25px;}}
+@media screen and (max-width:550px) {.autoPlay{right:20px;}}

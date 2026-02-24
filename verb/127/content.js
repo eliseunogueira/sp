@@ -1,0 +1,13 @@
+var lessonNumber = 127;
+var conjNum = 1;
+var verbTypeNum = 3;
+var narration =  ["In this lesson, you will learn the endings for regular IR verbs.","You should be able to notice certain similarities with all the verb endings in the present tense."];
+var replaceText  = ["", "viv","decid","recib","part","sub"];
+var englishVerbs  = ["Infinitive", "To live","To decide","To receive","To leave","To go up"];
+var forConj1 = ["(yo) zzzz<strong>o</strong>","(tú) zzzz<strong>es</strong>","(usted) zzzz<strong>e</strong>","(él/ella) zzzz<strong>e</strong>","(nosotros) zzzz<strong>imos</strong>","(ustedes) zzzz<strong>en</strong>","(ellos/ellas) zzzz<strong>en</strong>"];
+var engConj1Z = ["1st Person Singular","2nd Person Singular (inf.)","2nd Pers. Sing. Form. (3rd)","3rd Person Singular","1st Person Plural","2nd Person Plural (3rd)","3rd Person Plural"];
+var engConj1A = ["I live","you live (informal)","you live (formal)","he/she lives","we live","you live (plural)","they live"];
+var engConj1B = ["I decide","you decide (informal)","you decide (formal)","he/she decides","we decide","you decide (plural)","they decide"];
+var engConj1C = ["I receive","you receive (informal)","you receive (formal)","he/she receives","we receive","you receive (plural)","they receive"];
+var engConj1D = ["I leave","you leave (informal)","you leave (formal)","he/she leaves","we leave","you leave (plural)","they leave"];
+var engConj1E = ["I go up","you go up (informal)","you go up (formal)","he/she go ups","we go up","you go up (plural)","they go up"];

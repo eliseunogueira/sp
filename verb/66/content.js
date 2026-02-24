@@ -1,0 +1,24 @@
+
+var lessonNumber = 66;var lessonTitle = "Gustar (To like)";var forExamples = ["<strong>Gustar</strong>","Yo creo que te va a <strong>gustar</strong> tu regalo.","(Yo) me gusta","<strong>Me gusta</strong> mucho la naturaleza.","(Nosotros) nos gustó","<strong>Nos gustó</strong> jugar al golf juntos.","(Él) le gustaba","Al muchacho <strong>le gustaba</strong> jugar al fútbol.","(Tú) te gustará","<strong>Te gustará</strong> el perfume.","(Ella) le gustaría","A ella <strong>le gustaría</strong> vivir cerca de un lago."];
+var engExamples = ["To like<em></em>","I think that you are going <em>to like</em> your gift.","I like","<em>I like</em> nature a lot.","We liked","<em>We liked</em> playing golf together.","He used to like","<em>The boy used to like</em> playing football.","You will like","<em>You will like</em> the perfume. (informal)","She would like","<em>She would like</em> to live close to a lake."];var btnColor = ["#F30101","#5F0000"];
+
+var forConj1 = ["(yo) me gust<strong>a(n)</strong>","(tú) te gust<strong>a(n)</strong>","(usted) le gust<strong>a(n)</strong>","(él/ella) le gust<strong>a(n)</strong>","(nosotros) nos gust<strong>a(n)</strong>","(ustedes) les gust<strong>a(n)</strong>","(ellos/ellas) les gust<strong>a(n)</strong>"];
+var forConj2 = ["(yo) me gust<strong>ó</strong> / gust<strong>aron</strong>","(tú) te gust<strong>ó</strong> / gust<strong>aron</strong>","(usted) le gust<strong>ó</strong> / gust<strong>aron</strong>","(él/ella) le gust<strong>ó</strong> / gust<strong>aron</strong>","(nosotros) nos gust<strong>ó</strong> / gust<strong>aron</strong>","(ustedes) les gust<strong>ó</strong> / gust<strong>aron</strong>","(ellos/ellas) les gust<strong>ó</strong> / gust<strong>aron</strong>"];
+var forConj3 = ["(yo) me gust<strong>aba(n)</strong>","(tú) te gust<strong>aba(n)</strong>","(usted) le gust<strong>aba(n)</strong>","(él/ella) le gust<strong>aba(n)</strong>","(nosotros) nos gust<strong>aba(n)</strong>","(ustedes) les gust<strong>aba(n)</strong>","(ellos/ellas) les gust<strong>aba(n)</strong>"];
+var forConj4 = ["(yo) me gust<strong>ará(n)</strong>","(tú) te gust<strong>ará(n)</strong>","(usted) le gust<strong>ará(n)</strong>","(él/ella) le gust<strong>ará(n)</strong>","(nosotros) nos gust<strong>ará(n)</strong>","(ustedes) les gust<strong>ará(n)</strong>","(ellos/ellas) les gust<strong>ará(n)</strong>"];
+var forConj5 = ["(yo) me gust<strong>aría(n)</strong>","(tú) te gust<strong>aría(n)</strong>","(usted) le gust<strong>aría(n)</strong>","(él/ella) le gust<strong>aría(n)</strong>","(nosotros) nos gust<strong>aría(n)</strong>","(ustedes) les gust<strong>aría(n)</strong>","(ellos/ellas) les gust<strong>aría(n)</strong>"];
+
+var engConj1 = ["I like","you like (informal)","you like (formal)","he/she/it likes","we like","you like (plural)","they like"];var engConj2 = ["I liked","you liked (informal)","you liked (formal)","he/she/it liked","we liked","you liked (plural)","they liked"];var engConj3 = ["I was liking","you were liking (informal)","you were liking (formal)","he/she/it was liking","we were liking","you were liking (plural)","they were liking"];var engConj4 = ["I will like","you will like (informal)","you will like (formal)","he/she/it will like","we will like","you will like (plural)","they will like"];
+var engConj5 = ["I would like","you would like (informal)","you would like (formal)","he/she/it would like","we would like","you would like (plural)","they would like"];
+
+var quizConj1 = ["me gusta","te gusta","le gusta","nos gusta","les gusta","les gusta"];
+var quizConj2 = ["me gustó","te gustó","le gustó","nos gustó","les gustó","les gustó"];
+var quizConj3 = ["me gustaba","te gustaba","le gustaba","nos gustaba","les gustaba","les gustaba"];
+var quizConj4 = ["me gustará","te gustará","le gustará","nos gustará","les gustará","les gustará"];
+var quizConj5 = ["me gustaría","te gustaría","le gustaría","nos gustaría","les gustaría","les gustaría"];
+
+var verbTypeNum = 1;var forConj6 = "gustando"
+var forConj7 = 'gust';
+var pronominal = false;var conjNum = [0,0,1,1,2,2,3,3,4,4,5,5];var irregReason = [""];
+
+var extraNote = '<br><strong>Gustar</strong> and <strong>Encantar</strong> are used differently than most verbs. They are frequently used with an object pronoun and conjugated to the third person singular or plural, depending on what is liked or loved. This occurs because Spanish uses a different structure.<br><br>Me gust<strong>a</strong> el coche.<br>I like the car. (The car is pleasing to me.)<br><br>Me gust<strong>an</strong>  los coches.<br>I like the cars. (The cars are pleasing to me.)';

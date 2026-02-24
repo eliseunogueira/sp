@@ -1,0 +1,13 @@
+var lessonNumber = 129;
+var conjNum = 3;
+var verbTypeNum = 3;
+var narration =  ["The endings for IR verbs are the exact same as ER verbs for the imperfect tense."];
+var replaceText = ["","recib","part","sub","viv","decid"];
+var englishVerbs = ["Infinitive","To receive","To leave","To go up","To live","To decide"];
+var forConj3 = ["(yo) zzzz<strong>ía</strong>","(tú) zzzz<strong>ías</strong>","(usted) zzzz<strong>ía</strong>","(él/ella) zzzz<strong>ía</strong>","(nosotros) zzzz<strong>íamos</strong>","(ustedes) zzzz<strong>ían</strong>","(ellos/ellas) zzzz<strong>ían</strong>"];
+var engConj3Z = ["1st Person Singular","2nd Person Singular (inf.)","2nd Pers. Sing. Form. (3rd)","3rd Person Singular","1st Person Plural","2nd Person Plural (3rd)","3rd Person Plural"];
+var engConj3A = ["I was receiving","you were receiving (informal)","you were receiving (formal)","he/she was receiving","we were receiving","you were receiving (plural)","they were receiving"];
+var engConj3B = ["I was leaving","you were leaving (informal)","you were leaving (formal)","he/she was leaving","we were leaving","you were leaving (plural)","they were leaving"];
+var engConj3C = ["I was going up","you were going up (informal)","you were going up (formal)","he/she was going up","we were going up","you were going up (plural)","they were going up"];
+var engConj3D = ["I was living","you were living (informal)","you were living (formal)","he/she was living","we were living","you were living (plural)","they were living"];
+var engConj3E = ["I used to decide","you used to decide (informal)","you used to decide (formal)","he/she used to decide","we used to decide","you used to decide (plural)","they used to decide"];

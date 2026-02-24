@@ -1,0 +1,13 @@
+var lessonNumber = 136;
+var conjNum = 6;
+var verbTypeNum = 2;
+var narration =  ["The endings for regular ER verbs in the subjunctive are very similar.","Simply change the E from the AR endings to an A."];
+var replaceText  = ["", "com","beb","le","corr","depend"];
+var englishVerbs  = ["Infinitive", "To eat","To drink","To read","To run","To depend"];
+var forConj6 = ["que (yo) zzzz<strong>a</strong>","que (tú) zzzz<strong>as</strong>","que (usted) zzzz<strong>a</strong>","que (él/ella) zzzz<strong>a</strong>","que (nosotros) zzzz<strong>amos</strong>","que (ustedes) zzzz<strong>an</strong>","que (ellos/ellas) zzzz<strong>an</strong>"];
+var engConj6Z = ["1st Person Singular","2nd Person Singular (inf.)","2nd Pers. Sing. Form. (3rd)","3rd Person Singular","1st Person Plural","2nd Person Plural (3rd)","3rd Person Plural"];
+var engConj6A = ["that I eat","that you eat (informal)","that you eat (formal)","that he/she eats","that we eat","that you eat (plural)","that they eat"];
+var engConj6B = ["that I drink","that you drink (informal)","that you drink (formal)","that he/she drinks","that we drink","that you drink (plural)","that they drink"];
+var engConj6C = ["that I read","that you read (informal)","that you read (formal)","that he/she reads","that we read","that you read (plural)","that they read"];
+var engConj6D = ["that I run","that you run (informal)","that you run (formal)","that he/she runs","that we run","that you run (plural)","that they run"];
+var engConj6E = ["that I depend","that you depend (informal)","that you depend (formal)","that he/she depends","that we depend","that you depend (plural)","that they depend"];

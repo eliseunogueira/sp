@@ -1,0 +1,13 @@
+var lessonNumber = 135;
+var conjNum = 6;
+var verbTypeNum = 1;
+var narration =  ["The subjunctive mood can be difficult to understand when to use.","However, the endings for the subjunctive are not more difficult than other tenses.","Here are the endings for regular AR verbs in the subjunctive."];
+var replaceText  = ["", "esper","cocin","limpi","habl","trabaj"];
+var englishVerbs  = ["Infinitive", "To wait","To cook","To clean","To speak","To work"];
+var forConj6 = ["que (yo) zzzz<strong>e</strong>","que (tú) zzzz<strong>es</strong>","que (usted) zzzz<strong>e</strong>","que (él/ella) zzzz<strong>e</strong>","que (nosotros) zzzz<strong>emos</strong>","que (ustedes) zzzz<strong>en</strong>","que (ellos/ellas) zzzz<strong>en</strong>"];
+var engConj6Z = ["1st Person Singular","2nd Person Singular (inf.)","2nd Pers. Sing. Form. (3rd)","3rd Person Singular","1st Person Plural","2nd Person Plural (3rd)","3rd Person Plural"];
+var engConj6A = ["that I wait","that you wait (informal)","that you wait (formal)","that he/she waits","that we wait","that you wait (plural)","that they wait"];
+var engConj6B = ["that I cook","that you cook (informal)","that you cook (formal)","that he/she cooks","that we cook","that you cook (plural)","that they cook"];
+var engConj6C = ["that I clean","that you clean (informal)","that you clean (formal)","that he/she cleans","that we clean","that you clean (plural)","that they clean"];
+var engConj6D = ["that I speak","that you speak (informal)","that you speak (formal)","that he/she speaks","that we speak","that you speak (plural)","that they speak"];
+var engConj6E = ["that I work","that you work (informal)","that you work (formal)","that he/she works","that we work","that you work (plural)","that they work"];
