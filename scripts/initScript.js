@@ -14,7 +14,7 @@ var doNotTimer,
   defArr = [];
 function strip(e) {
   return (e = (e = e.toLowerCase().split(' ').join('')).replace(
-    /[.,\/#!$%?\¿^’&\*;':¡{}=\-_`~()]/g,
+    /[.,\/#!$%?\Â¿^â€™&\*;':Â¡{}=\-_`~()]/g,
     '',
   ));
 }
@@ -28,13 +28,13 @@ function strip2(e) {
     .replace(/<[^>]*>/g, ''));
 }
 var insightExclude = [
-  '<div><strong>¿</strong>',
-  '<div><strong>¡</strong>',
+  '<div><strong>Â¿</strong>',
+  '<div><strong>Â¡</strong>',
   '<div><strong>?</strong>',
   '<div><strong>!</strong>',
   '<div><strong>,</strong>',
-  '<strong>¿ ?</strong>',
-  '<strong>¡ !</strong>',
+  '<strong>Â¿ ?</strong>',
+  '<strong>Â¡ !</strong>',
 ];
 function excluded(e) {
   for (var t = 0; t < insightExclude.length; t++)
@@ -60,7 +60,7 @@ function loadInsight() {
       }),
       document.head.appendChild(e),
       $('body').append(
-        '<div id="insightLoader"><div id="insightCont"></div></div>',
+        '<div id="insightLoader"><div id="insightCont"></div><div id="insightClose">X</div></div>',
       ),
       $('#insightLoader').on('click', function (e) {
         e.target == this && (playPres(), $('#insightLoader').fadeOut());
@@ -86,9 +86,9 @@ function loadInsight() {
     )
       excluded(t[n]) || o.push(t[n]);
     ((t = (t = o.join('</div>'))
-      .split('<strong>¿')
+      .split('<strong>Â¿')
       .join('<strong>')
-      .split('<strong>¡')
+      .split('<strong>Â¡')
       .join('<strong>')
       .split('?</strong>')
       .join('</strong>')

@@ -5,7 +5,7 @@ var currentVersion = '5.1.0';
 /////////////////////
 var cacheName = theLang + 'OuinoCache' + currentVersion;
 var dynamicCache = theLang + 'OuinoDynamic' + currentVersion;
-var cacheURL = 'https://www.eliseunogueira.com.br/app/' + theLang + '/';
+var cacheURL = 'https://eliseunogueira.com.br/app/' + theLang + '/';
 var url;
 
 var assets = [
