@@ -1,7 +1,7 @@
 ///OS START
-var osType = "mac";
+var osType = "pwa";
 var externalKeyboard = true;
-var soundType = ".ogg";
+var soundType = ".mp3";
 var currentDevice = "desktop";
 //OS END
 

@@ -100,7 +100,6 @@ font-size: 21px;
 color: #ffbd3b;
 }
 
-
 .recordBtn{
 position: relative;
 float: left;
@@ -253,8 +252,6 @@ text-shadow: -1px -1px 0 #000,  1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000
 }
 
 .proBox strong{color: #ffbd3b;}
-
-
 
 #letterPro{width: 19%; margin-right: 1%;}
 #letterPro p{font-weight:300;}
@@ -485,8 +482,6 @@ cursor: pointer;
 opacity: 0.8;
 }
 
-
-
 .soText{
 font-size: 20px;
 padding-right: 40px;
@@ -517,6 +512,7 @@ z-index: 99999;
 
 #loadIn{display: none !important;}
 
+
 .micBox{padding-top: 20px;}
 
 .micBox em{ font-size:14px; color: #CCC;}
@@ -535,14 +531,12 @@ margin: 40px auto;
 }
 
 
-
-
 #soundArrow{
 position: fixed;
 width: 60px;
 height: auto;
 top: 500px;
-right: 215px;
+right: 78px !important;
 z-index: 201;
 opacity: 0;
 pointer-events: none;
@@ -591,8 +585,6 @@ display:none;
 #musicOnOff b{
 color: #ffbd3b;
 }
-
-
 
 #volDiv2{
 position: relative;
@@ -661,13 +653,6 @@ background-color: rgba(0, 0, 0, 1);
 .yell{color: #ffbd3b;}
 #micDiv .insideMenu a, #micDiv .insideMenu section {display: none;}
 
-#micDiv .insideMenu a, #micDiv .insideMenu section {display: none;}
-
-
-
-
-
-
 /*4.1 CHANGES START*/
 
 
@@ -691,6 +676,11 @@ background-color: rgba(0, 0, 0, 1);
 #nativeLabel{padding-top: 9px; background: rgba(0,0,0,0.6);}
 
 .rightArrow, .leftArrow {background-size: 15px !important; opacity: 0.7 !important;}
+
+.menuBtnContainer .micBtn {display:none !important;}
+#soundArrow{right: 37px !important;}
+
+
 .fullOpacity {opacity: 1 !important;}
 
 /*4.1 CHANGES START*/

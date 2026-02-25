@@ -116,7 +116,7 @@ var currSentence,
   difficulty = 'hard',
   sentenceArray = [],
   timedOut = !1,
-  soundType = '.ogg',
+  soundType = '.mp3',
   spaceCheck = !1,
   micOn = !0,
   afterRec = !1,
@@ -456,7 +456,7 @@ if (
         ? $('.charSp').show()
         : 'Portuguese' == lessonLanguage
           ? ($('#extra4').append(
-              '<div class="boardChar charPor">Ã¡</div><div class="boardChar charPor">Ã¢</div><div class="boardChar charPor">Ã£</div><div class="boardChar charPor">Ã </div><div class="boardChar charPor">Ã§</div><div class="boardChar charPor">Ã©</div><div class="boardChar charPor">Ãª</div><div class="boardChar charPor">Ã­</div><div class="boardChar charPor">Ã³</div><div class="boardChar charPor">Ã´</div><div class="boardChar charPor">Ãµ</div><div class="boardChar charPor">Ãº</div>',
+              '<div class="boardChar charPor">á</div><div class="boardChar charPor">â</div><div class="boardChar charPor">ã</div><div class="boardChar charPor">à</div><div class="boardChar charPor">ç</div><div class="boardChar charPor">é</div><div class="boardChar charPor">ê</div><div class="boardChar charPor">í</div><div class="boardChar charPor">ó</div><div class="boardChar charPor">ô</div><div class="boardChar charPor">õ</div><div class="boardChar charPor">ú</div>',
             ),
             $('.charPor').show())
           : 'French' == lessonLanguage
@@ -706,7 +706,7 @@ function randomSentence() {
             .join('')
             .split('</strong>')
             .join('')
-            .split('â€¦')
+            .split('…')
             .join('...')
             .split(' .')
             .join('.')
@@ -722,7 +722,7 @@ function randomSentence() {
             .join('')
             .split('</em>')
             .join('')
-            .split('â€¦')
+            .split('…')
             .join('...')
             .split(' .')
             .join('.')
@@ -770,7 +770,7 @@ function randomSentence() {
             .join('')
             .split('</strong>')
             .join('')
-            .split('â€¦')
+            .split('…')
             .join('...')
             .split(' .')
             .join('.')
@@ -786,7 +786,7 @@ function randomSentence() {
             .join('')
             .split('</em>')
             .join('')
-            .split('â€¦')
+            .split('…')
             .join('...')
             .split(' .')
             .join('.')
@@ -862,9 +862,9 @@ function processRandom() {
         .join('')
         .split(':')
         .join('')
-        .split('Â¿')
+        .split('¿')
         .join('')
-        .split('Â¡')
+        .split('¡')
         .join('')
         .split(';')
         .join('')
@@ -1030,11 +1030,11 @@ function checkWordsLeft() {
       .join('')
       .split('!')
       .join('')
-      .split('Â¡')
+      .split('¡')
       .join('')
       .split('?')
       .join('')
-      .split('Â¿')
+      .split('¿')
       .join('')
       .split('?')
       .join('')
@@ -1047,15 +1047,15 @@ function checkWordsLeft() {
       .join(' ')
       .split('`')
       .join("'")
-      .split('â€˜')
+      .split('‘')
       .join("'")
-      .split('â€˜')
+      .split('‘')
       .join("'")
-      .split('â€™')
+      .split('’')
       .join("'")
-      .split('â€“')
+      .split('–')
       .join('-')
-      .split('â€”')
+      .split('—')
       .join('-')
       .split('-')
       .join(' ')
@@ -1063,7 +1063,7 @@ function checkWordsLeft() {
     o = e.length - t.length,
     r = currSentence
       .replace(
-        /[a-zA-Z0-9Ã Ã¨Ã¬Ã²Ã¹Ã¢Ã£ÃªÃ®Ã´Ã»Ã§Ã¡Ã©Ã­Ã³ÃºÃ±Ã¤Ã«Ã¯Ã¶Ã¼ÃµÃ€ÃˆÃŒÃ’Ã™Ã‚ÃƒÃŠÃŽÃ”Ã›Ã‡ÃÃ‰ÃÃ“Ã•ÃšÃ‘Ã„Ã‹ÃÃ–ÃœÃŸ']/g,
+        /[a-zA-Z0-9àèìòùâãêîôûçáéíóúñäëïöüõÀÈÌÒÙÂÃÊÎÔÛÇÁÉÍÓÕÚÑÄËÏÖÜß']/g,
         '_',
       )
       .split('-')
@@ -2215,19 +2215,19 @@ function addCharacter() {
 }
 function puncRemove(e) {
   return e
-    .split('Ã®')
+    .split('î')
     .join('i')
-    .split('ÃŽ')
+    .split('Î')
     .join('I')
-    .split('ÃŸ')
+    .split('ß')
     .join('ss')
-    .split('Ã»')
+    .split('û')
     .join('u')
-    .split('Ã›')
+    .split('Û')
     .join('U')
-    .split('Ã´')
+    .split('ô')
     .join('o')
-    .split('Ã”')
+    .split('Ô')
     .join('O')
     .split('.')
     .join('')
@@ -2235,9 +2235,9 @@ function puncRemove(e) {
     .join('')
     .split('!')
     .join('')
-    .split('Â¡')
+    .split('¡')
     .join('')
-    .split('Â¿')
+    .split('¿')
     .join('')
     .split(',')
     .join('')
@@ -2248,21 +2248,21 @@ function puncRemove(e) {
 }
 function removeAccent(e) {
   return e
-    .replace(/Ã€|Ã|Ã‚|Ãƒ|Ã„|Ã…/g, 'A')
-    .replace(/Ã‡/g, 'C')
-    .replace(/Ãˆ|Ã‰|ÃŠ|Ã‹/g, 'E')
-    .replace(/ÃŒ|Ã|ÃŽ|Ã/g, 'I')
-    .replace(/Ã’|Ã“|Ã”|Ã–|Ã•|Ã˜/g, 'O')
-    .replace(/Ã™|Ãš|Ã›|Ãœ/g, 'U')
-    .replace(/Ã‘/g, 'N')
-    .replace(/Ã |Ã¡|Ã¢|Ã£|Ã¤|Ã¥/g, 'a')
-    .replace(/Ã§/g, 'c')
-    .replace(/Ã¨|Ã©|Ãª|Ã«/g, 'e')
-    .replace(/Ã¬|Ã­|Ã®|Ã¯/g, 'i')
-    .replace(/Ã²|Ã³|Ã´|Ã¶|Ãµ|Ã¸/g, 'o')
-    .replace(/Ã¹|Ãº|Ã»|Ã¼/g, 'u')
-    .replace(/Ã±/g, 'n')
-    .replace(/ÃŸ/g, 'ss');
+    .replace(/À|Á|Â|Ã|Ä|Å/g, 'A')
+    .replace(/Ç/g, 'C')
+    .replace(/È|É|Ê|Ë/g, 'E')
+    .replace(/Ì|Í|Î|Ï/g, 'I')
+    .replace(/Ò|Ó|Ô|Ö|Õ|Ø/g, 'O')
+    .replace(/Ù|Ú|Û|Ü/g, 'U')
+    .replace(/Ñ/g, 'N')
+    .replace(/à|á|â|ã|ä|å/g, 'a')
+    .replace(/ç/g, 'c')
+    .replace(/è|é|ê|ë/g, 'e')
+    .replace(/ì|í|î|ï/g, 'i')
+    .replace(/ò|ó|ô|ö|õ|ø/g, 'o')
+    .replace(/ù|ú|û|ü/g, 'u')
+    .replace(/ñ/g, 'n')
+    .replace(/ß/g, 'ss');
 }
 function hyphens(e, t) {
   var o = [];
@@ -2368,15 +2368,15 @@ function checkAnswer4() {
     t = currSentence
       .split('`')
       .join("'")
-      .split('â€˜')
+      .split('‘')
       .join("'")
-      .split('â€˜')
+      .split('‘')
       .join("'")
-      .split('â€™')
+      .split('’')
       .join("'")
-      .split('â€“')
+      .split('–')
       .join('-')
-      .split('â€”')
+      .split('—')
       .join('-')
       .split('-')
       .join('-'),
@@ -2384,15 +2384,15 @@ function checkAnswer4() {
       .val()
       .split('`')
       .join("'")
-      .split('â€˜')
+      .split('‘')
       .join("'")
-      .split('â€˜')
+      .split('‘')
       .join("'")
-      .split('â€™')
+      .split('’')
       .join("'")
-      .split('â€“')
+      .split('–')
       .join('-')
-      .split('â€”')
+      .split('—')
       .join('-')
       .split('-')
       .join('-'),
@@ -2442,8 +2442,7 @@ function checkAnswer4() {
                   n[i].slice(r[i].indexOf("'"))))
               : d && d == u
                 ? (l = l + '<strong>' + u + '</strong>')
-                : u ||
-                    -1 != ['.', '!', '?', ':', ',', 'Â¿', 'Â¡', ';'].indexOf(d)
+                : u || -1 != ['.', '!', '?', ':', ',', '¿', '¡', ';'].indexOf(d)
                   ? m && m == u && d != u
                     ? (l = l + '<em>' + u + '</em>')
                     : u && (l = l + '<strong>' + u + '</strong>')
@@ -2618,7 +2617,7 @@ function bonusSentence() {
         .join('')
         .split('</strong>')
         .join('')
-        .split('â€¦')
+        .split('…')
         .join('...')
         .split(' .')
         .join('.')
@@ -2634,7 +2633,7 @@ function bonusSentence() {
       .join('')
       .split('</em>')
       .join('')
-      .split('â€¦')
+      .split('…')
       .join('...')
       .split(' .')
       .join('.')
