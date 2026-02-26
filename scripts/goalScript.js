@@ -2028,7 +2028,7 @@ if (
         : $('.menuBtnContainer').append(
             '<img id="minimizeBtn" src="../common/minimize.svg" class="smallIcon2" style="padding-left: 10px;"/><img id="fullToggle" src="../common/min.svg" class="smallIcon2" /><img id="closeWinBtn" src="../common/close.svg" class="smallIcon2" />',
           ),
-      (win.title = lessonTitle),
+      (document.title = lessonTitle),
       isMac ||
         ($('.menuBar').css({
           '-webkit-user-select': 'none',
