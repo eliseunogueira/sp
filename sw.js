@@ -1458,26 +1458,39 @@ var assets = [
   'screens/block5.jpg',
 ];
 
-//fsdf
-
 self.addEventListener('install', function (event) {
-  //cache open
   event.waitUntil(
     caches.open(cacheName).then(function (cache) {
-      ///For LOOP
-      for (var i = 0; i < assets.length; i++) {
-        url = cacheURL + assets[i];
-        cache.add(url).then(function () {});
-      }
-      ///For LOOP
+      // É mais seguro usar map e Promise.all ou cache.addAll
+      return Promise.all(
+        assets.map(function (asset) {
+          var url = cacheURL + asset;
+          return cache.add(url).catch(function (err) {
+            console.warn('Falha ao pré-cachear:', url, err);
+          });
+        }),
+      );
     }),
-    //cache opend
   );
 });
 
 self.addEventListener('activate', function (event) {
-  event.waitUntil(caches.delete('OuinoCache' + oldVersion));
-  event.waitUntil(caches.delete('OuinoDynamic' + oldVersion));
+  event.waitUntil(
+    caches.keys().then(function (keys) {
+      return Promise.all(
+        keys
+          .filter(function (key) {
+            return (
+              key === 'OuinoCache' + oldVersion ||
+              key === 'OuinoDynamic' + oldVersion
+            );
+          })
+          .map(function (key) {
+            return caches.delete(key);
+          }),
+      );
+    }),
+  );
 });
 
 self.addEventListener('fetch', function (event) {
@@ -1490,17 +1503,16 @@ self.addEventListener('fetch', function (event) {
         .then(function (cacheRes) {
           return (
             cacheRes ||
-            fetch(event.request, { ignoreSearch: false }).then(
-              function (fetchRes) {
-                if (fetchRes.status === 200) {
-                  return caches.open(dynamicCache).then(function (cache) {
-                    cache.put(event.request.url, fetchRes.clone());
-                    return fetchRes;
-                  });
-                }
-                return fetchRes;
-              },
-            )
+            fetch(event.request).then(function (fetchRes) {
+              // CORREÇÃO: Validar status 200 antes do put
+              if (fetchRes.status === 200) {
+                return caches.open(dynamicCache).then(function (cache) {
+                  cache.put(event.request.url, fetchRes.clone());
+                  return fetchRes;
+                });
+              }
+              return fetchRes;
+            })
           );
         })
         .catch(function () {
@@ -1510,6 +1522,7 @@ self.addEventListener('fetch', function (event) {
         }),
     );
   } else {
+    // ESTE ERA O PROBLEMA: O bloco ELSE também precisava da validação
     event.respondWith(
       caches.open(cacheName).then(function (cache) {
         return cache
@@ -1517,14 +1530,16 @@ self.addEventListener('fetch', function (event) {
           .then(function (response) {
             return (
               response ||
-              fetch(event.request, { ignoreSearch: true }).then(
-                function (fetchRes) {
+              fetch(event.request).then(function (fetchRes) {
+                // CORREÇÃO: Validar status 200 aqui também!
+                if (fetchRes.status === 200) {
                   return caches.open(cacheName).then(function (cache) {
                     cache.put(event.request.url, fetchRes.clone());
                     return fetchRes;
                   });
-                },
-              )
+                }
+                return fetchRes;
+              })
             );
           });
       }),
