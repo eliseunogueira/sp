@@ -1461,7 +1461,6 @@ var assets = [
 self.addEventListener('install', function (event) {
   event.waitUntil(
     caches.open(cacheName).then(function (cache) {
-      // É mais seguro usar map e Promise.all ou cache.addAll
       return Promise.all(
         assets.map(function (asset) {
           var url = cacheURL + asset;
@@ -1480,9 +1479,10 @@ self.addEventListener('activate', function (event) {
       return Promise.all(
         keys
           .filter(function (key) {
+            // Limpa versões antigas que não correspondam à versão atual
             return (
-              key === 'OuinoCache' + oldVersion ||
-              key === 'OuinoDynamic' + oldVersion
+              (key.includes('OuinoCache') && key !== cacheName) ||
+              (key.includes('OuinoDynamic') && key !== dynamicCache)
             );
           })
           .map(function (key) {
@@ -1494,6 +1494,9 @@ self.addEventListener('activate', function (event) {
 });
 
 self.addEventListener('fetch', function (event) {
+  // 1. FILTRO DE PROTOCOLO: Ignora chrome-extension:// e outros esquemas não suportados
+  if (!event.request.url.startsWith('http')) return;
+
   var hasQuery = event.request.url.indexOf('?') != -1;
 
   if (!hasQuery) {
@@ -1504,7 +1507,7 @@ self.addEventListener('fetch', function (event) {
           return (
             cacheRes ||
             fetch(event.request).then(function (fetchRes) {
-              // CORREÇÃO: Validar status 200 antes do put
+              // CORREÇÃO: Validar status 200 E o esquema da URL
               if (fetchRes.status === 200) {
                 return caches.open(dynamicCache).then(function (cache) {
                   cache.put(event.request.url, fetchRes.clone());
@@ -1516,13 +1519,15 @@ self.addEventListener('fetch', function (event) {
           );
         })
         .catch(function () {
-          return caches.open(cacheName).then(function (cache) {
-            return cache.match('offline/index.html');
-          });
+          // Fallback para página offline se for uma navegação principal
+          if (event.request.mode === 'navigate') {
+            return caches.open(cacheName).then(function (cache) {
+              return cache.match('offline/index.html');
+            });
+          }
         }),
     );
   } else {
-    // ESTE ERA O PROBLEMA: O bloco ELSE também precisava da validação
     event.respondWith(
       caches.open(cacheName).then(function (cache) {
         return cache
@@ -1531,7 +1536,6 @@ self.addEventListener('fetch', function (event) {
             return (
               response ||
               fetch(event.request).then(function (fetchRes) {
-                // CORREÇÃO: Validar status 200 aqui também!
                 if (fetchRes.status === 200) {
                   return caches.open(cacheName).then(function (cache) {
                     cache.put(event.request.url, fetchRes.clone());
