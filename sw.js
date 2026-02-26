@@ -1492,10 +1492,13 @@ self.addEventListener('fetch', function (event) {
             cacheRes ||
             fetch(event.request, { ignoreSearch: false }).then(
               function (fetchRes) {
-                return caches.open(dynamicCache).then(function (cache) {
-                  cache.put(event.request.url, fetchRes.clone());
-                  return fetchRes;
-                });
+                if (fetchRes.status === 200) {
+                  return caches.open(dynamicCache).then(function (cache) {
+                    cache.put(event.request.url, fetchRes.clone());
+                    return fetchRes;
+                  });
+                }
+                return fetchRes;
               },
             )
           );
